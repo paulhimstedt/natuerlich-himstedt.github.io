@@ -1,12 +1,14 @@
 /**/
 
-.min-h-screen #product-container {
-    min-height: 60vh;
-    margin-top: 100px;
-    margin-bottom: 100px;
+html {
+    scroll-behavior: smooth;
 }
 
-#product-container .hero-content {
+.min-h-screen #product-container {
+    min-height: 60vh;
+}
+
+.product-container .hero-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -24,6 +26,21 @@
     position: absolute;
     z-index: 3;
 }
+
+.scroll-progress {
+    position: absolute;
+    top: 30%;
+    left: 85%;
+}
+
+#moresection1 {}
+
+
+/*#drawersection1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}*/
 
 
 /*for prifile image on mobile*/
