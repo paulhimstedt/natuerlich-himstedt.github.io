@@ -1,0 +1,44 @@
+/**/
+
+.min-h-screen #product-container {
+    min-height: 60vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#product-container .hero-content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.landing-page .hero-content img {
+    max-width: 360px;
+}
+
+.navbar img,
+.footer img {
+    height: 48px;
+}
+
+#sticky-nav {
+    position: absolute;
+    z-index: 3;
+}
+
+
+/*for prifile image on mobile*/
+
+@media only screen and (max-width: 375px) {
+    .landing-page .hero-content .max-w-sm {
+        max-width: 20rem;
+    }
+}
+
+
+/*for map embed on mobile*/
+
+@media only screen and (max-width: 590px) {
+    .google-maps-embedding {
+        display: none;
+    }
+}

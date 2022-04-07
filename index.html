@@ -1,13 +1,250 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="emerald">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>natürlich Himstedt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $("#scrollsection1").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section1").offset().top
+            }, 2000);
+        });
+    </script>
 </head>
+
 <body>
-    <H1>Diese Website befindet sich derzeit noch in der Entwicklung</H1>
-    
+    <!--navigation bar-->
+    <div class="drawer">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
+        <div class="drawer-content flex flex-col">
+            <!-- Navbar -->
+
+            <div class="w-full navbar bg-base-100" id="sticky-nav">
+
+                <div class="flex-none lg:hidden">
+                    <label for="my-drawer-3" class="btn btn-square btn-ghost">
+                   
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          
+        </label>
+                </div>
+                <div class="flex-1 px-2 mx-2">
+                    <a class="btn btn-ghost"><img src="src\logo-nobackground-1000.png" alt="logo"></a>
+                </div>
+                <div class="flex-none hidden lg:block" id="menu-container">
+                    <ul class="menu menu-horizontal p-0">
+                        <!-- Navbar menu content here -->
+                        <li><a id="scrollsection1">Beratung</a></li>
+                        <li><a href="#section2">Wellnessmassagen</a></li>
+                        <li><a>Kräuterkurse</a></li>
+                        <li><a>Frauenkreise</a></li>
+                        <li><a>Schreibkurse</a></li>
+                        <li><a>Aromaöle</a></li>
+                        <li><a>Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--landing-page-->
+
+            <div class="hero landing-page min-h-screen bg-base-200">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="src/profile-pic.jpg" class="max-w-sm rounded-lg shadow-2xl" id="prifile-pic" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Beate Himstedt</h1>
+                        <p class="py-10 text-3xl">„natürlich Himstedt“ steht für Natürlichkeit, Einfachheit, Bescheidenheit, Zuverlässigkeit, Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener, glücklicher, dankbarer und sich selbst mehr wertschätzender
+                            sein. Oft liegt das Glück in den einfachen Dingen.
+                            <br/> Lassen Sie sich inspirieren, verwöhnen oder lernen Sie etwas über sich selbst oder die Natur hinzu.</p>
+                        <button class="btn btn-primary">Erfahren sie Mehr</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Beratung zu Lebensfragen-->
+
+            <div class="hero bg-base-200 " id="section1">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Beratung zu Lebensfragen</h1>
+                        <p class="py-6 text-2xl">„natürlich“ tauchen immer wieder im täglichen Leben Probleme und Fragen auf und man hat manchmal das Gefühl einen Knoten im Kopf zu haben oder sich im Kreis zu drehen. Oft sind das Hinweise, dass man wieder mal einen entscheidenden
+                            Entwicklungsschritt vor sich hat. Gern helfe ich Ihnen Ihren Knoten zu lösen, so das Sie wieder ganz entspannt Ihr Leben leben können und Sie stolz darauf sind, Ihr Problem gelöst zu haben.
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Wellnessmassagen-->
+
+            <div class="hero bg-base-200" id="section2">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Wellness massagen</h1>
+                        <p class="py-6 text-2xl">„natürlich“ gibt es nichts schöneres, als entspannt im eigenen Körper zu wohnen. Wer wünscht sich das nicht? Gönnen Sie sich doch ab und zu eine Wellnessmassage, egal ob Fuß-, Rücken-, Gesichts-, Kiefer- oder Ganzkörpermassage.
+                            Tauchen Sie ein, in ein entspanntes Gefühl mit Hot Stone, Aromaölen, Ohrkerzen oder Kräuterstempeln und vergessen Sie für einen Moment Ihren Alltag.
+
+                        </p>
+                        <button class="btn btn-primary">Erfahren sie Mehr</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Kräuterkurse-->
+
+            <div class="hero bg-base-200" id="product-container">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Kräuterkurse</h1>
+                        <p class="py-6 text-2xl">„natürlich“ geht es hier um Kräuter. Ein achtsamer und verantwortungsbewußter Umgang mit Kräutern erfordert solides Hintergrundwissen. „Der Größte ist der, der die Natur und die Wunder weiß, lernt und erfährt.“ Paracelsus
+                            </br>
+                            In den Kräuterkursen bringe ich Ihnen die Kräuter aus Ihrem Garten näher. Sie erfahren wie Sie diese einsetzen und zubereiten können, wie Sie sich selbst Tinkturen, Salben, Teemischungen, Wickel oder Auflagen selbst herstellen können.
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Frauenkreise-->
+
+            <div class="hero bg-base-200" id="product-container">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Frauenkreise</h1>
+                        <p class="py-6 text-2xl">„natürlich“ geht es hier um Frauen, um Themen, die die eigene Persönlichkeit betreffen. Gemeinsam wollen wir gelebte Kreativität, Austausch, Hilfe, Bewußwerdung, Freiheit, Lebendigkeit wieder zusammen spüren. Alle Frauen haben
+                            die gleichen Themen vom Frau werden, Frau sein und älter werden. Im Kreis sind alle gleich-(wertig), verbunden und getragen von gegenseitigem Respekt. Lasst uns an den Abenden austauschen, füreinander da sein, zuhören, kreativ
+                            sein, Leid und Freude teilen. An 10 Abenden wird immer wieder jeder für sich etwas mit nach Hause nehmen. Sei es ein Glücksgefühl oder ein Ahaerlebnis.
+                        </p>
+                        <button class="btn btn-primary">Erfahren sie Mehr</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Schreibkurse-->
+
+            <div class="hero bg-base-200" id="product-container">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Schreibkurse</h1>
+                        <p class="py-6 text-2xl">„natürlich“ Schreiben zur Selbsthilfe. Hier geht es nicht (wie in der Schule) um Schönschreiben, Korrektschreiben, ausdrucksstark Schreiben. „natürlich“ einfach mal die Seele frei schreiben. Egal ob sauber, richtig oder schön,
+                            hier geht es um Selbsterkenntnis. Wie kann ich wissen, was ich denke, bevor ich lese was ich schreibe. Oft ist der Alltag sehr schnell und hektisch und oft werden schnelle Entscheidungen und Lösungen von uns verlangt. Im Schreibkurs
+                            kann man genau diese Dinge trainieren. Durch Schreiben in einer ruhigen Atmosphäre wird einem bewußt was man denkt, wie man denkt und kann sich auch auf bestimmte Situationen vorbereiten. Probieren Sie es gern aus.
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Aromaöle-->
+
+            <div class="hero bg-base-200" id="product-container">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Aromaöle</h1>
+                        <p class="py-6 text-2xl">„natürlich“ sind auch die Aromaöle, die Sie bei mir käuflich erwerben können zu 100 % Bio. Ich arbeite mit den Firmen Maienfelser und Primavera zusammen. Gern berate ich Sie, damit Sie Ihr passendes Aromaöl finden.</p>
+                        <button class="btn btn-primary">Erfahren sie Mehr</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Kontakt-->
+
+            <div class="hero bg-base-200" id="product-container">
+                <div class="hero-content flex-col lg:flex-row">
+                    <!--<img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />-->
+                    <div>
+                        <h1 class="text-5xl font-bold">Kontakt</h1>
+                        <h2 class="py-6 text-2xl"> Tel: 8908989232 </br>Mail: beatehimstedt@gmail.comn</h2>
+                        <h2 class="py-6 text-2xl"> </h2>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                    <div class="google-maps-embedding">
+
+                        <div class="gmap_canvas"><iframe width="590" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=Kraiburger%20str%203%20schnaitsee&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 500px;
+                                    width: 590px;
+                                }
+                            </style>
+                            <a href="https://www.embedgooglemap.net"></a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none!important;
+                                    height: 500px;
+                                    width: 590px;
+                                }
+                            </style>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Footer-->
+
+            <footer class="footer p-10 bg-base-300 text-base-content">
+                <div>
+                    <img class="flex-1 px-2 mx-2" src="src\logo-nobackground-1000.png" alt="logo">
+                    <p>natürlich Himstedt<br>Immer für sie da!</p>
+                </div>
+                <div>
+                    <span class="footer-title">Services</span>
+                    <a class="link link-hover">Branding</a>
+                    <a class="link link-hover">Design</a>
+                    <a class="link link-hover">Marketing</a>
+                    <a class="link link-hover">Advertisement</a>
+                </div>
+                <div>
+                    <span class="footer-title">Company</span>
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Jobs</a>
+                    <a class="link link-hover">Press kit</a>
+                </div>
+                <div>
+                    <span class="footer-title">Rechtlich</span>
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Cookie policy</a>
+                </div>
+            </footer>
+
+        </div>
+        <div class="drawer-side">
+            <label for="my-drawer-3" class="drawer-overlay"></label>
+            <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
+
+                <li><a>Beratung</a></li>
+                <li><a>Wellnessmassagen</a></li>
+                <li><a>Kräuterkurse</a></li>
+                <li><a>Frauenkreise</a></li>
+                <li><a>Schreibkurse</a></li>
+                <li><a>Aromaöle</a></li>
+                <li><a>Impressum</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
