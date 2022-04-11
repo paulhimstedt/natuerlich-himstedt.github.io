@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>natürlich Himstedt</title>
+    <link rel="icon" type="image/png" href="src\logo-icon.png" />
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/index.js">
     </script>
+
 </head>
 
 <body>
@@ -48,19 +50,23 @@
                     </div>
                 </div>
 
-                <!--<img style="overflow: hidden; position: absolute; z-index: 0;  transform: rotate(145deg); left: 2%;" src="src/—Pngtree—vector watercolor background shading effect_1868221.png" alt="">-->
+
 
                 <!--landing-page-->
 
-                <div class="hero landing-page min-h-screen bg-base-200">
+                <div class="hero min-h-screen bg-base-200">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="src/profile-pic.jpg" class="max-w-sm rounded-lg shadow-2xl" id="prifile-pic" />
+                        <!--<img style=" position: absolute; z-index: 0;  transform: rotate(145deg); left: 2%;" src="src/—Pngtree—vector watercolor background shading effect_1868221.png" alt="">-->
+                        <!--<img style='background-image: url("src/—Pngtree—vector watercolor background shading effect_1868221.png");' src="src/profile-pic.jpg" class="max-w-sm rounded-lg shadow-2xl" id="prifile-pic" />-->
+                        <img src="src/img-profile-pic.png" class="max-w-sm rounded-lg shadow-2xl mask mask-circle" id="prifile-pic" />
                         <div>
                             <h1 class="text-5xl font-bold">Beate Himstedt</h1>
-                            <p class="py-10 text-xl">„natürlich Himstedt“ steht für Natürlichkeit, Einfachheit, Bescheidenheit, Zuverlässigkeit, Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener, glücklicher, dankbarer und sich selbst mehr wertschätzender
-                                sein. Oft liegt das Glück in den einfachen Dingen.
-                                <br/> Lassen Sie sich inspirieren, verwöhnen oder lernen Sie etwas über sich selbst oder die Natur hinzu.</p>
-                            <button class="btn btn-primary">Erfahren sie Mehr</button>
+                            <p class="py-10 text-xl">„natürlich Himstedt“ steht für Natürlichkeit, Einfachheit, Bescheidenheit, Zuverlässigkeit, Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener und glücklicher. Lernen Sie sich selbst wieder mehr
+                                zu schätzen. Oft liegt das Glück in den einfachen Dingen.
+
+                                <br/> Lassen Sie sich inspirieren, verwöhnen oder lernen Sie neue Seiten von sich selbst und der Natur kennen.
+                            </p>
+                            <a href="#section1"><button class="btn btn-primary">Erfahren Sie Mehr</button></a>
                         </div>
                     </div>
                 </div>
@@ -69,15 +75,14 @@
 
                 <div class="hero bg-base-200 product-container" id="section1">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="src/img-beratung.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 class="text-5xl font-bold">Beratung zu Lebensfragen</h1>
                             <p class="py-6 text-2xl">„natürlich“ tauchen immer wieder im täglichen Leben Probleme und Fragen auf und man hat manchmal das Gefühl einen Knoten im Kopf zu haben oder sich im Kreis zu drehen. Oft sind das Hinweise, dass man wieder mal einen entscheidenden
                                 Entwicklungsschritt vor sich hat. Gern helfe ich Ihnen Ihren Knoten zu lösen, so das Sie wieder ganz entspannt Ihr Leben leben können und Sie stolz darauf sind, Ihr Problem gelöst zu haben.
                             </p>
                             <div id="moresection1_p"></div>
-                            <button class="btn btn-primary" id="moresection1" onclick="section_one_more()"> Erfahren sie Mehr</button>
-                            <!---->
+                            <!-- <button class="btn btn-primary" id="moresection1" onclick="section_one_more()"> Mehr</button>-->
                         </div>
 
                     </div>
@@ -87,23 +92,18 @@
 
                 <div class="hero bg-base-200 product-container" id="section2">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="src/img-wellnessmassagen.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
-                            <h1 class="text-5xl font-bold">Wellness massagen</h1>
+                            <h1 class="text-5xl font-bold">Wellness-massagen</h1>
                             <p class="py-6 text-2xl">„natürlich“ gibt es nichts schöneres, als entspannt im eigenen Körper zu wohnen. Wer wünscht sich das nicht? Gönnen Sie sich doch ab und zu eine Wellnessmassage, egal ob Fuß-, Rücken-, Gesichts-, Kiefer- oder Ganzkörpermassage.
                                 Tauchen Sie ein, in ein entspanntes Gefühl mit Hot Stone, Aromaölen, Ohrkerzen oder Kräuterstempeln und vergessen Sie für einen Moment Ihren Alltag.
                             </p>
 
                             <!--Anfang Popout-->
-                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%;" id="moresection2_p">
+                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection2_p">
                                 <div class="w-auto flex-col lg:flex-row">
                                     <div class="grid h-100 flex card bg-base-300 rounded-box place-items-left">
-
-
-
-
                                         <table class="table bg-base-300">
-                                            <!-- head -->
                                             <thead>
                                                 <tr>
                                                     <th></th>
@@ -112,43 +112,32 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <!-- row 1 -->
                                                 <tr>
                                                     <td class="py-5 text-2xl">Entspannungsmassage</td>
                                                     <td>25 €</td>
                                                     <td>50 €</td>
                                                 </tr>
-                                                <!-- row 2 -->
                                                 <tr>
                                                     <td class="py-5 text-2xl">Fußmassage</td>
                                                     <td>22 €</td>
                                                     <td>35 €</td>
                                                 </tr>
-                                                <!-- row 3 -->
                                                 <tr>
                                                     <td class="py-5 text-2xl">Ohrkerzen</td>
                                                     <td>22 €</td>
                                                     <td></td>
                                                 </tr>
-                                                <!-- row 4 -->
-                                                <tr>
-                                                    <td class="py-5 text-2xl">Ganzkörpermassage</td>
-                                                    <td></td>
-                                                    <td>50 €</td>
-                                                </tr>
-                                                <!-- row 5 -->
                                                 <tr>
                                                     <td class="py-5 text-2xl">Hot Stone Massage</td>
                                                     <td></td>
                                                     <td>55 €</td>
                                                 </tr>
-                                                <!-- row 6 -->
+
                                                 <tr>
                                                     <td class="py-5 text-2xl">Aromaölmassage</td>
                                                     <td></td>
                                                     <td>55 €</td>
                                                 </tr>
-                                                <!-- row 7 -->
                                                 <tr>
                                                     <td class="py-5 text-2xl">Kräuterstempelmassage</td>
                                                     <td></td>
@@ -162,15 +151,16 @@
                                     </div>
                                     <div class="divider divider-horizontal"></div>
                                     <div style="margin-top: 3%; padding: 5%; width: 100%;" class="h-auto grid w-20 flex bg-base-100 rounded-box place-items-left">
-                                        <p class="py-5 text-2xl">Wichtige Info! </p>
-                                        <p>Ich mache Sie ausdrücklich aufmerksam, dass keine erotischen Massagen oder ähnliche Massageformen durchgeführt werden. Weiterhin möchte ich Sie darauf hinweisen, dass ich keine therapeutischen Massagen durchführe.
+
+                                        <p class="py-5 text-2xl">Wichtige Info!</p>
+                                        <p>Ich mache Sie Ausdrücklich darauf aufmerksam, dass keine erotischen Massagen oder ähnliche Massageformen durchgeführt werden. Weiterhin möchte ich Sie darauf hinweisen, dass ich keine therapeutischen Massagen durchführe.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <!--Ende Popout-->
 
-                            <button class="btn btn-primary" id="moresection2" onclick="section_two_more()"> Erfahren sie Mehr</button>
+                            <button class="btn btn-primary" id="moresection2" onclick="section_two_more()"> Mehr</button>
                         </div>
                     </div>
                 </div>
@@ -179,7 +169,7 @@
 
                 <div class="hero bg-base-200 product-container" id="section3">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="src/img-kräuterkurse.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 class="text-5xl font-bold">Kräuterkurse</h1>
                             <p class="py-6 text-2xl">„natürlich“ geht es hier um Kräuter. Ein achtsamer und verantwortungsbewußter Umgang mit Kräutern erfordert solides Hintergrundwissen. „Der Größte ist der, der die Natur und die Wunder weiß, lernt und erfährt.“ Paracelsus
@@ -187,10 +177,10 @@
                                 In den Kräuterkursen bringe ich Ihnen die Kräuter aus Ihrem Garten näher. Sie erfahren wie Sie diese einsetzen und zubereiten können, wie Sie sich selbst Tinkturen, Salben, Teemischungen, Wickel oder Auflagen selbst herstellen können.
                             </p>
                             <!--Anfang Popout-->
-                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%;" id="moresection3_p">
+                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection3_p">
                                 <div class="flex flex-col w-full">
                                     <div style="padding: 5%;">
-                                        <h2>Hier finden Sie immer wieder aktualisierte Angebote über Kräuter.</h2>
+                                        <h2>Hier finden Sie immer wieder aktualisierte Angebote, um Ihr Wissen und Ihren Erfahrungsschatz über Kräuter auszubauen. Wissenserwerb über riechen, schmecken, wahrnehmen, anfassen, begreifen und wertschätzen.</h2>
                                         <p style="font-style: italic; font-weight: bold; color: #3DB868;">„Unkraut nennt man die Pflanzen, deren Vorzüge noch nicht erkannt worden sind.“ </p>
                                         <p>Ralph Waldo Emerson</p>
                                     </div>
@@ -201,77 +191,43 @@
                                                 <!-- head -->
                                                 <thead>
                                                     <tr>
-                                                        <th class="py-5 text-2xl">Monat</th>
-                                                        <th class="py-5 text-2xl">Workshop</th>
-                                                        <th class="py-5 text-2xl">Vortrag</th>
+                                                        <th class="py-5 text-2xl">Wann</th>
+                                                        <th class="py-5 text-2xl">Was</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <!-- row 1 -->
                                                     <tr>
-                                                        <td>April</td>
-                                                        <td>Kräuterjahressalz</td>
-                                                        <td>Vorzüge vom Löwenzahn, </br>Gänseblümchen</td>
+                                                        <td>27.April: 18.30 - 20.00 Uhr </br>29.April: 14.00 Uhr </td>
+                                                        <td>Vortrag: Frühlingskräuter</br>Workshop: Kräuterjahressalz</td>
                                                     </tr>
-                                                    <!-- row 2 -->
                                                     <tr>
-                                                        <td>Mai</td>
-                                                        <td>Girschpesto</td>
-                                                        <td>Vorzüge vom Ruprechtskraut, Girsch</td>
+                                                        <td>10.Mai: 18.30 - 20.00 Uhr</br>12.Mai: 18.00 Uhr </td>
+                                                        <td>Vortrag: Vorzüge vom Ruprechtskraut, Girsch u.a.</br>Workshop: Girschpesto</td>
                                                     </tr>
-                                                    <!-- row 3 -->
                                                     <tr>
-                                                        <td>Juni</td>
-                                                        <td>Rotöl Zeckengel</td>
-                                                        <td>Vorzüge vom Johanniskraut, </br>Zitronenmelisse</td>
+                                                        <td>1.Juni: 18.30 -20.00 Uhr </br>2.Juni: 16.00 Uhr </td>
+                                                        <td>Vortrag: Vorzüge vom Johanniskraut, Zitronenmelisse u.a.</br>Workshop: Rotöl Zeckengel</td>
                                                     </tr>
-                                                    <!-- row 4 -->
                                                     <tr>
-                                                        <td>Juli</td>
-                                                        <td>Wie stelle ich eine Tinktur her?</td>
-                                                        <td>Vorzüge vom Schafgarbe, Spitzwegerich</td>
+                                                        <td>10.Mai: 18.30 - 20.00 Uhr</br>12.Mai: 18.00 Uhr </td>
+                                                        <td>Vortrag: Vorzüge vom Schafgarbe, Spitzwegerich</br>Workshop: Wie stelle ich eine Tinktur her?</td>
                                                     </tr>
-                                                    <!-- row 5 -->
                                                     <tr>
-                                                        <td>August</td>
-                                                        <td>Ringelblumensalbe, Kräutersuppe</td>
-                                                        <td>Vorzüge von Goldrute, Braunelle</td>
-                                                    </tr>
-                                                    <!-- row 6 -->
-                                                    <tr>
-                                                        <td>September</td>
-                                                        <td>Kräutertee</td>
-                                                        <td>Herzgespann, Wegerich</td>
-                                                    </tr>
-                                                    <!-- row 7 -->
-                                                    <tr>
-                                                        <td>Oktober</td>
-                                                        <td>Samen</td>
-                                                        <td>Samen aus Brennnessel, Karde, </br>Springkraut und Wegerich</td>
-                                                    </tr>
-                                                    <!-- row 8 -->
-                                                    <tr>
-                                                        <td>November</td>
-                                                        <td>Beinwellsalbe</td>
-                                                        <td>Wie stelle ich eine Salbe her?</td>
-                                                    </tr>
-                                                    <!-- row 9 -->
-                                                    <tr>
-                                                        <td>Dezember</td>
-                                                        <td>Räuchern</td>
-                                                        <td>Räuchern in der Vorweihnachtszeit </br>und zu den Rauhnächten.</td>
+                                                        <td>2.August: 18.30 - 20.00 Uhr</br>6.August: 10.00 Uhr</td>
+                                                        <td>Vortrag: Vorzüge von Goldrute, Braunelle u.a</br>Workshop: Ringelblumensalbe, Kräutersuppe</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
 
                                         </div>
-                                    </div>
 
+                                    </div>
+                                    <p class="py-6 text-2xl">(Kosten: Vortrag 10 €, Workshop 20 € zuzüglich Materialkosten)</p>
 
                                 </div>
                             </div>
                             <!--Ende Popout-->
-                            <button class="btn btn-primary" id="moresection3" onclick="section_three_more()"> Erfahren sie Mehr</button>
+                            <button class="btn btn-primary" id="moresection3" onclick="section_three_more()"> Mehr</button>
                         </div>
 
                     </div>
@@ -281,14 +237,23 @@
 
                 <div class="hero bg-base-200 product-container" id="section4">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="src/img-frauenkreise.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 class="text-5xl font-bold">Frauenkreise</h1>
-                            <p class="py-6 text-2xl">„natürlich“ geht es hier um Frauen, um Themen, die die eigene Persönlichkeit betreffen. Gemeinsam wollen wir gelebte Kreativität, Austausch, Hilfe, Bewußwerdung, Freiheit, Lebendigkeit wieder zusammen spüren. Alle Frauen haben
-                                die gleichen Themen vom Frau werden, Frau sein und älter werden. Im Kreis sind alle gleich-(wertig), verbunden und getragen von gegenseitigem Respekt. Lasst uns an den Abenden austauschen, füreinander da sein, zuhören,
-                                kreativ sein, Leid und Freude teilen. An 10 Abenden wird immer wieder jeder für sich etwas mit nach Hause nehmen. Sei es ein Glücksgefühl oder ein Ahaerlebnis.
+                            <p class="py-6 text-2xl">„natürlich“ geht es hier um Frauen, um Themen, die die eigene Persönlichkeit betreffen. Gemeinsam wollen wir gelebte Kreativität, Austausch, Hilfe, Bewusstwerdung, Freiheit und Lebendigkeit wieder zusammen spüren. Alle Frauen
+                                haben die gleichen Themen vom Frau werden, Frau sein und älter werden. Im Kreis sind alle gleich-( wertig), verbunden und getragen von gegenseitigem Respekt. Lasst uns an den Abenden über bestimmte Themen austauschen, füreinander
+                                da sein, zuhören, kreativ sein, Leid und Freude teilen. An 10 Abenden wird immer wieder jeder für sich etwas mit nach Hause nehmen. Sei es ein Glücksgefühl oder ein Aha-Erlebnis.
                             </p>
-                            <button class="btn btn-primary" id="moresection4" onclick="section_four_more()"> Erfahren sie Mehr</button>
+                            <!--Anfang Popout-->
+                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection4_p">
+                                <div class="w-full flex w-auto flex-col lg:flex-row">
+                                    <div>
+                                        <p>10 Abende a 1,5 Stunden 200 € Termine (Montag, 9./16./23./30.Mai, 20./27.Juni, 4./11./18./25.Juli) 4-6 Teilnehmer Schreibzeug bitte mitbringen!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Ende Popout-->
+                            <button class="btn btn-primary" id="moresection4" onclick="section_four_more()"> Mehr</button>
                         </div>
                     </div>
                 </div>
@@ -297,22 +262,21 @@
 
                 <div class="hero bg-base-200 product-container" id="section5">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="src/img-schreibkurse.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 class="text-5xl font-bold">Schreibkurse</h1>
-                            <p class="py-6 text-2xl">„natürlich“ Schreiben zur Selbsthilfe. Hier geht es nicht (wie in der Schule) um Schönschreiben, Korrektschreiben, ausdrucksstark Schreiben. „natürlich“ einfach mal die Seele frei schreiben. Egal ob sauber, richtig oder schön,
-                                hier geht es um Selbsterkenntnis. Wie kann ich wissen, was ich denke, bevor ich lese was ich schreibe. Oft ist der Alltag sehr schnell und hektisch und oft werden schnelle Entscheidungen und Lösungen von uns verlangt. Im
-                                Schreibkurs kann man genau diese Dinge trainieren. Durch Schreiben in einer ruhigen Atmosphäre wird einem bewußt was man denkt, wie man denkt und kann sich auch auf bestimmte Situationen vorbereiten. Probieren Sie es gern
-                                aus.
+                            <p class="py-6 text-2xl">„natürlich“ Schreiben zur Selbsthilfe bringt die eigenen Gedanken aus dem Unterbewusstsein an die Oberfläche. Hier geht es nicht (wie in der Schule) um Schönschreiben, Korrekt Schreiben oder ausdrucksstark Schreiben. „natürlich“
+                                einfach mal die Seele frei schreiben. Egal ob sauber, richtig oder schön, hier geht es um Selbsterkenntnis. Wie kann ich wissen, was ich denke, bevor ich lese was ich schreibe. Oft ist der Alltag sehr schnell und hektisch
+                                und oft werden schnelle Entscheidungen und Lösungen von uns verlangt. Im Schreibkurs kann man genau diese Dinge trainieren. Durch Schreiben in einer ruhigen Atmosphäre wird einem bewußt was man denkt, wie man denkt und
+                                man kann sich auch auf bestimmte Situationen vorbereiten. Probieren Sie es gern aus.
                             </p>
                             <!--Anfang Popout-->
-                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%;" id="moresection5_p">
+                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection5_p">
                                 <div class="w-full flex w-auto flex-col lg:flex-row">
                                     <div>
                                         <p>Schreibthemen gibt es natürlich viele.
-                                            </br> Kannst Du Dich nicht leiden, wenn Du in den Spiegel schaust? Hast Du manchmal ein Gedankenkarussel im Kopf? Hast Du manchmal das Gefühl immer wieder vor dem gleichen Problem zu stehen? Kannst Du mit manchen
-                                            Leuten nicht sprechen oder etwas klären? Hast Du immer wieder die gleichen Schmerzen und weißt nicht warum? Bringen Dich Kleinigkeiten aus der Ruhe, oder versetzen Dich in Wut? Fühlst Du Dich ÜBER- lastet, -gewichtig,
-                                            -gestresst? Fühlst Du Dich leer? Was hält mich zurück?
+                                            </br> Können Sie sich nicht leiden, wenn Sie in den Spiegel schauen? Haben Sie manchmal das Gefühl immer wieder vor dem gleichen Problem zu stehen? Können Sie mit manchen Leuten nicht sprechen oder etwas klären?
+                                            Bringen Sie Kleinigkeiten aus der Ruhe, oder versetzen Sie in Wut? Fühlen Sie sich ÜBER- lastet, -gewichtig, -gestresst? Fühlen Sie sich leer? Was hält Sie zurück?
                                             </br> Wie wäre es wenn … </br>Es ist Zeit, dass … </br>Ich habe genug …</p>
                                     </div>
                                     <div class="divider divider-horizontal"></div>
@@ -320,15 +284,15 @@
                                         <div>
                                             <p>Schreibkurs 4 Abende maximal 6 Teilnehmern a 1,5 Stunden (100 €) Tagesseminar maximal 6 Teilnehmer 8 Stunden mit Mittagspause 120 €
                                                 </br>
-                                                Im Kurs lernst Du verschiedene Optionen, Deine Themen zu bearbeiten. Danach wirst Du in der Lage sein, Deine Probleme, Denkknoten, Ängste, Sorgen schreibend zu bearbeiten. Der Mehrwert für Dich liegt ganz klar in der Bewusstwerdung wie man selbst denkt,
-                                                über andere denkt oder wie mein Unterbewusstsein denkt. Erst über die Bewußwerdung kann man anders Reagieren und auch agieren. In der Kleingruppe wird es immer wieder Austauschmöglichkeiten geben, wenn es
-                                                gewünscht wird. Alles bleibt in der Gruppe !!! </p>
+                                                Im Kurs lernen Sie verschiedene Optionen Ihre Themen zu bearbeiten. Danach werden Sie in der Lage sein, Ihre Probleme, Denkknoten, Ängste oder Sorgen schreibend zu bearbeiten. Der Mehrwert für Sie liegt ganz klar in der Bewusstwerdung wie man selbst denkt,
+                                                über andere denkt oder wie Ihr Unterbewusstsein denkt. Erst über die Bewusstwerdung kann man anders reagieren und auch agieren. In der Kleingruppe wird es immer wieder Austauschmöglichkeiten geben, wenn
+                                                es gewünscht wird. Alles bleibt in der Gruppe !!! </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!--Ende Popout-->
-                            <button class="btn btn-primary" id="moresection5" onclick="section_five_more()"> Erfahren sie Mehr</button>
+                            <button class="btn btn-primary" id="moresection5" onclick="section_five_more()"> Mehr</button>
                         </div>
 
                     </div>
@@ -338,12 +302,15 @@
 
                 <div class="hero bg-base-200 product-container" id="section6">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="src/img-aromaoele.jpg" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 class="text-5xl font-bold">Aromaöle</h1>
-                            <p class="py-6 text-2xl">„natürlich“ sind auch die Aromaöle, die Sie bei mir käuflich erwerben können zu 100 % Bio. Ich arbeite mit den Firmen Maienfelser und Primavera zusammen. Gern berate ich Sie, damit Sie Ihr passendes Aromaöl finden.</p>
+                            <p class="py-6 text-2xl">„natürlich“ sind auch die Aromaöle, die Sie bei mir käuflich erwerben können zu 100 % Bio. Ich arbeite mit den Firmen Maienfelser und Primavera zusammen. Ätherische Öle sind hochkonzentrierte Pflanzenauszüge, sie sind die Seele
+                                der Pflanze. Sie berühren unser Herz und schließen geheime Türen unserer Seelen auf. Diese kraftvollen Öle können sowohl auf Kopf-, Herz- und Basisebene wirken, bringen Vitalität und Lebensfreude zurück. Beim Einatmen der
+                                Duftmoleküle wandern diese direkt zur Amygdala im Gehirn. Dort sind alle emotionalen Erfahrungen gespeichert. So kann man wortlos mit seinen eigenen Gefühlen in Kontakt kommen. Gern berate ich Sie, damit Sie Ihr passendes
+                                Aromaöl finden.</p>
                             <div id="moresection6_p"></div>
-                            <button class="btn btn-primary" id="moresection6" onclick="section_six_more()"> Erfahren sie Mehr</button>
+                            <!--<button class="btn btn-primary" id="moresection6" onclick="section_six_more()"> Mehr</button>-->
                         </div>
                     </div>
                 </div>
@@ -355,10 +322,43 @@
                         <!--<img src="https://api.lorem.space/image/movie?w=260&h=400" class="max-w-sm rounded-lg shadow-2xl" />-->
                         <div>
                             <h1 class="text-5xl font-bold">Kontakt</h1>
-                            <h2 class="py-6 text-2xl"> Tel: 8908989232 </br>Mail: beatehimstedt@gmail.comn</h2>
-                            <h2 class="py-6 text-2xl"> </h2>
-                            <button class="btn btn-primary">Get Started</button>
+                            <h2 class="py-6 text-2xl"> Tel: 08074 / 176009 </br>Mail: etaeb.himstedt@t-online.de</h2>
+                            <!-- The button to open modal -->
+                            <label for="my-modal-6" class="btn modal-button">Kontaktieren sie mich</label>
+
+                            <input type="checkbox" id="my-modal-6" class="modal-toggle">
+                            <div class="modal modal-bottom sm:modal-middle cursor-pointer">
+                                <div style="z-index: 2;" class="modal-box w-11/12 max-w-5xl ">
+                                    <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+
+                                    <h3 class="font-bold text-lg">Über dieses Formular können sie mir eine Nachricht zukommen lassen.</h3>
+                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                        <fieldset id="fs-frm-inputs">
+
+                                            <div class="form-control">
+                                                <label class="input-group input-group-vertical" for="full-name">Name</label>
+                                                <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
+                                            </div>
+
+                                            <div class="form-control">
+                                                <label class="input-group input-group-vertical" for="email-address">Email Addresse</label>
+                                                <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
+                                            </div>
+                                            <div class="input-group input-group-vertical" class="form-control">
+                                                <label for="message">Nachricht</label>
+                                                <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required=""></textarea>
+                                            </div>
+                                        </fieldset>
+                                        <div class="modal-action">
+                                            <button type="submit" for="my-modal-6"><label for="my-modal-6" class="btn">Senden</label></button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
                         </div>
+
+
                         <div class="google-maps-embedding">
 
                             <div class="gmap_canvas"><iframe width="590" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=Kraiburger%20str%203%20schnaitsee&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
@@ -386,6 +386,7 @@
                     </div>
                 </div>
 
+
                 <!--Footer-->
 
                 <footer class="footer p-10 bg-base-300 text-base-content">
@@ -394,42 +395,60 @@
                         <p>natürlich Himstedt<br>Immer für sie da!</p>
                     </div>
                     <div>
-                        <span class="footer-title">Services</span>
-                        <a class="link link-hover">Branding</a>
-                        <a class="link link-hover">Design</a>
-                        <a class="link link-hover">Marketing</a>
-                        <a class="link link-hover">Advertisement</a>
+                        <span class="footer-title">Dienste</span>
+                        <a class="link link-hover" href="#section1">Beratung</a>
+                        <a class="link link-hover" href="#section2">Wellnessmassagen</a>
+                        <a class="link link-hover" href="#section3">Kräuterkurse</a>
+                        <a class="link link-hover" href="#section4">Frauenkreise</a>
+                        <a class="link link-hover" href="#section5">Schreibkurse</a>
+                        <a class="link link-hover" href="#section6">Aromaöle</a>
                     </div>
                     <div>
                         <span class="footer-title">Company</span>
-                        <a class="link link-hover">About us</a>
-                        <a class="link link-hover">Contact</a>
-                        <a class="link link-hover">Jobs</a>
-                        <a class="link link-hover">Press kit</a>
+                        <a class="link link-hover" href="/index.html">Über mich</a>
+                        <a class="link link-hover" href="#section7">Kontakt</a>
                     </div>
                     <div>
                         <span class="footer-title">Rechtlich</span>
-                        <a class="link link-hover">Terms of use</a>
-                        <a class="link link-hover">Privacy policy</a>
-                        <a class="link link-hover">Cookie policy</a>
+                        <a class="link link-hover">Impressum</a>
+                        <!--<a class="link link-hover">Privacy policy</a>
+                        <a class="link link-hover">Cookie policy</a>-->
+
                     </div>
                 </footer>
 
             </div>
             <div class="drawer-side">
                 <label for="my-drawer-3" class="drawer-overlay"></label>
-                <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
-
-                    <li><a>Beratung</a></li>
-                    <li><a>Wellnessmassagen</a></li>
-                    <li><a>Kräuterkurse</a></li>
-                    <li><a>Frauenkreise</a></li>
-                    <li><a>Schreibkurse</a></li>
-                    <li><a>Aromaöle</a></li>
-                    <li><a>Impressum</a></li>
+                <ul class="menu p-4 overflow-y-auto w-60 bg-base-100">
+                    <p class="py-10 text-xl">Worüber möchten Sie mehr erfahren?</p>
+                    <div class="drawer-action">
+                        <li><button onClick="document.getElementById('section1').scrollIntoView();"><label for="my-drawer-3" class="btn">Beratung</label></button></li>
+                        <li><button onClick="document.getElementById('section2').scrollIntoView();"><label for="my-drawer-3" class="btn">Wellness-massagen</label></button></li>
+                        <li><button onClick="document.getElementById('section3').scrollIntoView();"><label for="my-drawer-3" class="btn">Kräuterkurse</label></button></li>
+                        <li><button onClick="document.getElementById('section4').scrollIntoView();"><label for="my-drawer-3" class="btn">Frauenkreise</label></button></li>
+                        <li><button onClick="document.getElementById('section5').scrollIntoView();"><label for="my-drawer-3" class="btn">Schreibkurse</label></button></li>
+                        <li><button onClick="document.getElementById('section6').scrollIntoView();"><label for="my-drawer-3" class="btn">Aromaöle</label></button></li>
+                        <li><button onClick="document.getElementById('section7').scrollIntoView();"><label for="my-drawer-3" class="btn">Kontakt</label></button></li>
+                        <li><button onClick="document.getElementById('section1').scrollIntoView();"><label for="my-drawer-3" class="btn">impressum</label></button></li>
+                    </div>
                 </ul>
             </div>
         </div>
+        <!--<h1>Impressum</h1>
+<h2>Angaben gemäß § 5 TMG:</h2>
+<p>natürlich Himstedt<br>Beate Himstedt</p>
+<h3>Postanschrift:</h3>
+<p>Kraiburgerstraße 3<br>83530<br></p>
+<h3>Kontakt:</h3>
+<p>Telefon: 08074176009<br>E-Mail: etaeb.himstedt@t-online.de</p>
+<p></p><p><br></p>
+<p></p><h2>Hinweise zur Website</h2>
+<p></p><h2>Information gemäß § 36 VSBG</h2>
+<p>Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz über die alternative Streitbeilegung in Verbrauchersachen) erklärt der Betreiber dieser Website:</p>
+<p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+<p></p>
+-->
         <!--
         <div class="scroll-progress">
             <ul class="steps steps-vertical">
@@ -444,6 +463,7 @@
             </ul>
         </div>
         -->
+
     </div>
 </body>
 
