@@ -1,3 +1,21 @@
+function normal() {
+    document.getElementById("section0").className = "hero bg-base-200 min-h-screen"
+}
+
+function mobile() {
+    document.getElementById("section0").className = "hero bg-base-200"
+}
+
+function fullscreenLandingPage() {
+    if (window.innerWidth <= 1000) {
+        mobile()
+    } else {
+        normal()
+    }
+}
+window.onload = fullscreenLandingPage;
+fullscreenLandingPage();
+
 function section_one_more() {
     document.getElementById("moresection1_p").style.display = "flex";
     document.getElementById("moresection1").setAttribute('onclick', 'section_one_less()')

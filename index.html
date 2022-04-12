@@ -17,28 +17,22 @@
 
 <body>
     <div>
-        <!--navigation bar-->
+        <!--nav bar-->
         <div class="drawer">
             <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
             <div class="drawer-content flex flex-col">
-                <!-- Navbar -->
 
                 <div class="w-full navbar bg-base-100" id="sticky-nav">
-
                     <div class="flex-none lg:hidden">
                         <label for="my-drawer-3" class="btn btn-square btn-ghost">
-                   
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-          
-        </label>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </label>
                     </div>
                     <div class="flex-1 px-2 mx-2">
                         <a href="/index.html"> <img src="src\logo-nobackground-1000.png" alt="logo"></a>
-
                     </div>
                     <div class="flex-none hidden lg:block" id="menu-container">
                         <ul class="menu menu-horizontal p-0">
-                            <!-- Navbar menu content here -->
                             <li><a href="#section1">Beratung</a></li>
                             <li><a href="#section2">Wellnessmassagen</a></li>
                             <li><a href="#section3">Kräuterkurse</a></li>
@@ -50,20 +44,15 @@
                     </div>
                 </div>
 
-
-
                 <!--landing-page-->
 
-                <div class="hero min-h-screen bg-base-200">
+                <div class="hero bg-base-200" id="section0">
                     <div class="hero-content flex-col lg:flex-row">
-                        <!--<img style=" position: absolute; z-index: 0;  transform: rotate(145deg); left: 2%;" src="src/—Pngtree—vector watercolor background shading effect_1868221.png" alt="">-->
-                        <!--<img style='background-image: url("src/—Pngtree—vector watercolor background shading effect_1868221.png");' src="src/profile-pic.jpg" class="max-w-sm rounded-lg shadow-2xl" id="prifile-pic" />-->
-                        <img src="src/img-profile-pic.png" class="max-w-sm rounded-lg shadow-2xl mask mask-circle" id="prifile-pic" />
+                        <img src="src/img-profile-pic.png" class="max-w-sm rounded-lg shadow-2xl mask mask-circle" id="profile-pic" />
                         <div>
                             <h1 class="text-5xl font-bold">Beate Himstedt</h1>
-                            <p class="py-10 text-xl">„natürlich Himstedt“ steht für Natürlichkeit, Einfachheit, Bescheidenheit, Zuverlässigkeit, Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener und glücklicher. Lernen Sie sich selbst wieder mehr
+                            <p class="py-6 text-2xl">„natürlich Himstedt“ steht für Natürlichkeit, Einfachheit, Bescheidenheit, Zuverlässigkeit, Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener und glücklicher. Lernen Sie sich selbst wieder mehr
                                 zu schätzen. Oft liegt das Glück in den einfachen Dingen.
-
                                 <br/> Lassen Sie sich inspirieren, verwöhnen oder lernen Sie neue Seiten von sich selbst und der Natur kennen.
                             </p>
                             <a href="#section1"><button class="btn btn-primary">Erfahren Sie Mehr</button></a>
@@ -84,11 +73,10 @@
                             <div id="moresection1_p"></div>
                             <!-- <button class="btn btn-primary" id="moresection1" onclick="section_one_more()"> Mehr</button>-->
                         </div>
-
                     </div>
                 </div>
 
-                <!--Wellnessmassagen-->
+                <!--wellness massagen-->
 
                 <div class="hero bg-base-200 product-container" id="section2">
                     <div class="hero-content flex-col lg:flex-row">
@@ -98,60 +86,57 @@
                             <p class="py-6 text-2xl">„natürlich“ gibt es nichts schöneres, als entspannt im eigenen Körper zu wohnen. Wer wünscht sich das nicht? Gönnen Sie sich doch ab und zu eine Wellnessmassage, egal ob Fuß-, Rücken-, Gesichts-, Kiefer- oder Ganzkörpermassage.
                                 Tauchen Sie ein, in ein entspanntes Gefühl mit Hot Stone, Aromaölen, Ohrkerzen oder Kräuterstempeln und vergessen Sie für einen Moment Ihren Alltag.
                             </p>
-
                             <!--Anfang Popout-->
                             <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection2_p">
-                                <div class="w-auto flex-col lg:flex-row">
-                                    <div class="grid h-100 flex card bg-base-300 rounded-box place-items-left">
-                                        <table class="table bg-base-300">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th class="py-5 text-2xl">30 min</th>
-                                                    <th class="py-5 text-2xl">60 min</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="py-5 text-2xl">Entspannungsmassage</td>
-                                                    <td>25 €</td>
-                                                    <td>50 €</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="py-5 text-2xl">Fußmassage</td>
-                                                    <td>22 €</td>
-                                                    <td>35 €</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="py-5 text-2xl">Ohrkerzen</td>
-                                                    <td>22 €</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="py-5 text-2xl">Hot Stone Massage</td>
-                                                    <td></td>
-                                                    <td>55 €</td>
-                                                </tr>
+                                <div class="flex flex-col w-full">
+                                    <div class="grid h-140 flex-grow card bg-base-300 rounded-box place-items-right">
+                                        <div class="overflow-x-auto">
+                                            <table class="table bg-base-300">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th class="py-5 text-2xl">30 min</th>
+                                                        <th class="py-5 text-2xl">60 min</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="py-5 text-2xl">Entspannungsmassage</td>
+                                                        <td>25 €</td>
+                                                        <td>50 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-5 text-2xl">Fußmassage</td>
+                                                        <td>22 €</td>
+                                                        <td>35 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-5 text-2xl">Ohrkerzen</td>
+                                                        <td>22 €</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-5 text-2xl">Hot Stone Massage</td>
+                                                        <td></td>
+                                                        <td>55 €</td>
+                                                    </tr>
 
-                                                <tr>
-                                                    <td class="py-5 text-2xl">Aromaölmassage</td>
-                                                    <td></td>
-                                                    <td>55 €</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="py-5 text-2xl">Kräuterstempelmassage</td>
-                                                    <td></td>
-                                                    <td>60 €</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-
-
+                                                    <tr>
+                                                        <td class="py-5 text-2xl">Aromaölmassage</td>
+                                                        <td></td>
+                                                        <td>55 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="py-5 text-2xl">Kräuterstempelmassage</td>
+                                                        <td></td>
+                                                        <td>60 €</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                     <div class="divider divider-horizontal"></div>
-                                    <div style="margin-top: 3%; padding: 5%; width: 100%;" class="h-auto grid w-20 flex bg-base-100 rounded-box place-items-left">
-
+                                    <div style="padding: 5%;">
                                         <p class="py-5 text-2xl">Wichtige Info!</p>
                                         <p>Ich mache Sie Ausdrücklich darauf aufmerksam, dass keine erotischen Massagen oder ähnliche Massageformen durchgeführt werden. Weiterhin möchte ich Sie darauf hinweisen, dass ich keine therapeutischen Massagen durchführe.
                                         </p>
@@ -159,7 +144,6 @@
                                 </div>
                             </div>
                             <!--Ende Popout-->
-
                             <button class="btn btn-primary" id="moresection2" onclick="section_two_more()"> Mehr</button>
                         </div>
                     </div>
@@ -218,18 +202,14 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-
                                         </div>
-
                                     </div>
                                     <p class="py-6 text-2xl">(Kosten: Vortrag 10 €, Workshop 20 € zuzüglich Materialkosten)</p>
-
                                 </div>
                             </div>
                             <!--Ende Popout-->
                             <button class="btn btn-primary" id="moresection3" onclick="section_three_more()"> Mehr</button>
                         </div>
-
                     </div>
                 </div>
 
@@ -294,7 +274,6 @@
                             <!--Ende Popout-->
                             <button class="btn btn-primary" id="moresection5" onclick="section_five_more()"> Mehr</button>
                         </div>
-
                     </div>
                 </div>
 
@@ -325,21 +304,17 @@
                             <h2 class="py-6 text-2xl"> Tel: 08074 / 176009 </br>Mail: etaeb.himstedt@t-online.de</h2>
                             <!-- The button to open modal -->
                             <label for="my-modal-6" class="btn modal-button">Kontaktieren sie mich</label>
-
                             <input type="checkbox" id="my-modal-6" class="modal-toggle">
                             <div class="modal modal-bottom sm:modal-middle cursor-pointer">
                                 <div style="z-index: 2;" class="modal-box w-11/12 max-w-5xl ">
                                     <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
-
                                     <h3 class="font-bold text-lg">Über dieses Formular können sie mir eine Nachricht zukommen lassen.</h3>
                                     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
                                         <fieldset id="fs-frm-inputs">
-
                                             <div class="form-control">
                                                 <label class="input-group input-group-vertical" for="full-name">Name</label>
                                                 <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
                                             </div>
-
                                             <div class="form-control">
                                                 <label class="input-group input-group-vertical" for="email-address">Email Addresse</label>
                                                 <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
@@ -358,9 +333,7 @@
                             </div>
                         </div>
 
-
                         <div class="google-maps-embedding">
-
                             <div class="gmap_canvas"><iframe width="590" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=Kraiburger%20str%203%20schnaitsee&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
                                 <style>
                                     .mapouter {
@@ -380,12 +353,9 @@
                                     }
                                 </style>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
-
 
                 <!--Footer-->
 
@@ -404,16 +374,13 @@
                         <a class="link link-hover" href="#section6">Aromaöle</a>
                     </div>
                     <div>
-                        <span class="footer-title">Company</span>
+                        <span class="footer-title">Unternehmen</span>
                         <a class="link link-hover" href="/index.html">Über mich</a>
                         <a class="link link-hover" href="#section7">Kontakt</a>
                     </div>
                     <div>
                         <span class="footer-title">Rechtlich</span>
-                        <a class="link link-hover">Impressum</a>
-                        <!--<a class="link link-hover">Privacy policy</a>
-                        <a class="link link-hover">Cookie policy</a>-->
-
+                        <a class="link link-hover" href="impressum.html">Impressum</a>
                     </div>
                 </footer>
 
@@ -430,40 +397,15 @@
                         <li><button onClick="document.getElementById('section5').scrollIntoView();"><label for="my-drawer-3" class="btn">Schreibkurse</label></button></li>
                         <li><button onClick="document.getElementById('section6').scrollIntoView();"><label for="my-drawer-3" class="btn">Aromaöle</label></button></li>
                         <li><button onClick="document.getElementById('section7').scrollIntoView();"><label for="my-drawer-3" class="btn">Kontakt</label></button></li>
-                        <li><button onClick="document.getElementById('section1').scrollIntoView();"><label for="my-drawer-3" class="btn">impressum</label></button></li>
+                        <li>
+                            <a href="impressum.html">
+                                <button class="btn">Impressum</button>
+                            </a>
+                        </li>
                     </div>
                 </ul>
             </div>
         </div>
-        <!--<h1>Impressum</h1>
-<h2>Angaben gemäß § 5 TMG:</h2>
-<p>natürlich Himstedt<br>Beate Himstedt</p>
-<h3>Postanschrift:</h3>
-<p>Kraiburgerstraße 3<br>83530<br></p>
-<h3>Kontakt:</h3>
-<p>Telefon: 08074176009<br>E-Mail: etaeb.himstedt@t-online.de</p>
-<p></p><p><br></p>
-<p></p><h2>Hinweise zur Website</h2>
-<p></p><h2>Information gemäß § 36 VSBG</h2>
-<p>Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz über die alternative Streitbeilegung in Verbrauchersachen) erklärt der Betreiber dieser Website:</p>
-<p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-<p></p>
--->
-        <!--
-        <div class="scroll-progress">
-            <ul class="steps steps-vertical">
-                <li class="step step-primary">Über mich</li>
-                <li class="step step-primary">Beratung</li>
-                <li class="step step-primary">Wellnessmassagen</li>
-                <li class="step">Kräuterkurse</li>
-                <li class="step">Frauenkreise</li>
-                <li class="step">Schreibkurse</li>
-                <li class="step">Aromaöle</li>
-                <li class="step">Impressum</li>
-            </ul>
-        </div>
-        -->
-
     </div>
 </body>
 
