@@ -1,9 +1,11 @@
 function normal() {
-    document.getElementById("section0").className = "hero bg-base-200 min-h-screen"
+    //document.getElementById("section0").className = "hero bg-base-200 min-h-screen"
+    document.getElementById("section0").className = "hero bg-transparent min-h-screen"
 }
 
 function mobile() {
-    document.getElementById("section0").className = "hero bg-base-200"
+    //document.getElementById("section0").className = "hero bg-base-200"
+    document.getElementById("section0").className = "hero bg-transparent"
 }
 
 function fullscreenLandingPage() {

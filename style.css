@@ -1,30 +1,78 @@
-html {
-    scroll-behavior: smooth;
-}
-
-.product-container .hero-content {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-.navbar img,
-.footer img {
-    height: 48px;
-}
-
-#sticky-nav {
-    position: absolute;
-    z-index: 3;
-}
-
-
-/*for map embed on mobile*/
-
-@media only screen and (max-width: 590px) {
-    .google-maps-embedding {
-        display: none;
+    html {
+        scroll-behavior: smooth;
     }
-    #landing-page {
-        min-height: 60vh;
+    
+    body {
+        background: url(/src/bg-image.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        scrollbar-width: thin;
+        scrollbar-color: var(--thumbBG) var(--scrollbarBG);
     }
-}
+    
+    html {
+        --scrollbarBG: #ffffff;
+        --thumbBG: #073e5a;
+    }
+    
+    body::-webkit-scrollbar {
+        width: 11px;
+    }
+    
+    body::-webkit-scrollbar-track {
+        background: var(--scrollbarBG);
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: var(--thumbBG);
+        border-radius: 6px;
+        border: 3px solid var(--scrollbarBG);
+    }
+    
+    p {
+        color: #FFF;
+    }
+    
+    .product-container .hero-content {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .navbar img,
+    .footer img {
+        height: 48px;
+        width: auto;
+    }
+    
+    #profile-pic form img {
+        max-width: 45%;
+        height: auto;
+    }
+    
+    #landing_contact_list input {
+        border-style: solid;
+        border-color: red;
+    }
+    
+    #sticky-nav {
+        position: absolute;
+        z-index: 3;
+    }
+    
+    #landing_card {}
+    
+    #landing_contact_list li {
+        margin: 5px;
+    }
+    /*for map embed on mobile*/
+    
+    @media only screen and (max-width: 590px) {
+        .google-maps-embedding {
+            display: none;
+        }
+        #landing-page {
+            min-height: 60vh;
+        }
+    }
