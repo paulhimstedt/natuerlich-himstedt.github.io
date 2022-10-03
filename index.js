@@ -1,11 +1,13 @@
 function normal() {
     //document.getElementById("section0").className = "hero bg-base-200 min-h-screen"
     document.getElementById("section0").className = "hero bg-transparent min-h-screen"
+    document.getElementById("schreibkurs-card").className = "card w-96 bg-base-100 shadow-xl image-full"
 }
 
 function mobile() {
     //document.getElementById("section0").className = "hero bg-base-200"
     document.getElementById("section0").className = "hero bg-transparent"
+    document.getElementById("schreibkurs-card").className = "card lg:card-side bg-base-100 shadow-xl image-full"
 }
 
 function fullscreenLandingPage() {
