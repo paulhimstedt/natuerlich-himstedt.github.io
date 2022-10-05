@@ -1,3 +1,18 @@
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+    });
+});
+
+const hiddenElemets = document.querySelectorAll(".hidden");
+hiddenElemets.forEach((el) => observer.observe(el));
+
+
 function normal() {
     //document.getElementById("section0").className = "hero bg-base-200 min-h-screen"
     document.getElementById("section0").className = "hero bg-transparent min-h-screen"

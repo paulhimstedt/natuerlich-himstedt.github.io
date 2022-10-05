@@ -3,7 +3,7 @@
     }
     
     body {
-        background: url(/src/bg-image.png) no-repeat center center fixed;
+        background: url(/src/bg-image-3.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -12,23 +12,15 @@
         scrollbar-color: var(--thumbBG) var(--scrollbarBG);
     }
     
-    html {
-        --scrollbarBG: #ffffff;
-        --thumbBG: #073e5a;
+    section {}
+    
+    #hidden {
+        opacity: 0;
+        transition: all 1s;
     }
     
-    body::-webkit-scrollbar {
-        width: 11px;
-    }
-    
-    body::-webkit-scrollbar-track {
-        background: var(--scrollbarBG);
-    }
-    
-    body::-webkit-scrollbar-thumb {
-        background-color: var(--thumbBG);
-        border-radius: 6px;
-        border: 3px solid var(--scrollbarBG);
+    #show {
+        opacity: 1;
     }
     
     p {
@@ -61,7 +53,13 @@
         z-index: 3;
     }
     
-    #landing_card {}
+    #head-div {
+        display: inline-block;
+    }
+    
+    .div-wrapper {
+        position: relative;
+    }
     
     #landing_contact_list li {
         margin: 5px;
