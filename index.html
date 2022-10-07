@@ -9,17 +9,19 @@
     <link rel="icon" type="image/png" href="src\logo-icon.png" />
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="/index.js">
     </script>
 
 </head>
 
-<body>
+<body id>
 
     <!--nav bar-->
 
     <div class="drawer">
+
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
         <div class="drawer-content flex flex-col">
 
@@ -44,10 +46,10 @@
 
                         <div class="tooltip tooltip-open tooltip-bottom" data-tip="Kurs im Oktober">
 
-
                             <li><a href="#section5">Schreibkurse</a></li>
 
                         </div>
+
                         <li><a href="#section6">Aromaöle</a></li>
 
                         <li><a href="#section7">Kontakt</a></li>
@@ -56,25 +58,10 @@
                 </div>
             </div>
 
-            <!--landing-page-->
-            <!--
-                    <div class="hero bg-transparent" id="section0">
-                        <div class="hero-content flex-col lg:flex-row">
-                            <img src="src/img-profile-pic.png" class="max-w-sm rounded-lg shadow-2xl mask mask-circle" id="profile-pic" />
-                            <div>
-                                <h1 class="text-5xl font-bold">Beate Himstedt</h1>
-                                <p class="py-6 text-2xl">„natürlich Himstedt“ steht für Natürlichkeit, Einfachheit, Bescheidenheit, Zuverlässigkeit, Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener und glücklicher. Lernen Sie sich selbst wieder
-                                    mehr zu schätzen.<br/>Oft liegt das Glück in den einfachen Dingen. Lassen Sie sich inspirieren, verwöhnen oder lernen Sie neue Seiten von sich selbst und der Natur kennen. </p>
-                                <a href="#section1"><button class="btn  ">Erfahren Sie Mehr</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    -->
             <section>
                 <div class="hero bg-transparent" id="section0">
                     <div class="hero-content flex-col lg:flex-row">
                         <div class="card-body">
-
                             <div class="div-wrapper">
                                 <div id="head-div">
                                     <img src="src/img-profile-pic.png" class="rounded-lg shadow-2xl mask mask-circle" id="profile-pic" style="max-height: 10%; width: auto;" />
@@ -86,14 +73,11 @@
                             <p class="py-6 text-2xl" style="color: white;">steht für Natürlichkeit, Einfachheit, Unabhängigkeit, Zuverlässigkeit, Kreativität und Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener und glücklicher. Lernen Sie sich selbst wieder mehr zu
                                 schätzen. Oft liegt das Glück in den einfachen Dingen. Lassen Sie sich inspirieren, verwöhnen oder lernen Sie neue Seiten von sich selbst und der Natur kennen</p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-primary">Mehr erfahren</button>
-                                <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
-                                <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e"><button class="btn btn-primary">Termin Buchen</button></a>
+                                <a href="#section2 "><button class="btn ">Erfahren Sie Mehr</button></a>
+
+                                <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e"><button class="btn btn-primary">Termine Buchen</button></a>
 
                             </div>
-                            <!--    
-                                </div>
-                            -->
                         </div>
                         <div>
                             <div class="card lg:card-side bg-base-100 shadow-xl" id="landing_card">
@@ -124,7 +108,7 @@
                             </div>
 
                             <!--
-                                <a href="#section1 "><button class="btn ">Erfahren Sie Mehr</button></a>
+                                
                             -->
                         </div>
                     </div>
@@ -138,7 +122,10 @@
             <section>
                 <div class="hero bg-transparent product-container" id="section2">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="src/img-wellnessmassagen-neu.png" class="max-w-sm rounded-lg shadow-2xl" />
+
+                        <div class="animated ">
+                            <img src="src/img-wellnessmassagen-neu.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
                         <div>
                             <h1 class="text-5xl font-bold">Wellness-Massagen</h1>
                             <p class="py-6 text-2xl">„natürlich“ gibt es nichts Schöneres, als entspannt im eigenen Körper zu wohnen. Wer wünscht sich das nicht? Gönnen Sie sich doch ab und zu eine Wellnessmassage, egal ob Fuß-, Rücken-, Gesichts-, Kiefer- oder Ganzkörpermassage.
@@ -209,12 +196,15 @@
             <section>
                 <div class="hero bg-transparent product-container" id="section1">
                     <div class="hero-content flex-col lg:flex-row ">
-                        <img src="src/img-beratung.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div class="animated ">
+                            <img src="src/img-beratung.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
                         <div>
                             <h1 class="text-5xl font-bold">Beratung zu Lebensfragen</h1>
                             <p class="py-6 text-2xl">„natürlich“ tauchen im täglichen Leben immer wieder Probleme und Fragen auf und man hat manchmal das Gefühl einen Knoten im Kopf zu haben oder sich im Kreis zu drehen. Oft sind das Hinweise, dass man wieder mal einen entscheidenden
                                 Entwicklungsschritt vor sich hat. Gern unterstütze ich Sie bei der Lösung Ihrer Knoten, so dass Sie wieder ganz entspannt Ihr Leben leben können und Sie stolz darauf sind, Ihr Problem gelöst zu haben.
                             </p>
+                            <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e"><button class="btn btn-primary">Termin Buchen</button></a>
                             <div id="moresection1_p"></div>
                             <!-- <button class="btn " id="moresection1 " onclick="section_one_more() "> Mehr</button>-->
                         </div>
@@ -227,7 +217,9 @@
             <section>
                 <div class="hero bg-transparent product-container" id="section3">
                     <div class="hero-content flex-col lg:flex-row-reverse ">
-                        <img src="src/img-kräuterkurse.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div class="animated">
+                            <img src="src/img-kräuterkurse.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
                         <div>
                             <h1 class="text-5xl font-bold">Kräuterkurse</h1>
                             <p class="py-6 text-2xl">„natürlich“ geht es hier um Kräuter. Diese Pflanzen stärken die Gesundheit und das Allgemeinbefinden. Viele wertvolle Kräuter wachsen direkt vor der Haustür. Oft reißt man sie als Unkraut achtlos heraus. In Kräuterkursen bringe
@@ -236,19 +228,6 @@
 
 
                             <figure><img class="max-w-sm rounded-lg shadow-2xl" src="src/gif-kräuterkurse.gif" style="max-height: 250px;" alt=""></figure>
-
-
-
-                            <!--
-                                <h2 class="py-6 text-2xl" style="font-style: italic; font-weight: bold;">„Der Größte ist der, der die Natur und die Wunder weiß, lernt und erfährt.“
-                                    </p>
-                                    <p>Paracelsus</p>
-                                    </br>
-                                    <p class="py-6 text-2xl"> In den Kräuterkursen bringe ich Ihnen die Kräuter aus Ihrem / meinem Garten und der Natur näher. Sie erfahren, wie Sie diese einsetzen und zubereiten können, wie Sie sich selbst Tinkturen, Salben, Teemischungen, Wickel
-                                        oder Auflagen herstellen können.
-                                    </p>
-                                    -->
-                            <!--Anfang Popout-->
                             <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection3_p">
                                 <div class="flex flex-col w-full">
 
@@ -323,18 +302,20 @@
                                         <h2 class="card-title">Frauenkreise:</h2>
                                         <p>Informationen</p>
                                         <p>
-                                            Dauer: &emsp;&emsp;10 Abende a 1,5 Stunden</br>
-                                            Kosten: &emsp;&emsp;200 €</br>
-                                            Termin: &emsp;&emsp;Januar 2023
+                                            Dauer: &emsp; &emsp;&emsp;&emsp;&nbsp; 10 Abende a 1,5 Stunden</br>
+                                            Kosten: &emsp;&emsp;&emsp;&emsp; 200 €</br>
+                                            Termin: &emsp;&emsp;&emsp;&emsp; Januar 2023
                                             </br>
-                                            Teilnehmer: 4 - 6</br>
+                                            Teilnehmer: &emsp;&emsp;&nbsp; 4 - 6</br>
                                         </p>
                                         <div class="card-actions justify-end">
-                                            <label for="my-modal-6" class="btn modal-button">Jetzt anmelden</label>
-                                            <input type="checkbox" id="my-modal-6" class="modal-toggle">
+
+                                            <label for="my-modal-4" class="btn modal-button">Jetzt anmelden</label>
+                                            <input type="checkbox" id="my-modal-4" class="modal-toggle">
+
                                             <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
-                                                <div style="z-index: 2;" class="modal-box w-11/12 max-w-5xl">
-                                                    <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                <div class="modal-box w-11/12 max-w-5xl">
+                                                    <label for="my-modal-4" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
                                                     <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
                                                     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
                                                         <fieldset id="fs-frm-inputs">
@@ -355,7 +336,7 @@
                                                                         -->
                                                         </fieldset>
                                                         <div class="modal-action">
-                                                            <button type="submit" for="my-modal-6"><label for="my-modal-6" class="btn">Anmelden</label></button>
+                                                            <button type="submit" for="my-modal-4"><label for="my-modal-4" class="btn">Anmelden</label></button>
                                                         </div>
                                                     </form>
 
@@ -413,18 +394,18 @@
                                             <div class="card-body">
                                                 <h2 class="card-title">Schreibkurs:</h2>
                                                 <p>Meine neue Morgenroutine Abendkurs</p>
-                                                <p> Dauer: Abendkurs a 2 Stunden</br>
-                                                    Kosten: 30 €</br>
-                                                    Termin: Dienstag den 25.10.22 oder 08.11.22
-                                                    </br>
-                                                    Teilnehmer: maximal 6 </br>
+                                                <p> Dauer: &emsp;&emsp;&emsp;&nbsp;Abendkurs a 2 Stunden</br>
+                                                    Kosten:&emsp;&emsp;&emsp; 30 €</br>
+                                                    Termin:&emsp;&emsp;&emsp; Dienstag den 25.10.22</br>
+                                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;oder 08.11.22</br>
+                                                    Teilnehmer:&emsp;&nbsp; maximal 6 </br>
                                                 </p>
                                                 <div class="card-actions justify-end">
-                                                    <label for="my-modal-6" class="btn modal-button">Jetzt anmelden</label>
-                                                    <input type="checkbox" id="my-modal-6" class="modal-toggle">
+                                                    <label for="my-modal-5" class="btn modal-button">Jetzt anmelden</label>
+                                                    <input type="checkbox" id="my-modal-5" class="modal-toggle">
                                                     <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
-                                                        <div style="z-index: 2;" class="modal-box w-11/12 max-w-5xl">
-                                                            <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                        <div class="modal-box w-11/12 max-w-5xl">
+                                                            <label for="my-modal-5" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
                                                             <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
                                                             <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
                                                                 <fieldset id="fs-frm-inputs">
@@ -445,7 +426,7 @@
                                                                                 -->
                                                                 </fieldset>
                                                                 <div class="modal-action">
-                                                                    <button type="submit" for="my-modal-6"><label for="my-modal-6" class="btn">Anmelden</label></button>
+                                                                    <button type="submit" for="my-modal-5"><label for="my-modal-5" class="btn">Anmelden</label></button>
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -487,14 +468,16 @@
                     <div class="hero-content flex-col lg:flex-row">
                         <div>
                             <h1 class="text-5xl font-bold">Kontakt</h1>
-                            <h2 class="py-6 text-2xl"> <a href="tel:08074176009">Tel: 08074 / 176009 </a> </br>
-                                <a href="mailto: etaeb.himstedt@t-online.de">Mail: etaeb.himstedt@t-online.de</a></h2>
+
+                            <h2 style="color: white;" class="py-6 text-2xl"> <a href="tel:08074176009">Tel: 08074 / 176009 </a> </br>
+                                <a href="mailto: etaeb.himstedt@t-online.de">Mail: etaeb.himstedt@t-online.de</a></br>
+                                Adresse: Kraiburger str. 3 </br>83530 Schnaitsee</h2>
 
                             <!-- The button to open modal -->
                             <label for="my-modal-6" class="btn modal-button">Kontaktieren sie mich</label>
                             <input type="checkbox" id="my-modal-6" class="modal-toggle">
                             <div class="modal modal-bottom sm:modal-middle cursor-pointer">
-                                <div style="z-index: 2;" class="modal-box w-11/12 max-w-5xl">
+                                <div class="modal-box w-11/12 max-w-5xl">
                                     <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
                                     <h3 class="font-bold text-lg">Über dieses Formular können sie mir eine Nachricht zukommen lassen.</h3>
                                     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
