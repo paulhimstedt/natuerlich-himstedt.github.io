@@ -1,9 +1,54 @@
+/*const sections = document.querySelectorAll('section1');
+
+const options = {};
+
+const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            document.querySelectorAll(".animated")[0].classList.add("fadeInRight");
+            console.log("testetestst");
+        }
+    });
+}, options);
+
+// loop 
+sections.forEach(section => {
+    observer.observe(section);
+});
+*/
+
+const sections = document.querySelectorAll("section")
+const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            console.log("start fade ", entry);
+            console.log(entry.target)
+            entry.target.classList.remove("hidden_cont")
+            entry.target.classList.add("show");
+            entry.target.classList.add("fadeInRight");
+
+        }
+    });
+});
+
+console.log(sections)
+sections.forEach(section => {
+    observer2.observe(section);
+});
+
+
 function normal() {
-    document.getElementById("section0").className = "hero bg-base-200 min-h-screen"
+    //document.getElementById("section0").className = "hero bg-base-200 min-h-screen"
+    document.getElementById("section0").className = "hero bg-transparent min-h-screen"
+    document.getElementById("schreibkurs-card").className = "card w-96 bg-base-100 shadow-xl image-full"
 }
 
 function mobile() {
-    document.getElementById("section0").className = "hero bg-base-200"
+    //document.getElementById("section0").className = "hero bg-base-200"
+    document.getElementById("section0").className = "hero bg-transparent"
+    document.getElementById("schreibkurs-card").className = "card lg:card-side bg-base-100 shadow-xl image-full"
 }
 
 function fullscreenLandingPage() {

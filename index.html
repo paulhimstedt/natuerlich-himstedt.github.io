@@ -9,77 +9,125 @@
     <link rel="icon" type="image/png" href="src\logo-icon.png" />
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/index.js">
+    <script defer src="/index.js">
     </script>
 
 </head>
 
-<body>
-    <div>
-        <!--nav bar-->
-        <div class="drawer">
-            <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
-            <div class="drawer-content flex flex-col">
+<body id>
 
-                <div class="w-full navbar bg-base-100" id="sticky-nav">
-                    <div class="flex-none lg:hidden">
-                        <label for="my-drawer-3" class="btn btn-square btn-ghost">
+    <!--nav bar-->
+
+    <div class="drawer">
+
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
+        <div class="drawer-content flex flex-col">
+
+            <div class="w-full navbar bg-base-100" id="sticky-nav">
+                <div class="flex-none lg:hidden">
+                    <label for="my-drawer-3" class="btn btn-square btn-ghost">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                         </label>
-                    </div>
-                    <div class="flex-1 px-2 mx-2">
-                        <a href="/index.html"> <img src="src\logo-nobackground-1000.png" alt="logo"></a>
-                    </div>
-                    <div class="flex-none hidden lg:block" id="menu-container">
-                        <ul class="menu menu-horizontal p-0">
-                            <li><a href="#section1">Beratung</a></li>
-                            <li><a href="#section2">Wellnessmassagen</a></li>
-                            <li><a href="#section3">Kräuterkurse</a></li>
-                            <li><a href="#section4">Frauenkreise</a></li>
+                </div>
+                <div class="flex-1 px-2 mx-2">
+                    <a href="/index.html"> <img src="src\logo-nobackground-1000.png" alt="logo"></a>
+                </div>
+                <div class="flex-none hidden lg:block" id="menu-container">
+                    <ul class="menu menu-horizontal p-0">
+                        <li><a href="#section2">Wellnessmassagen</a></li>
+                        <li><a href="#section1">Beratung</a></li>
+
+                        <li><a href="#section3">Kräuterkurse</a></li>
+
+
+                        <li><a href="#section4">Frauenkreise</a></li>
+
+                        <div class="tooltip tooltip-open tooltip-bottom" data-tip="Kurs im Oktober">
+
                             <li><a href="#section5">Schreibkurse</a></li>
-                            <li><a href="#section6">Aromaöle</a></li>
-                            <li><a href="#section7">Kontakt</a></li>
-                        </ul>
-                    </div>
+
+                        </div>
+
+                        <li><a href="#section6">Aromaöle</a></li>
+
+                        <li><a href="#section7">Kontakt</a></li>
+
+                    </ul>
                 </div>
+            </div>
 
-                <!--landing-page-->
-
-                <div class="hero bg-base-200" id="section0">
+            <section>
+                <div class="hero bg-transparent" id="section0">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="src/img-profile-pic.png" class="max-w-sm rounded-lg shadow-2xl mask mask-circle" id="profile-pic" />
+                        <div class="card-body">
+                            <div class="div-wrapper">
+                                <div id="head-div">
+                                    <img src="src/img-profile-pic.png" class="rounded-lg shadow-2xl mask mask-circle" id="profile-pic" style="max-height: 10%; width: auto;" />
+                                </div>
+                                <div id="head-div">
+                                    <h1 class="  text-5xl font-bold">natürlich Himstedt</h1>
+                                </div>
+                            </div>
+                            <p class="py-6 text-2xl" style="color: white;">steht für Natürlichkeit, Einfachheit, Unabhängigkeit, Zuverlässigkeit, Kreativität und Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener und glücklicher. Lernen Sie sich selbst wieder mehr zu
+                                schätzen. Oft liegt das Glück in den einfachen Dingen. Lassen Sie sich inspirieren, verwöhnen oder lernen Sie neue Seiten von sich selbst und der Natur kennen</p>
+                            <div class="card-actions justify-end">
+                                <a href="#section2 "><button class="btn ">Erfahren Sie Mehr</button></a>
+
+                                <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e"><button class="btn btn-primary">Termine Buchen</button></a>
+
+                            </div>
+                        </div>
                         <div>
-                            <h1 class="text-5xl font-bold">Beate Himstedt</h1>
-                            <p class="py-6 text-2xl">„natürlich Himstedt“ steht für Natürlichkeit, Einfachheit, Bescheidenheit, Zuverlässigkeit, Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener und glücklicher. Lernen Sie sich selbst wieder mehr
-                                zu schätzen.<br/>Oft liegt das Glück in den einfachen Dingen. Lassen Sie sich inspirieren, verwöhnen oder lernen Sie neue Seiten von sich selbst und der Natur kennen. </p>
-                            <a href="#section1"><button class="btn btn-primary">Erfahren Sie Mehr</button></a>
+                            <div class="card lg:card-side bg-base-100 shadow-xl" id="landing_card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Kontaktieren Sie mich!</h2>
+                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                        <fieldset id="fs-frm-inputs ">
+                                            <ul role="list " id="landing_contact_list">
+                                                <li><label for="full-name">Ganzer Name</label></li>
+                                                <li><input type="text" name="name" id="full-name" placeholder="Vorname und Nachname" required=""></li>
+                                                <li><label for="email-address">Email-Addresse</label></li>
+                                                <li><input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required=""></li>
+                                                <li><label for="message ">Ihre Nachricht</label></li>
+                                                <li><textarea rows="2" name="message" id="message" placeholder="Ihre persöhnliche Nachricht an mich" required="" data-gramm="false" wt-ignore-input="true"></textarea></li>
+                                                <li><input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"></li>
+                                            </ul>
+                                        </fieldset>
+                                        <div class="card-actions justify-end">
+                                            <!--<input  value="Senden ">--><button class="btn btn-primary" type="submit" value="Senden">Senden </button>
+
+
+                                        </div>
+
+
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <!--
+                                
+                            -->
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!--Beratung zu Lebensfragen-->
 
-                <div class="hero bg-base-200 product-container" id="section1">
+
+
+            <!--wellness massagen-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section2">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="src/img-beratung.png" class="max-w-sm rounded-lg shadow-2xl" />
-                        <div>
-                            <h1 class="text-5xl font-bold">Beratung zu Lebensfragen</h1>
-                            <p class="py-6 text-2xl">„natürlich“ tauchen im täglichen Leben immer wieder Probleme und Fragen auf und man hat manchmal das Gefühl einen Knoten im Kopf zu haben oder sich im Kreis zu drehen. Oft sind das Hinweise, dass man wieder mal einen entscheidenden
-                                Entwicklungsschritt vor sich hat. Gern unterstütze ich Sie bei der Lösung Ihrer Knoten, so dass Sie wieder ganz entspannt Ihr Leben leben können und Sie stolz darauf sind, Ihr Problem gelöst zu haben. </p>
-                            <div id="moresection1_p"></div>
-                            <!-- <button class="btn btn-primary" id="moresection1" onclick="section_one_more()"> Mehr</button>-->
+
+                        <div class="animated ">
+                            <img src="src/img-wellnessmassagen-neu.png" class="max-w-sm rounded-lg shadow-2xl" />
                         </div>
-                    </div>
-                </div>
-
-                <!--wellness massagen-->
-
-                <div class="hero bg-base-200 product-container" id="section2">
-                    <div class="hero-content flex-col lg:flex-row">
-                        <img src="src/img-wellnessmassagen.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
-                            <h1 class="text-5xl font-bold">Wellness-massagen</h1>
+                            <h1 class="text-5xl font-bold">Wellness-Massagen</h1>
                             <p class="py-6 text-2xl">„natürlich“ gibt es nichts Schöneres, als entspannt im eigenen Körper zu wohnen. Wer wünscht sich das nicht? Gönnen Sie sich doch ab und zu eine Wellnessmassage, egal ob Fuß-, Rücken-, Gesichts-, Kiefer- oder Ganzkörpermassage.
                                 Tauchen Sie ein, in ein entspanntes Gefühl mit einfühlsamen Händen, mit Hot Stone, Aromaölen, Ohrkerzen oder Kräuterstempeln und vergessen Sie für einen Moment Ihren Alltag.</p>
                             <!--Anfang Popout-->
@@ -90,41 +138,39 @@
                                             <table class="table w-full shadow-xl">
                                                 <thead class="bg-gray-100">
                                                     <tr>
-                                                        <th class="py-5 text-2xl">Massage</th>
-                                                        <th class="py-5 text-2xl">30 min</th>
-                                                        <th class="py-5 text-2xl">60 min</th>
+                                                        <th class="py-6 text-2xl">
+                                                            Massage
+                                                        </th>
+
+                                                        <th class="py-6 text-2xl">60 min</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td>Entspannungsmassage</td>
-                                                        <td>25 €</td>
+
                                                         <td>49 €</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Fußmassage</td>
-                                                        <td>22 €</td>
+
                                                         <td>35 €</td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>Ohrkerzen</td>
-                                                        <td>22 €</td>
-                                                        <td></td>
-                                                    </tr>
+
                                                     <tr>
                                                         <td>Hot Stone Massage</td>
-                                                        <td></td>
+
                                                         <td>49 €</td>
                                                     </tr>
 
                                                     <tr>
                                                         <td>Aromaölmassage</td>
-                                                        <td></td>
+
                                                         <td>55 €</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Kräuterstempelmassage</td>
-                                                        <td></td>
+
                                                         <td>59 €</td>
                                                     </tr>
                                                 </tbody>
@@ -132,43 +178,61 @@
                                         </div>
                                     </div>
                                     <div class="divider divider-horizontal"></div>
-                                    <p class="py-5 text-2xl ">Wichtige Info!</p>
+                                    <p class="py-5 text-2xl">Wichtige Info!</p>
                                     <p>Ich mache Sie <strong> ausdrücklich</strong> darauf aufmerksam, dass keine erotischen Massagen oder ähnliche Massageformen durchgeführt werden. Weiterhin möchte ich Sie darauf hinweisen, dass ich keine therapeutischen
                                         Massagen durchführe.
                                     </p>
                                 </div>
                             </div>
                             <!--Ende Popout-->
-                            <button class="btn btn-primary" id="moresection2" onclick="section_two_more()">Mehr</button>
+                            <button class="btn" id="moresection2" onclick="section_two_more()">Mehr</button>
+                            <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e"><button class="btn btn-primary">Termin Buchen</button></a>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!--Kräuterkurse-->
+            <!--Beratung zu Lebensfragen-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section1">
+                    <div class="hero-content flex-col lg:flex-row ">
+                        <div class="animated ">
+                            <img src="src/img-beratung.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+                        <div>
+                            <h1 class="text-5xl font-bold">Beratung zu Lebensfragen</h1>
+                            <p class="py-6 text-2xl">„natürlich“ tauchen im täglichen Leben immer wieder Probleme und Fragen auf und man hat manchmal das Gefühl einen Knoten im Kopf zu haben oder sich im Kreis zu drehen. Oft sind das Hinweise, dass man wieder mal einen entscheidenden
+                                Entwicklungsschritt vor sich hat. Gern unterstütze ich Sie bei der Lösung Ihrer Knoten, so dass Sie wieder ganz entspannt Ihr Leben leben können und Sie stolz darauf sind, Ihr Problem gelöst zu haben.
+                            </p>
+                            <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e"><button class="btn btn-primary">Termin Buchen</button></a>
+                            <div id="moresection1_p"></div>
+                            <!-- <button class="btn " id="moresection1 " onclick="section_one_more() "> Mehr</button>-->
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                <div class="hero bg-base-200 product-container" id="section3">
-                    <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="src/img-kräuterkurse.png" class="max-w-sm rounded-lg shadow-2xl" />
+
+            <!--Kräuterkurse-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section3">
+                    <div class="hero-content flex-col lg:flex-row-reverse ">
+                        <div class="animated">
+                            <img src="src/img-kräuterkurse.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
                         <div>
                             <h1 class="text-5xl font-bold">Kräuterkurse</h1>
-                            <p class="py-6 text-2xl">„natürlich“ geht es hier um Kräuter. Diese Pflanzen stärken die Gesundheit und das Allgemeinbefinden. Durch die steigende Lebenserwartung und manchmal die Skepsis gegenüber Medikamenten und deren Nebenwirkungen, wird ein Umdenken
-                                in Gang gesetzt. Viele wertvolle Kräuter wachsen direkt vor der Haustür. Oft reißt man sie als Unkraut achtlos heraus. Ich möchte Ihnen diese Schätze wieder näher bringen. Ein achtsamer und verantwortungsbewußter Umgang
-                                mit unseren Kräutern erfordert solides Hintergrundwissen.</p>
-
-                            <p class="py-6 text-2xl" style="font-style: italic; font-weight: bold; color: #3DB868;">„Der Größte ist der, der die Natur und die Wunder weiß, lernt und erfährt.“
-                            </p>
-                            <p>Paracelsus</p>
-                            </br>
-                            <p class="py-6 text-2xl"> In den Kräuterkursen bringe ich Ihnen die Kräuter aus Ihrem / meinem Garten und der Natur näher. Sie erfahren, wie Sie diese einsetzen und zubereiten können, wie Sie sich selbst Tinkturen, Salben, Teemischungen, Wickel oder
-                                Auflagen herstellen können.
+                            <p class="py-6 text-2xl">„natürlich“ geht es hier um Kräuter. Diese Pflanzen stärken die Gesundheit und das Allgemeinbefinden. Viele wertvolle Kräuter wachsen direkt vor der Haustür. Oft reißt man sie als Unkraut achtlos heraus. In Kräuterkursen bringe
+                                ich Ihnen die Kräuter aus Ihrem / meinem Garten und der Natur näher. Sie erfahren, wie Sie diese einsetzen und zubereiten können, wie Sie sich selbst Tinkturen, Salben, Teemischungen, Wickel oder Auflagen herstellen können.
                             </p>
 
-                            <!--Anfang Popout-->
+
+                            <figure><img class="max-w-sm rounded-lg shadow-2xl" src="src/gif-kräuterkurse.gif" style="max-height: 250px;" alt=""></figure>
                             <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection3_p">
-                                <div class="flex flex-col w-full ">
+                                <div class="flex flex-col w-full">
 
                                     <h2>Hier finden Sie immer wieder aktualisierte Angebote, um Ihr Wissen und Ihren Erfahrungsschatz über Kräuter auszubauen. Wissenserwerb über riechen, schmecken, wahrnehmen, anfassen, begreifen und wertschätzen</h2>
-                                    <p style="font-style: italic; font-weight: bold; color: #3DB868;">„Unkraut nennt man die Pflanzen, deren Vorzüge noch nicht erkannt worden sind.“</p>
+                                    <p style="font-style: italic; font-weight: bold;">„Unkraut nennt man die Pflanzen, deren Vorzüge noch nicht erkannt worden sind.“</p>
                                     <p>Ralph Waldo Emerson</p>
 
                                     <div class="divider divider-horizontal"></div>
@@ -211,118 +275,178 @@
                                 </div>
                             </div>
                             <!--Ende Popout-->
-                            <button class="btn btn-primary" id="moresection3" onclick="section_three_more()">Mehr</button>
+                            <!--<button class="btn " id="moresection3 " onclick="section_three_more() ">Mehr</button>-->
+                            <!--<button class="btn" id="moresection3">Warteliste</button>-->
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!--Frauenkreise-->
-
-                <div class="hero bg-base-200 product-container" id="section4">
+            <!--Frauenkreise-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section4">
                     <div class="hero-content flex-col lg:flex-row">
-                        <img src="src/img-frauenkreise.png " class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="src/img-frauenkreise.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
-                            <h1 class="text-5xl font-bold ">Frauenkreise</h1>
-                            <p class="py-6 text-2xl ">„natürlich“ geht es hier um Frauen, um Themen, die die eigene Persönlichkeit betreffen. Gemeinsam wollen wir gelebte Kreativität, Austausch, Hilfe, Bewusstwerdung, Freiheit und Lebendigkeit wieder zusammen spüren. Alle Frauen
+                            <h1 class="text-5xl font-bold">Frauenkreise</h1>
+                            <p class="py-6 text-2xl">„natürlich“ geht es hier um Frauen, um Themen, die die eigene Persönlichkeit betreffen. Gemeinsam wollen wir gelebte Kreativität, Austausch, Hilfe, Bewusstwerdung, Freiheit und Lebendigkeit wieder zusammen spüren. Alle Frauen
                                 haben die gleichen Themen vom Frau werden, Frau sein und älter werden. Im Kreis sind alle gleich-( wertig), verbunden und getragen von gegenseitigem Respekt. Lasst uns an den Abenden über bestimmte Themen austauschen, füreinander
                                 da sein, zuhören, kreativ sein, Leid und Freude teilen. An 10 Abenden wird immer wieder jeder für sich etwas mit nach Hause nehmen. Sei es ein Glücksgefühl oder ein Aha-Erlebnis. </br><strong>Alles bleibt in der Gruppe !!!</strong>
                             </p>
-                            <!--Anfang Popout-->
-                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection4_p">
-                                <div class="w-full flex w-auto flex-col lg:flex-row">
-                                    <div class="card w-200 bg-base-100 shadow-xl">
-                                        <div class="card-body">
-                                            <h2 class="card-title">Informationen</h2>
-                                            <p>10 Abende a 1,5 Stunden</br>
-                                                Kosten: 200 €</br>
-                                                Termine (Montag, 9./16./23./30. Mai, 20./27. Juni, 4./11./18./25. Juli)</br>
-                                                4-6 Teilnehmer</br>
-                                                Bitte Schreibzeug mitbringen!</p>
-                                            <div class="card-actions justify-end">
+                            <div class="w-full flex w-auto flex-col lg:flex-row">
+
+
+                                <div class="card w-96 bg-base-100 shadow-xl image-full" id="frauenkreis-card">
+                                    <figure><img src="src/img-frauenkreise-buchen.jpg" alt="Shoes" /></figure>
+                                    <div class="card-body">
+                                        <h2 class="card-title">Frauenkreise:</h2>
+                                        <p>Informationen</p>
+                                        <p>
+                                            Dauer: &emsp; &emsp;&emsp;&emsp;&nbsp; 10 Abende a 1,5 Stunden</br>
+                                            Kosten: &emsp;&emsp;&emsp;&emsp; 200 €</br>
+                                            Termin: &emsp;&emsp;&emsp;&emsp; Januar 2023
+                                            </br>
+                                            Teilnehmer: &emsp;&emsp;&nbsp; 4 - 6</br>
+                                        </p>
+                                        <div class="card-actions justify-end">
+
+                                            <label for="my-modal-4" class="btn modal-button">Jetzt anmelden</label>
+                                            <input type="checkbox" id="my-modal-4" class="modal-toggle">
+
+                                            <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
+                                                <div class="modal-box w-11/12 max-w-5xl">
+                                                    <label for="my-modal-4" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                    <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
+                                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                                        <fieldset id="fs-frm-inputs">
+                                                            <div class="form-control">
+                                                                <label class="input-group input-group-vertical" for="full-name">Name</label>
+                                                                <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
+                                                            </div>
+                                                            <div class="form-control">
+                                                                <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
+                                                                <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
+                                                            </div>
+                                                            <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
+                                                            <!--
+                                                                        <div class="input-group input-group-vertical" class="form-control">
+                                                                            <label for="message">Nachricht</label>
+                                                                            <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required=""></textarea>
+                                                                        </div>
+                                                                        -->
+                                                        </fieldset>
+                                                        <div class="modal-action">
+                                                            <button type="submit" for="my-modal-4"><label for="my-modal-4" class="btn">Anmelden</label></button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
                                             </div>
+
                                         </div>
                                     </div>
+                                    <!--Ende Popout-->
+                                    <!--
+                            <button class="btn" id="moresection4" onclick="section_four_more()"> Mehr</button>
+                            -->
                                 </div>
                             </div>
-                            <!--Ende Popout-->
-                            <button class="btn btn-primary" id="moresection4" onclick="section_four_more() "> Mehr</button>
-                        </div>
-                    </div>
-                </div>
+                            <!--Anfang Popout-->
+                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection4_p">
 
-                <!--Schreibkurse-->
+                            </div>
+            </section>
 
-                <div class="hero bg-base-200 product-container" id="section5">
+            <!--Schreibkurse-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section5">
                     <div class="hero-content flex-col lg:flex-row-reverse">
                         <img src="src/img-schreibkurse.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 class="text-5xl font-bold">Schreibkurse</h1>
-                            <p class="py-6 text-2xl">„natürlich“ Schreiben zur Selbsthilfe bringt die eigenen Gedanken aus dem Unterbewusstsein an die Oberfläche.</br>
-                                Hier geht es nicht (wie in der Schule) um Schönschreiben, korrekt Schreiben oder ausdrucksstark Schreiben. </br>
-                                „natürlich“ einfach mal die Seele frei schreiben. Egal ob sauber, richtig oder schön, hier geht es um Selbsterkenntnis.</br>
-                                Wie kann ich wissen, was ich denke, bevor ich lese was ich schreibe. Oft ist der Alltag sehr schnell und hektisch und oft werden schnelle Entscheidungen und Lösungen von uns verlangt.</br>
-                                Im Schreibkurs kann man genau diese Dinge trainieren. Durch Schreiben in einer ruhigen Atmosphäre wird einem bewußt was man denkt, wie man denkt und man kann sich auch auf bestimmte Situationen vorbereiten. Probieren Sie es gern aus.
+                            <p class="py-6 text-2xl">„natürlich“ Schreiben zur Selbsthilfe bringt die eigenen Gedanken aus dem Unterbewusstsein an die Oberfläche. Hier geht es nicht (wie in der Schule) um Schönschreiben, korrekt Schreiben oder ausdrucksstark Schreiben. „natürlich“
+                                einfach mal die Seele frei schreiben. Egal ob sauber, richtig oder schön, hier geht es um Selbsterkenntnis. Oft ist der Alltag sehr schnell und hektisch und oft werden schnelle Entscheidungen und Lösungen von uns verlangt.
+                                Im Schreibkurs kann man genau diese Dinge trainieren. Durch Schreiben in einer ruhigen Atmosphäre wird einem bewußt was man denkt, wie man denkt und man kann sich auch auf bestimmte Situationen vorbereiten. Probieren Sie
+                                es gern aus. Neuer Kurs: „Meine tägliche Morgenroutine“ ab sofort buchbar.
+                                </br>Neuer Kurs: „Meine tägliche Morgenroutine“ ab sofort buchbar.
                             </p>
                             <!--Anfang Popout-->
                             <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection5_p">
                                 <div class="flex flex-col w-full lg:flex-row">
-                                    <div class="grid flex-grow ">
+                                    <div class="grid flex-grow">
                                         <div class="card w-200 bg-base-100 shadow-xl">
                                             <div class="card-body">
-                                                <h2 class="card-title">Schreibthemen gibt es natürlich viele.</h2>
-                                                <p>
-                                                    Können Sie sich nicht leiden, wenn Sie in den Spiegel schauen?</br>
-                                                    Haben Sie manchmal das Gefühl immer wieder vor dem gleichen Problem zu stehen?</br>
-                                                    Können Sie mit manchen Leuten nicht sprechen oder etwas klären?</br>
-                                                    Bringen Sie Kleinigkeiten aus der Ruhe, oder versetzen Sie in Wut?</br>
-                                                    Fühlen Sie sich ÜBER- lastet, -gewichtig, -gestresst?</br>
-                                                    Fühlen Sie sich leer?</br>
-                                                    Was hält Sie zurück?</br>
-                                                    </br> Wie wäre es wenn … </br>Es ist Zeit, dass … </br>Ich habe genug …</p>
-                                                <div class="card-actions justify-end">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="divider divider-horizontal"></div>
-                                    <div class="grid flex-grow ">
-                                        <div class="card w-200 bg-base-100 shadow-xl">
-                                            <div class="card-body">
-                                                <h2 class="card-title">Schreibkurs:</h2>
-                                                <p>
-                                                    4 Abende a 1,5 Stunden</br>
-                                                    Kosten: 100 €</br>
-                                                    Termine (22./28. Juni, 13./19. Juli)</br>
-                                                    maximal 6 Teilnehmer</br>
-                                                    </br>
-                                                    Tagesseminar 8 Stunden mit Mittagspause und kleinem Imbiss</br>
-                                                    Kosten: 120 €</br>
-                                                    Termine (28. Mai oder 25. Juni oder 16. Juli)</br>
-                                                    maximal 6 Teilnehmer</br>
-                                                    </br>
-                                                    Im Kurs lernen Sie verschiedene Optionen Ihre Themen zu bearbeiten. </br>
-                                                    Danach werden Sie in der Lage sein, Ihre Probleme, Denkknoten, Ängste oder Sorgen schreibend zu bearbeiten.</br>
-                                                    Der Mehrwert für Sie liegt ganz klar in der Bewusstwerdung wie man selbst denkt, über andere denkt oder wie Ihr Unterbewusstsein denkt.</br> Erst über die Bewusstwerdung kann man anders reagieren und
-                                                    auch agieren.
-                                                    </br>
-                                                    In der Kleingruppe wird es immer wieder Austauschmöglichkeiten geben, wenn es gewünscht wird.</br>
+
+                                                <p style="color: black;">
+                                                    Im Kurs lernen Sie verschiedene Optionen Ihre Themen zu bearbeiten. Danach werden Sie in der Lage sein, Ihre Probleme, Denkknoten, Ängste oder Sorgen schreibend zu bearbeiten. Der Mehrwert für Sie liegt ganz klar in der Bewusstwerdung wie man selbst denkt,
+                                                    über andere denkt oder wie Ihr Unterbewusstsein denkt. Erst über die Bewusstwerdung kann man anders reagieren und auch agieren. In der Kleingruppe wird es immer wieder Austauschmöglichkeiten geben, wenn
+                                                    es gewünscht wird. </br>
                                                     <strong> Alles bleibt in der Gruppe !!! </strong></p>
                                                 <div class="card-actions justify-end">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="divider divider-horizontal"></div>
+                                    <div class="grid flex-grow">
+                                        <div style="height: 300px;" class="card w-96 bg-base-100 shadow-xl image-full" id="schreibkurs-card">
+                                            <figure><img src="src/img-schreibkurs-buchen.jpg" alt="Shoes" /></figure>
+                                            <div class="card-body">
+                                                <h2 class="card-title">Schreibkurs:</h2>
+                                                <p>Meine neue Morgenroutine Abendkurs</p>
+                                                <p> Dauer: &emsp;&emsp;&emsp;&nbsp;Abendkurs a 2 Stunden</br>
+                                                    Kosten:&emsp;&emsp;&emsp; 30 €</br>
+                                                    Termin:&emsp;&emsp;&emsp; Dienstag den 25.10.22</br>
+                                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;oder 08.11.22</br>
+                                                    Teilnehmer:&emsp;&nbsp; maximal 6 </br>
+                                                </p>
+                                                <div class="card-actions justify-end">
+                                                    <label for="my-modal-5" class="btn modal-button">Jetzt anmelden</label>
+                                                    <input type="checkbox" id="my-modal-5" class="modal-toggle">
+                                                    <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
+                                                        <div class="modal-box w-11/12 max-w-5xl">
+                                                            <label for="my-modal-5" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                            <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
+                                                            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                                                <fieldset id="fs-frm-inputs">
+                                                                    <div class="form-control">
+                                                                        <label class="input-group input-group-vertical" for="full-name">Name</label>
+                                                                        <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
+                                                                    </div>
+                                                                    <div class="form-control">
+                                                                        <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
+                                                                        <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
+                                                                    </div>
+                                                                    <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
+                                                                    <!--
+                                                                                <div class="input-group input-group-vertical" class="form-control">
+                                                                                    <label for="message">Nachricht</label>
+                                                                                    <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required=""></textarea>
+                                                                                </div>
+                                                                                -->
+                                                                </fieldset>
+                                                                <div class="modal-action">
+                                                                    <button type="submit" for="my-modal-5"><label for="my-modal-5" class="btn">Anmelden</label></button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!--Ende Popout-->
-                            <button class="btn btn-primary" id="moresection5" onclick="section_five_more()"> Mehr</button>
+                            <button class="btn" id="moresection5" onclick="section_five_more() "> Mehr</button>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!--Aromaöle-->
-
-                <div class="hero bg-base-200 product-container" id="section6">
+            <!--Aromaöle-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section6">
                     <div class="hero-content flex-col lg:flex-row">
                         <img src="src/img-aromaoele.jpg" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
@@ -332,23 +456,28 @@
                                 Duftmoleküle wandern diese direkt zur Amygdala im Gehirn. Dort sind alle emotionalen Erfahrungen gespeichert. So kann man wortlos mit seinen eigenen Gefühlen in Kontakt kommen.</br>
                                 Gern berate ich Sie, damit Sie Ihr passendes Aromaöl finden.</p>
                             <div id="moresection6_p"></div>
-                            <!--<button class="btn btn-primary " id="moresection6 " onclick="section_six_more() "> Mehr</button>-->
+                            <!--<button class="btn " id="moresection6 " onclick="section_six_more() "> Mehr</button>-->
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!--Kontakt-->
-
-                <div class="hero bg-base-200 product-container" id="section7">
+            <!--Kontakt-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section7">
                     <div class="hero-content flex-col lg:flex-row">
                         <div>
                             <h1 class="text-5xl font-bold">Kontakt</h1>
-                            <h2 class="py-6 text-2xl"> Tel: 08074 / 176009 </br>Mail: etaeb.himstedt@t-online.de</h2>
+
+                            <h2 style="color: white;" class="py-6 text-2xl"> <a href="tel:08074176009">Tel: 08074 / 176009 </a> </br>
+                                <a href="mailto: etaeb.himstedt@t-online.de">Mail: natuerlich.himstedt@gmail.com</a></br>
+                                Adresse: Kraiburger str. 3 </br>83530 Schnaitsee</h2>
+
                             <!-- The button to open modal -->
                             <label for="my-modal-6" class="btn modal-button">Kontaktieren sie mich</label>
                             <input type="checkbox" id="my-modal-6" class="modal-toggle">
                             <div class="modal modal-bottom sm:modal-middle cursor-pointer">
-                                <div style="z-index: 2;" class="modal-box w-11/12 max-w-5xl">
+                                <div class="modal-box w-11/12 max-w-5xl">
                                     <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
                                     <h3 class="font-bold text-lg">Über dieses Formular können sie mir eine Nachricht zukommen lassen.</h3>
                                     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
@@ -358,7 +487,7 @@
                                                 <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
                                             </div>
                                             <div class="form-control">
-                                                <label class="input-group input-group-vertical" for="email-address">Email Addresse</label>
+                                                <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
                                                 <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
                                             </div>
                                             <div class="input-group input-group-vertical" class="form-control">
@@ -366,8 +495,8 @@
                                                 <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required=""></textarea>
                                             </div>
                                         </fieldset>
-                                        <div class="modal-action ">
-                                            <button type="submit" for="my-modal-6"><label for="my-modal-6" class="btn ">Senden</label></button>
+                                        <div class="modal-action">
+                                            <button type="submit" for="my-modal-6"><label for="my-modal-6" class="btn">Senden</label></button>
                                         </div>
                                     </form>
 
@@ -398,47 +527,48 @@
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!--Footer-->
+            <!--Footer-->
 
-                <footer class="footer p-10 bg-base-300 text-base-content">
-                    <div>
-                        <img class="flex-1 px-2 mx-2" src="src\logo-nobackground-1000.png" alt="logo">
-                        <p>natürlich Himstedt<br>Immer für sie da!</p>
-                    </div>
-                    <div>
-                        <span class="footer-title">Dienste</span>
-                        <a class="link link-hover" href="#section1">Beratung</a>
-                        <a class="link link-hover" href="#section2">Wellnessmassagen</a>
-                        <a class="link link-hover" href="#section3">Kräuterkurse</a>
-                        <a class="link link-hover" href="#section4">Frauenkreise</a>
-                        <a class="link link-hover" href="#section5">Schreibkurse</a>
-                        <a class="link link-hover" href="#section6">Aromaöle</a>
-                    </div>
-                    <div>
-                        <span class="footer-title">Unternehmen</span>
-                        <a class="link link-hover" href="/index.html">Über mich</a>
-                        <a class="link link-hover" href="#section7">Kontakt</a>
-                    </div>
-                    <div>
-                        <span class="footer-title">Rechtlich</span>
-                        <a class="link link-hover" href="impressum.html">Impressum</a>
-                    </div>
-                </footer>
+            <footer class="footer p-10 bg-base-100 text-base-content">
+                <div>
+                    <img class="flex-1 px-2 mx-2" src="src\logo-nobackground-1000.png" alt="logo">
+                    <p>natürlich Himstedt<br>Immer für sie da!</p>
+                </div>
+                <div>
+                    <span class="footer-title">Dienste</span>
+                    <a class="link link-hover" href="#section1">Beratung</a>
+                    <a class="link link-hover" href="#section2">Wellnessmassagen</a>
+                    <a class="link link-hover" href="#section3">Kräuterkurse</a>
+                    <a class="link link-hover" href="#section4">Frauenkreise</a>
+                    <a class="link link-hover" href="#section5">Schreibkurse</a>
+                    <a class="link link-hover" href="#section6">Aromaöle</a>
+                </div>
+                <div>
+                    <span class="footer-title">Unternehmen</span>
+                    <a class="link link-hover" href="/index.html">Über mich</a>
+                    <a class="link link-hover" href="#section7">Kontakt</a>
+                </div>
+                <div>
+                    <span class="footer-title">Rechtlich</span>
+                    <a class="link link-hover" href="impressum.html">Impressum</a>
+                </div>
+            </footer>
 
             </div>
             <div class="drawer-side">
                 <label for="my-drawer-3" class="drawer-overlay"></label>
                 <ul class="menu p-4 overflow-y-auto w-60 bg-base-100">
-                    <p class="py-10 text-xl">Worüber möchten Sie mehr erfahren?</p>
+                    <p class="py-10 text-xl" style="color: black;">Worüber möchten Sie mehr erfahren?</p>
                     <div class="drawer-action">
-                        <li><button onClick="document.getElementById( 'section1').scrollIntoView();"><label for="my-drawer-3" class="btn">Beratung</label></button></li>
-                        <li><button onClick="document.getElementById( 'section2').scrollIntoView();"><label for="my-drawer-3" class="btn">Wellness-massagen</label></button></li>
-                        <li><button onClick="document.getElementById( 'section3').scrollIntoView();"><label for="my-drawer-3" class="btn">Kräuterkurse</label></button></li>
-                        <li><button onClick="document.getElementById( 'section4').scrollIntoView();"><label for="my-drawer-3" class="btn">Frauenkreise</label></button></li>
-                        <li><button onClick="document.getElementById( 'section5').scrollIntoView();"><label for="my-drawer-3" class="btn">Schreibkurse</label></button></li>
-                        <li><button onClick="document.getElementById( 'section6').scrollIntoView();"><label for="my-drawer-3" class="btn">Aromaöle</label></button></li>
-                        <li><button onClick="document.getElementById( 'section7').scrollIntoView();"><label for="my-drawer-3" class="btn">Kontakt</label></button></li>
+                        <li><button onClick="document.getElementById('section1').scrollIntoView();"><label for="my-drawer-3" class="btn">Beratung</label></button></li>
+                        <li><button onClick="document.getElementById('section2').scrollIntoView();"><label for="my-drawer-3" class="btn">Wellness-massagen</label></button></li>
+                        <li><button onClick="document.getElementById('section3').scrollIntoView();"><label for="my-drawer-3" class="btn">Kräuterkurse</label></button></li>
+                        <li><button onClick="document.getElementById('section4').scrollIntoView();"><label for="my-drawer-3" class="btn">Frauenkreise</label></button></li>
+                        <li><button onClick="document.getElementById('section5').scrollIntoView();"><label for="my-drawer-3" class="btn">Schreibkurse</label></button></li>
+                        <li><button onClick="document.getElementById('section6').scrollIntoView();"><label for="my-drawer-3" class="btn">Aromaöle</label></button></li>
+                        <li><button onClick="document.getElementById('section7').scrollIntoView();"><label for="my-drawer-3" class="btn">Kontakt</label></button></li>
                         <li>
                             <a href="impressum.html">
                                 <button class="btn">Impressum</button>
@@ -447,8 +577,7 @@
                     </div>
                 </ul>
             </div>
-        </div>
-    </div>
+
 </body>
 
 </html>
