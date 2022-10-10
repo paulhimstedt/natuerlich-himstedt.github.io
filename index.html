@@ -60,7 +60,7 @@
 
             <section>
                 <div class="hero bg-transparent" id="section0">
-                    <div class="hero-content flex-col lg:flex-row">
+                    <div class="hero-content flex-col lg:flex-row" style="padding: 0;">
                         <div class="card-body">
                             <div class="div-wrapper">
                                 <div id="head-div">
@@ -328,12 +328,12 @@
                                                                 <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
                                                             </div>
                                                             <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
-                                                            <!--
-                                                                        <div class="input-group input-group-vertical" class="form-control">
-                                                                            <label for="message">Nachricht</label>
-                                                                            <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required=""></textarea>
-                                                                        </div>
-                                                                        -->
+
+                                                            <div style="display: none;" class="input-group input-group-vertical" class="form-control">
+                                                                <label for="message">Nachricht</label>
+                                                                <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required="">Ich möchte mich zum Frauenkreis anmelden</textarea>
+                                                            </div>
+
                                                         </fieldset>
                                                         <div class="modal-action">
                                                             <button type="submit" for="my-modal-4"><label for="my-modal-4" class="btn">Anmelden</label></button>
@@ -387,9 +387,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="divider divider-horizontal"></div>
+                                    <div class="divider divider-horizontal" style="margin-bottom: 16px; margin-top: 16px;"></div>
                                     <div class="grid flex-grow">
-                                        <div style="height: 300px;" class="card w-96 bg-base-100 shadow-xl image-full" id="schreibkurs-card">
+                                        <div style="height: 300px; margin-bottom: 20px;" class="card w-96 bg-base-100 shadow-xl image-full" id="schreibkurs-card">
                                             <figure><img src="src/img-schreibkurs-buchen.jpg" alt="Shoes" /></figure>
                                             <div class="card-body">
                                                 <h2 class="card-title">Schreibkurs:</h2>
@@ -418,12 +418,12 @@
                                                                         <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
                                                                     </div>
                                                                     <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
-                                                                    <!--
-                                                                                <div class="input-group input-group-vertical" class="form-control">
-                                                                                    <label for="message">Nachricht</label>
-                                                                                    <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required=""></textarea>
-                                                                                </div>
-                                                                                -->
+
+                                                                    <div style="display: none;" class="input-group input-group-vertical" class="form-control">
+                                                                        <label for="message">Nachricht</label>
+                                                                        <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich">Ich möchte mich zum Schreibkurs anmelden</textarea>
+                                                                    </div>
+
                                                                 </fieldset>
                                                                 <div class="modal-action">
                                                                     <button type="submit" for="my-modal-5"><label for="my-modal-5" class="btn">Anmelden</label></button>
@@ -438,7 +438,11 @@
                                 </div>
                             </div>
                             <!--Ende Popout-->
-                            <button class="btn" id="moresection5" onclick="section_five_more() "> Mehr</button>
+                            <div class="indicator">
+                                <span class="indicator-item badge badge-primary">neu</span>
+                                <button class="btn" id="moresection5" onclick="section_five_more() "> Mehr</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -467,11 +471,13 @@
                 <div class="hero bg-transparent product-container" id="section7">
                     <div class="hero-content flex-col lg:flex-row">
                         <div>
-                            <h1 class="text-5xl font-bold">Kontakt</h1>
+                            <h1 class="text-3xl font-bold">Kontakt</h1>
+                            <p style="margin-top: 0;" class="py-6 text-2xl">Beate Himstedt</p>
+                            <h2 style="color: white; " class="py-6 text-2xl">
 
-                            <h2 style="color: white;" class="py-6 text-2xl"> <a href="tel:08074176009">Tel: 08074 / 176009 </a> </br>
-                                <a href="mailto: etaeb.himstedt@t-online.de">Mail: natuerlich.himstedt@gmail.com</a></br>
-                                Adresse: Kraiburger str. 3 </br>83530 Schnaitsee</h2>
+                                <a href="mailto: etaeb.himstedt@t-online.de">Mail:</br><p style="text-decoration: underline;">natuerlich.himstedt@gmail.com</p> </a></br>
+                                <a href="tel:08074176009"> Telefon:</br><p style="text-decoration: underline;">08074 / 176009 </p></a> </br>
+                                Adresse:</br> Kraiburger str. 3 </br>3530 Schnaitsee</h2>
 
                             <!-- The button to open modal -->
                             <label for="my-modal-6" class="btn modal-button">Kontaktieren sie mich</label>

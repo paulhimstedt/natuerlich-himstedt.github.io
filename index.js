@@ -17,17 +17,25 @@ sections.forEach(section => {
     observer.observe(section);
 });
 */
-
+var fadeIndicator = 0
 const sections = document.querySelectorAll("section")
 const observer2 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-
+    entries.forEach(entry => {;
         if (entry.isIntersecting) {
+            fadeIndicator++;
+            if (fadeIndicator % 2 == 0) {
+                entry.target.classList.add("fadeInLeft");
+            } else {
+                entry.target.classList.add("fadeInRight");
+
+            }
             console.log("start fade ", entry);
             console.log(entry.target)
-            entry.target.classList.remove("hidden_cont")
-            entry.target.classList.add("show");
-            entry.target.classList.add("fadeInRight");
+                //entry.target.classList.remove("hidden_cont")
+                //entry.target.classList.add("show");
+
+
+            console.log(entry);
 
         }
     });

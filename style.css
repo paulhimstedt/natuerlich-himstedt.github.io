@@ -10,9 +10,14 @@
         background-size: cover;
         scrollbar-width: thin;
         scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+        overflow-x: hidden;
     }
     
-    section {}
+    .divider-horizontal {
+        height: auto;
+        width: 1rem;
+        margin: 0;
+    }
     
     #hidden {
         opacity: 0;
@@ -38,8 +43,9 @@
         width: auto;
     }
     
-    #profile-pic form img {
-        max-width: 45%;
+    #profile-pic {
+        margin-top: 50px;
+        max-width: 100%;
         height: auto;
     }
     
@@ -95,13 +101,13 @@
     /* Fade in left */
     
     .fadeInLeft {
-        -webkit-animation: fadeInLeft 1.2s both;
+        -webkit-animation: fadeInLeft 1.5s both;
         /* Safari 4+ */
-        -moz-animation: fadeInLeft 1.2s both;
+        -moz-animation: fadeInLeft 1.5s both;
         /* Fx 5+ */
-        -o-animation: fadeInLeft 1.2s both;
+        -o-animation: fadeInLeft 1.5s both;
         /* Opera 12+ */
-        animation: fadeInLeft 1.2s both;
+        animation: fadeInLeft 1.5s both;
         /* IE 10+, Fx 29+ */
     }
     /* Safari 4+ */
@@ -155,13 +161,13 @@
     /* Fade in top */
     
     .fadeInTop {
-        -webkit-animation: fadeInTop 1.2s both;
+        -webkit-animation: fadeInTop 1.5s both;
         /* Safari 4+ */
-        -moz-animation: fadeInTop 1.2s both;
+        -moz-animation: fadeInTop 1.5s both;
         /* Fx 5+ */
-        -o-animation: fadeInTop 1.2s both;
+        -o-animation: fadeInTop 1.5s both;
         /* Opera 12+ */
-        animation: fadeInTop 1.2s both;
+        animation: fadeInTop 1.5s both;
         /* IE 10+, Fx 29+ */
     }
     
@@ -211,13 +217,13 @@
     /* Fade in right */
     
     .fadeInRight {
-        -webkit-animation: fadeInRight 1.2s both;
+        -webkit-animation: fadeInRight 1.5s both;
         /* Safari 4+ */
-        -moz-animation: fadeInRight 1.2s both;
+        -moz-animation: fadeInRight 1.5s both;
         /* Fx 5+ */
-        -o-animation: fadeInRight 1.2s both;
+        -o-animation: fadeInRight 1.5s both;
         /* Opera 12+ */
-        animation: fadeInRight 1.2s both;
+        animation: fadeInRight 1.5s both;
         /* IE 10+, Fx 29+ */
     }
     
