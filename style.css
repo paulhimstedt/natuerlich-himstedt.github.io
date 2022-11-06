@@ -19,6 +19,16 @@
         margin: 0;
     }
     
+    #main-pdf {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+    }
+    
     #hidden {
         opacity: 0;
         transition: all 1s;
