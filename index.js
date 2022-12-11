@@ -1,22 +1,68 @@
-/*const sections = document.querySelectorAll('section1');
-
-const options = {};
-
-const observer = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(entry => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-            document.querySelectorAll(".animated")[0].classList.add("fadeInRight");
-            console.log("testetestst");
+var childs = document.getElementById('therapie_tab').children;
+var therapie_childs = document.getElementById('therapie_container').children;
+var nav_therapie_childs = document.getElementById('nav_therapien').children;;
+var manuelleThearpien_0 = document.getElementById("manuelleThearpien_0")
+var manuelleThearpien_1 = document.getElementById("manuelleThearpien_1")
+var manuelleThearpien_2 = document.getElementById("manuelleThearpien_2")
+var manuelleThearpien_3 = document.getElementById("manuelleThearpien_3")
+for (var i = 0; childs[i]; i++) {
+    childs[i].onclick = function() {
+        switch (this.innerHTML) {
+            case "Entgiftungsmassage":
+                clear_active_tabs()
+                manuelleThearpien_0.classList.remove("hidden")
+                this.classList.add("tab-active")
+                break;
+            case "Dorn-Breuss-Therapie":
+                clear_active_tabs()
+                manuelleThearpien_1.classList.remove("hidden")
+                this.classList.add("tab-active")
+                break;
+            case "Lymphdrainage":
+                clear_active_tabs()
+                manuelleThearpien_2.classList.remove("hidden")
+                this.classList.add("tab-active")
+                break;
+            case "Bindegewebsmassage":
+                clear_active_tabs()
+                manuelleThearpien_3.classList.remove("hidden")
+                this.classList.add("tab-active")
+                break;
         }
-    });
-}, options);
+    }
+}
 
-// loop 
-sections.forEach(section => {
-    observer.observe(section);
-});
-*/
+function therapien_topnav0() {
+    clear_active_tabs()
+    manuelleThearpien_0.classList.remove("hidden")
+    childs[0].classList.add("tab-active")
+}
+
+function therapien_topnav1() {
+    clear_active_tabs()
+    manuelleThearpien_1.classList.remove("hidden")
+    childs[1].classList.add("tab-active")
+}
+
+function therapien_topnav2() {
+    clear_active_tabs()
+    manuelleThearpien_2.classList.remove("hidden")
+    childs[2].classList.add("tab-active")
+}
+
+function therapien_topnav3() {
+    clear_active_tabs()
+    manuelleThearpien_3.classList.remove("hidden")
+    childs[3].classList.add("tab-active")
+}
+
+function clear_active_tabs() {
+    for (var i = 0; childs[i]; i++) {
+        childs[i].classList.remove("tab-active")
+        therapie_childs[i].classList.add("hidden")
+    }
+}
+
 var fadeIndicator = 0
 const sections = document.querySelectorAll("section")
 const observer2 = new IntersectionObserver(entries => {
