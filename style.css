@@ -1,5 +1,11 @@
     html {
         scroll-behavior: smooth;
+        /* hyphens */
+        -moz-hyphens: auto;
+        -o-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
     
     body {
