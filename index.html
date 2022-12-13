@@ -384,8 +384,10 @@
                                             <div id="manuelleThearpien_0" class="card-actions justify-end ">
                                                 <p style="color: black;"><strong>Entgiftungsmassage</strong></p>
                                                 <p style="color: black;">Möchten Sie Ihren Körper von Schlackenstoffen befreien oder bei einer Fastenkur unterstützen? Eine Entgiftungsmassage regt den Zellstoffwechsel an, entgiftet und entwässert das Gewebe, strafft die Haut und
-                                                    wirkt wohltuend auf Körper, Geist und Seele. Die einstündige Massage gliedert sich in drei Stufen. 1.) Heiße Rolle: entspannt die Muskulatur und fördert die Durchblutung, die Poren werden geöffnet und
-                                                    gereinigt. 2.) Lymphdrainage: Aktivierung des Körpers zum Abtransport von Schlacken und Gewebewasser. 3.) Honigmassage: Schlackenstoffe, Salze und Gifte werden aus dem Körpergewebe heraus befördert.</p>
+                                                    wirkt wohltuend auf Körper, Geist und Seele. </br>Die einstündige Massage gliedert sich in drei Stufen.</br>1.) Heiße Rolle: entspannt die Muskulatur und fördert die Durchblutung, die Poren werden geöffnet
+                                                    und gereinigt. </br>2.) Lymphdrainage: Aktivierung des Körpers zum Abtransport von Schlacken und Gewebewasser. </br>3.) Honigmassage: Schlackenstoffe, Salze und Gifte werden aus dem Körpergewebe heraus
+                                                    befördert.
+                                                </p>
 
                                             </div>
 
@@ -424,7 +426,7 @@
             <section>
                 <div class="hero bg-transparent product-container" id="section10">
                     <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="src/img-urindiagnostik.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="src/img-urindiagnostik.PNG" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
                             <h1 class="text-5xl font-bold">Urindiagnostik</h1>
                             <p class="py-6 text-2xl">Bei der Harndiagnostik kann man durch Zusatz von Chemikalien und durch Erhitzung Urinphänome erkennen, die gleichzeitig ein Spiegelbild der Funktion von Organsystemen sind. Dabei werden Stoffwechsel, Darm und Schleimhäute,
@@ -438,10 +440,10 @@
             <!--Hormonspeicheldiagnostik-->
             <section>
                 <div class="hero bg-transparent product-container" id="section11">
-                    <div class="hero-content flex-col lg:flex-row">
-                        <img src="src/img-speicheldiagnostik.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="src/img-speicheldiagnostik.PNG" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
-                            <h1 class="text-5xl font-bold">Hormonspeicheldiagnostik</h1>
+                            <h1 id="long_title_diagnostik" class="text-5xl font-bold">Hormonspeicheldiagnostik</h1>
                             <p class="py-6 text-2xl">Ich arbeite mit dem Labor SwissHealthMed bei Feldkirchen/ Westerham zusammen. Warum Speicheltestung und nicht Blut? Bei der Hormonmessung hat die Speicheldiagnostik einfach Vorteile. Diese sind: - genauere Werte, schmerzfrei,
                                 hohe Probenstabilität, zeitlich unabhängig - Erfassung der Hypophysenaktivität, da Hormone Schwankungen unterliegen (Blutentnahme einmalig, Speichel 2-4 Röhrchen) Indikationen: </br>
                                 <span class="badge badge-lg">Wechseljahrsprobleme / Östrogendominanz </span>
@@ -582,8 +584,40 @@
                                         </br>
                                         Teilnehmer: &emsp;&emsp;&nbsp; 3 - 6</br>
                                         </br>
-                                        Bitte auf geeignetes Schuhwerk und wetterfeste Kleidung achten
+                                        Bitte auf geeignetes Schuhwerk und wetterfeste Kleidung achten!
                                     </p>
+                                    <div class="card-actions justify-end">
+                                        <label for="my-modal-5" class="btn modal-button">Jetzt anmelden</label>
+                                        <input type="checkbox" id="my-modal-5" class="modal-toggle">
+                                        <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
+                                            <div class="modal-box w-11/12 max-w-5xl">
+                                                <label for="my-modal-5" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
+                                                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                                    <fieldset id="fs-frm-inputs">
+                                                        <div class="form-control">
+                                                            <label class="input-group input-group-vertical" for="full-name">Name</label>
+                                                            <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
+                                                        </div>
+                                                        <div class="form-control">
+                                                            <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
+                                                            <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
+                                                        </div>
+                                                        <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
+
+                                                        <div style="display: none;" class="input-group input-group-vertical" class="form-control">
+                                                            <label for="message">Nachricht</label>
+                                                            <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich">Ich möchte mich zum Waldbaden anmelden</textarea>
+                                                        </div>
+
+                                                    </fieldset>
+                                                    <div class="modal-action">
+                                                        <button type="submit" for="my-modal-5"><label for="my-modal-5" class="btn">Anmelden</label></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -736,9 +770,9 @@
                                         <p>Informationen</p>
                                         <p>
                                             Kosten: &emsp;&emsp;&emsp;&emsp; 99 €</br>
-                                            Termin: &emsp;&emsp;&emsp;&emsp; Dienstags ab 17.01.2023
+                                            Termin: &emsp;&emsp;&emsp;&emsp; dienstags ab 17.01.2023
                                             </br>
-                                            Teilnehmer: &emsp;&emsp;&nbsp; unbegränzt</br>
+                                            Teilnehmer: &emsp;&emsp;&nbsp; unbegrenzt</br>
                                         </p>
                                         <div class="card-actions justify-end">
 
@@ -759,11 +793,11 @@
                                                                 <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
                                                                 <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
                                                             </div>
-                                                            <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
+                                                            <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme.</p>
 
                                                             <div style="display: none;" class="input-group input-group-vertical" class="form-control">
                                                                 <label for="message">Nachricht</label>
-                                                                <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required="">Ich möchte mich zum Frauenkreis anmelden</textarea>
+                                                                <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required="">Ich möchte mich zum Frauenkreis anmelden.</textarea>
                                                             </div>
 
                                                         </fieldset>
