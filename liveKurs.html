@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveKurse</title>
+    <link rel="icon" type="image/png" href="src\logo-icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/index.js">
+    </script>
+</head>
+
+<body>
+    <div class="drawer">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
+        <div class="drawer-content flex flex-col">
+            <div class="w-full navbar bg-base-100" id="sticky-nav">
+                <div class="flex-none lg:hidden">
+                    <label for="my-drawer-3" class="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </label>
+                </div>
+                <div class="flex-1 px-2 mx-2">
+                    <a href="/index.html"> <img src="src\logo-nobackground-1000.png" alt="logo"></a>
+                </div>
+                <div class="flex-none hidden lg:block" id="menu-container">
+                    <ul class="menu menu-horizontal p-0">
+                        <li>
+                            <a>
+                              Wellnessmassagen
+                              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                            </a>
+                            <ul class="p-2 bg-base-100">
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s9e7a53b0f3c940998a9a3cd3ec39aee41fbf6604?source=settings">Entspannungsmassage</a></li>
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s6cec911d8b67709c031a1d633d409c5d7f838609?source=settings">Fußmassage</a></li>
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s83c5153f3c1202fb4f281b9521177af337f81181?source=settings">Hot Stone Massage</a></li>
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s84bd1aa443380f8931d728065b0c69997e6defe4?source=settings">Aromaölmassage</a></li>
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/sc34c1f2c2310feeb026a73792142dd60fbf737c6?source=settings">Kräuterstempelmassage</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="heilpraktiker.html">
+                              Heilpraktiker
+                              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                            </a>
+                            <ul class="p-2 bg-base-100">
+                                <li><a href="heilpraktiker.html#beratung">Beratung</a></li>
+
+                                <li tabindex="0">
+                                    <div class="dropdown dropdown-hover dropdown-left">
+                                        <a>
+                                        Therapie</a>
+                                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+
+                                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li>
+                                                <a href="/heilpraktiker.html#schröpfen">Schröpfen</a>
+                                            </li>
+                                            <li><a href="/heilpraktiker.html#spagyrik">Spagyrik</a></li>
+                                            <li><a href="/heilpraktiker.html#akupunktur">Akupunktur</a></li>
+                                            <li tabindex="0">
+                                                <div class="dropdown dropdown-left">
+                                                    <a href="heilpraktiker.html#manuelleTherapien">manuelle Therapie</a>
+                                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                                                </div>
+                                                <ul id="nav_therapien" tabindex="0" class="p-2 shadow bg-base-100 rounded-box w-52">
+                                                    <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav0()">Entgiftungsmassage</a></li>
+                                                    <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav1()">Dorn Breuss Therapie</a></li>
+                                                    <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav2()">Lymphdrainage</a></li>
+                                                    <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav3()">Bindegewebsmassage</a></li>
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li tabindex="0">
+                                    <div class="dropdown dropdown-hover dropdown-left">
+                                        <a>
+                                        Diagnostik</a>
+                                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+
+                                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a href="heilpraktiker.html#urindiagnostik">Urindiagnostik</a> </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a>
+                              Live Kurse
+                              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                            </a>
+                            <ul class="p-2 bg-base-100">
+                                <li><a href="#section3">Kräuterkurse</a></li>
+                                <li><a href="#section8">Waldbaden</a></li>
+                                <li><a href="#section5">Schreibkurs</a></li>
+                                <li><a href="#section9">Fußreflexkurs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>
+                              Online Kurse
+                              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                            </a>
+                            <ul class="p-2 bg-base-100">
+                                <li><a href="onlinekurs.html">5 Tage Kurs</a></li>
+                                <li><a href="onlinekurs_lang.html">4 Wochen Kurs</a></li>
+                                <!--
+                                <li><a  href="#section5">Schreibkurs</a></li>
+                                <li><a href="#section4">Frauenkreis</a></li>
+                                -->
+
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#section7">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--Kräuterkurse-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section3">
+                    <div class="hero-content flex-col lg:flex-row ">
+                        <div class="animated">
+                            <img src="src/img-kräuterkurse.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+                        <div>
+                            <h1 class="text-5xl font-bold">Kräuterkurse</h1>
+                            <p class="py-6 text-2xl">„natürlich“ geht es hier um Kräuter. Diese Pflanzen stärken die Gesundheit und das Allgemeinbefinden. Viele wertvolle Kräuter wachsen direkt vor der Haustür. Oft reißt man sie als Unkraut achtlos heraus. In Kräuterkursen bringe
+                                ich Ihnen die Kräuter aus Ihrem / meinem Garten und der Natur näher. Sie erfahren, wie Sie diese einsetzen und zubereiten können, wie Sie sich selbst Tinkturen, Salben, Teemischungen, Wickel oder Auflagen herstellen können.
+                            </p>
+
+
+                            <figure><img class="max-w-sm rounded-lg shadow-2xl" src="src/gif-kräuterkurse.gif" style="max-height: 250px;" alt=""></figure>
+                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection3_p">
+                                <div class="flex flex-col w-full">
+
+                                    <h2>Hier finden Sie immer wieder aktualisierte Angebote, um Ihr Wissen und Ihren Erfahrungsschatz über Kräuter auszubauen. Wissenserwerb über riechen, schmecken, wahrnehmen, anfassen, begreifen und wertschätzen</h2>
+                                    <p style="font-style: italic; font-weight: bold;">„Unkraut nennt man die Pflanzen, deren Vorzüge noch nicht erkannt worden sind.“</p>
+                                    <p>Ralph Waldo Emerson</p>
+
+                                    <div class="divider divider-horizontal"></div>
+                                    <div class="grid h-140 flex-grow card rounded-box place-items-right">
+                                        <div class="overflow-x-auto">
+                                            <table class="table w-full shadow-xl">
+                                                <!-- head -->
+                                                <thead>
+                                                    <tr>
+                                                        <th class="py-5 text-2xl">Wann</th>
+                                                        <th class="py-5 text-2xl">Was</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>27. April: 18.30 - 20.00 Uhr </br>29. April: 14.00 Uhr </td>
+                                                        <td>Vortrag: Frühlingskräuter</br>Workshop: Kräuterjahressalz</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10. Mai: 18.30 - 20.00 Uhr</br>12. Mai: 18.00 Uhr </td>
+                                                        <td>Vortrag: Vorzüge vom Ruprechtskraut, Girsch u.a.</br>Workshop: Girschpesto</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>31. Mai: 18.30 - 20.00 Uhr </br>2. Juni: 16.00 Uhr </td>
+                                                        <td>Vortrag: Vorzüge vom Johanniskraut, Zitronenmelisse u.a.</br>Workshop: Rotöl, Zeckengel</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5. Juli: 18.30 - 20.00 Uhr</br>9. Juli: 14.00 Uhr</td>
+                                                        <td>Vortrag: Vorzüge von Schafgarbe, Spitzwegerich u.a. </br>Workshop: Wie stelle ich eine Tinktur her?</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2. August: 18.30 - 20.00 Uhr</br>6. August: 10.00 Uhr</td>
+                                                        <td>Vortrag: Vorzüge von Goldrute, Braunelle u.a</br>Workshop: Ringelblumensalbe, Kräutersuppe</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p class="py-6 text-2xl">Kosten: Vortrag 10 €, Workshop 20 € zuzüglich Materialkosten</br> Den Treffpunkt erfahren Sie bei Anmeldung.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Waldbaden-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section8">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="src/img-waldbaden.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">Waldbaden</h1>
+                            <p class="py-6 text-2xl">Waldbaden fürs Seelenwohl. Den Wald mit allen Sinnen erfassen. Wie riecht der Wald?, Walddüfte inhalieren für die Stärkung des Immunsystems. Wie fühlt sich der Wald an? Waldboden, Erde, Rinde, Steine, Moose, Licht, Schatten.
+                                Welche Farben gibt es im Wald? Wie klingt die Natur?, rauschen, plätschern ... Wie schmeckt die Natur? Kräuter und Früchte kennenlernen. Waldbaden - sich mit allen Sinnen einlassen, den Vagusnerv trainieren, Herz-und Atemfrequenz
+                                und den Blutdruck senken. Den Wald erleben statt Denken und die Geschwindigkeit des Tages runter drehen. 30 Minuten im Wald reduziert das Stresshormon Cortisol für einen Tag.</p>
+                            <div class="card w-96 bg-base-100 shadow-xl">
+                                <div class="card-body">
+                                    <h2 class="card-title">Informationen</h2>
+                                    <p style="color: black;">
+                                        Dauer: &emsp; &emsp;&emsp;&emsp;&nbsp; 2-3 Stunden</br>
+                                        Kosten: &emsp;&emsp;&emsp;&emsp; 18 €</br>
+                                        Termin: &emsp;&emsp;&emsp;&emsp; Frühling 2023
+                                        </br>
+                                        Teilnehmer: &emsp;&emsp;&nbsp; 3 - 6</br>
+                                        </br>
+                                        Bitte auf geeignetes Schuhwerk und wetterfeste Kleidung achten!
+                                    </p>
+                                    <div class="card-actions justify-end">
+                                        <label for="my-modal-5" class="btn modal-button">Jetzt anmelden</label>
+                                        <input type="checkbox" id="my-modal-5" class="modal-toggle">
+                                        <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
+                                            <div class="modal-box w-11/12 max-w-5xl">
+                                                <label for="my-modal-5" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
+                                                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                                    <fieldset id="fs-frm-inputs">
+                                                        <div class="form-control">
+                                                            <label class="input-group input-group-vertical" for="full-name">Name</label>
+                                                            <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
+                                                        </div>
+                                                        <div class="form-control">
+                                                            <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
+                                                            <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
+                                                        </div>
+                                                        <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
+
+                                                        <div style="display: none;" class="input-group input-group-vertical" class="form-control">
+                                                            <label for="message">Nachricht</label>
+                                                            <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich">Ich möchte mich zum Waldbaden anmelden</textarea>
+                                                        </div>
+
+                                                    </fieldset>
+                                                    <div class="modal-action">
+                                                        <button type="submit" for="my-modal-5"><label for="my-modal-5" class="btn">Anmelden</label></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!--Schreibkurse-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section5">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="src/img-schreibkurse.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">Schreibkurse</h1>
+                            <p class="py-6 text-2xl">„natürlich“ Schreiben zur Selbsthilfe bringt die eigenen Gedanken aus dem Unterbewusstsein an die Oberfläche. Hier geht es nicht (wie in der Schule) um Schönschreiben, korrekt Schreiben oder ausdrucksstark Schreiben. „natürlich“
+                                einfach mal die Seele frei schreiben. Egal ob sauber, richtig oder schön, hier geht es um Selbsterkenntnis. Oft ist der Alltag sehr schnell und hektisch und oft werden schnelle Entscheidungen und Lösungen von uns verlangt.
+                                Im Schreibkurs kann man genau diese Dinge trainieren. Durch Schreiben in einer ruhigen Atmosphäre wird einem bewußt was man denkt, wie man denkt und man kann sich auch auf bestimmte Situationen vorbereiten. Probieren Sie
+                                es gern aus. Neuer Kurs: „Meine tägliche Morgenroutine“ ab sofort buchbar.
+                                </br>Neuer Kurs: „Meine tägliche Morgenroutine“ ab sofort buchbar.
+                            </p>
+                            <!--Anfang Popout-->
+                            <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection5_p">
+                                <div class="flex flex-col w-full lg:flex-row">
+                                    <div class="grid flex-grow">
+                                        <div class="card w-200 bg-base-100 shadow-xl">
+                                            <div class="card-body">
+
+                                                <p style="color: black;">
+                                                    Im Kurs lernen Sie verschiedene Optionen Ihre Themen zu bearbeiten. Danach werden Sie in der Lage sein, Ihre Probleme, Denkknoten, Ängste oder Sorgen schreibend zu bearbeiten. Der Mehrwert für Sie liegt ganz klar in der Bewusstwerdung wie man selbst denkt,
+                                                    über andere denkt oder wie Ihr Unterbewusstsein denkt. Erst über die Bewusstwerdung kann man anders reagieren und auch agieren. In der Kleingruppe wird es immer wieder Austauschmöglichkeiten geben, wenn
+                                                    es gewünscht wird. </br>
+                                                    <strong> Alles bleibt in der Gruppe !!! </strong></p>
+                                                <div class="card-actions justify-end">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divider divider-horizontal" style="margin-bottom: 16px; margin-top: 16px;"></div>
+                                    <div class="grid flex-grow">
+                                        <div style="height: 300px; margin-bottom: 20px;" class="card w-96 bg-base-100 shadow-xl image-full" id="schreibkurs-card">
+                                            <figure><img src="src/img-schreibkurs-buchen.jpg" alt="Shoes" /></figure>
+                                            <div class="card-body">
+                                                <h2 class="card-title">Schreibkurs:</h2>
+                                                <p>Meine neue Morgenroutine Abendkurs</p>
+                                                <p> Dauer: &emsp;&emsp;&emsp;&nbsp;Abendkurs a 2 Stunden</br>
+                                                    Kosten:&emsp;&emsp;&emsp; 30 €</br>
+                                                    Termin:&emsp;&emsp;&emsp; Dienstag den 26.01.23</br>
+                                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;oder 16.02.23</br>
+                                                    Uhrzeit:&emsp;&emsp;&emsp;18:30 Uhr </br>
+                                                    Teilnehmer:&emsp;&nbsp; maximal 6 </br>
+                                                </p>
+                                                <div class="card-actions justify-end">
+                                                    <label for="my-modal-5" class="btn modal-button">Jetzt anmelden</label>
+                                                    <input type="checkbox" id="my-modal-5" class="modal-toggle">
+                                                    <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
+                                                        <div class="modal-box w-11/12 max-w-5xl">
+                                                            <label for="my-modal-5" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                            <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
+                                                            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                                                <fieldset id="fs-frm-inputs">
+                                                                    <div class="form-control">
+                                                                        <label class="input-group input-group-vertical" for="full-name">Name</label>
+                                                                        <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
+                                                                    </div>
+                                                                    <div class="form-control">
+                                                                        <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
+                                                                        <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
+                                                                    </div>
+                                                                    <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
+
+                                                                    <div style="display: none;" class="input-group input-group-vertical" class="form-control">
+                                                                        <label for="message">Nachricht</label>
+                                                                        <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich">Ich möchte mich zum Schreibkurs anmelden</textarea>
+                                                                    </div>
+
+                                                                </fieldset>
+                                                                <div class="modal-action">
+                                                                    <button type="submit" for="my-modal-5"><label for="my-modal-5" class="btn">Anmelden</label></button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Ende Popout-->
+                            <div class="indicator">
+                                <span class="indicator-item badge badge-primary">neu</span>
+                                <button class="btn" id="moresection5" onclick="section_five_more() "> Mehr</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Fußreflexkurs-->
+            <section>
+                <div class="hero bg-transparent product-container" id="section9">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="src/img-fussreflexkurs.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-5xl font-bold">Fußreflexkurs</h1>
+                            <p class="py-6 text-2xl">In diesem Kurs lernt Du, wie Du die Fußreflexmassage zur Selbsthilfe einsetzen kannst. Du lernst die wichtigsten Punkte für die Selbstbehandlung, spezielle Punkte für bestimmte Indikationen, wie Verdauungsbeschwerden, Kopfschmerzen,
+                                Menstruationsschmerzen, Rückenprobleme und andere Beschwerden. Natürlich steht auch die Entspannung im Fokus, denn auch bei Stress, hilft diese Methode wunderbar zum Entspannen und Abschalten.</p>
+                            <div class="card w-96 bg-base-100 shadow-xl">
+                                <div class="card-body">
+                                    <h2 class="card-title">Informationen</h2>
+                                    <p style="color: black;">
+                                        Dauer: &emsp; &emsp;&emsp;&emsp;&nbsp; 2-3 Stunden</br>
+                                        Kosten: &emsp;&emsp;&emsp;&emsp; 39 €</br>
+                                        Termin: &emsp;&emsp;&emsp;&emsp; 25.02.2023 13:00 Uhr
+                                        </br>
+                                        Teilnehmer: &emsp;&emsp;&nbsp; 3 - 6</br>
+                                        </br>
+                                        Bitte großes und kleines Handtuch mitbringen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <footer class="footer p-10 bg-base-100 text-base-content">
+                <div>
+                    <img class="flex-1 px-2 mx-2" src="src\logo-nobackground-1000.png" alt="logo">
+                    <p>natürlich Himstedt<br>Immer für sie da!</p>
+                </div>
+                <div>
+                    <span class="footer-title">Dienste</span>
+                    <a class="link link-hover" href="#section1">Beratung</a>
+                    <a class="link link-hover" href="#section2">Wellnessmassagen</a>
+                    <a class="link link-hover" href="#section3">Kräuterkurse</a>
+                    <a class="link link-hover" href="#section4">Frauenkreise</a>
+                    <a class="link link-hover" href="#section5">Schreibkurse</a>
+                    <a class="link link-hover" href="#section6">Aromaöle</a>
+                    <a class="link link-hover" href="onlinekurs.html">Onlinekurs</a>
+                </div>
+                <div>
+                    <span class="footer-title">Unternehmen</span>
+                    <a class="link link-hover" href="/index.html">Über mich</a>
+                    <a class="link link-hover" href="#section7">Kontakt</a>
+                </div>
+                <div>
+                    <span class="footer-title">Rechtlich</span>
+                    <a class="link link-hover" href="impressum.html">Impressum</a>
+                </div>
+            </footer>
+        </div>
+
+
+
+        <div class="drawer-side">
+            <label for="my-drawer-3" class="drawer-overlay"></label>
+            <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
+                <p class="py-10 text-xl" style="color: black;">Worüber möchten Sie mehr erfahren?</p>
+
+                <li class="menu-title">
+                    <span>Massagen</span>
+                </li>
+                <li><button onClick="document.getElementById('section2').scrollIntoView();"><label for="my-drawer-3">Wellnessmassagen</label></button></li>
+                <li class="menu-title">
+                    <span>Heilpraktiker</span>
+                </li>
+                <li><button onClick="document.getElementById('section1').scrollIntoView();"><label for="my-drawer-3">Beratung</label></button></li>
+                <li>
+
+                    <div class="dropdown">
+
+                        <label tabindex="0">Therapien</label>
+                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><button onClick="document.getElementById('section13').scrollIntoView();"><label for="my-drawer-3">Schröpfen</label> </button></li>
+                            <li><button onClick="document.getElementById('section14').scrollIntoView();"><label for="my-drawer-3">Spagyrik</label> </button></li>
+                            <li><button onClick="document.getElementById('section16').scrollIntoView();"><label for="my-drawer-3">Akupunktur</label> </button></li>
+                            <li><button onClick="document.getElementById('section15').scrollIntoView();"><label for="my-drawer-3">manuelle Therapien</label> </button></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+
+                        <label tabindex="0">Diagnostik</label>
+                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><button onClick="document.getElementById('section10').scrollIntoView();"><label for="my-drawer-3">Urindiagnostik</label></button></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-title">
+                    <span>Live Kurse</span>
+                </li>
+                <li><button onClick="document.getElementById('section3').scrollIntoView();"><label for="my-drawer-3">Kräuterkurse</label></button></li>
+                <li><button onClick="document.getElementById('section8').scrollIntoView();"><label for="my-drawer-3">Waldbaden</label></button></li>
+                <li><button onClick="document.getElementById('section5').scrollIntoView();"><label for="my-drawer-3">Schreibkurs</label></button></li>
+                <li><button onClick="document.getElementById('section9').scrollIntoView();"><label for="my-drawer-3">Fußreflexkurs</label></button></li>
+
+                <li class="menu-title">
+                    <span>Online Kurse</span>
+                </li>
+                <li><a href="onlinekurs.html">5 Tage Kurs</a></li>
+                <li><a href="onlinekurs_lang.html">4 Wochen Kurs</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
