@@ -102,24 +102,37 @@
 
                         <li>
                             <a href="liveKurs.html">
-                              Live Kurse
-                              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                                <div class="indicator">
+                                    <span class="indicator-item indicator-start indicator-top  badge badge-primary">neu</span> Live Kurse
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                                </div>
                             </a>
                             <ul class="p-2 bg-base-100">
                                 <li><a href="liveKurs.html#kraeuterkurs">Kräuterkurse</a></li>
+                                <div class="indicator">
+                                    <span class="indicator-item indicator-start indicator-top  badge badge-primary">neu</span>
+                                </div>
                                 <li><a href="liveKurs.html#waldbaden">Waldbaden</a></li>
                                 <li><a href="liveKurs.html#schreibkurs">Schreibkurs</a></li>
-                                <li><a href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a></li>
+                                <div class="indicator">
+                                    <span class="indicator-item indicator-start indicator-top  badge badge-primary">neu</span>
+                                    <li><a href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a></li>
+                                </div>
                             </ul>
                         </li>
                         <li>
                             <a href="onlineKurs.html">
-                              Online Kurse
-                              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                                <div class="indicator">
+                                    <span class="indicator-item indicator-start indicator-top  badge badge-primary">neu</span> Online Kurse
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                                </div>
                             </a>
                             <ul class="p-2 bg-base-100">
                                 <li><a href="onlinekurs.html#5tagekurs">5 Tage Kurs</a></li>
-                                <li><a href="onlinekurs.html#schreibkurs">Schreibkurs</a></li>
+                                <div class="indicator">
+                                    <span class="indicator-item indicator-start indicator-top  badge badge-primary">neu</span>
+                                    <li><a href="onlinekurs.html#schreibkurs">Schreibkurs</a></li>
+                                </div>
                             </ul>
                         </li>
 
@@ -144,7 +157,7 @@
                             <p class="py-6 text-2xl" style="color: white;">steht für Natürlichkeit, Einfachheit, Unabhängigkeit, Zuverlässigkeit, Kreativität und Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener und glücklicher. Lernen Sie sich selbst wieder mehr zu
                                 schätzen. Oft liegt das Glück in den einfachen Dingen. Lassen Sie sich inspirieren, verwöhnen oder lernen Sie neue Seiten von sich selbst und der Natur kennen</p>
                             <div class="card-actions justify-end">
-                                <a href="#section2 "><button class="btn ">Erfahren Sie Mehr</button></a>
+                                <a href="#info "><button class="btn ">Erfahren Sie Mehr</button></a>
 
                                 <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e"><button class="btn btn-primary">Termine Buchen</button></a>
 
@@ -216,7 +229,7 @@ Deine Beate
 
 -->
             <section>
-                <div class="hero">
+                <div class="hero" id="info">
                     <div class="hero-content text-left flex-col lg:flex-row  md:flex-row">
                         <figure class="px-10 pt-10">
                             <img style="height: 70%;" src="./src/home_image.png" alt="home image" class="rounded-xl" />
@@ -235,10 +248,10 @@ Deine Beate
                                 <p class="py-6 text-2xl">Schau Dich gern auf meiner Homepage um, lass Dich inspirieren oder komm in Aktion. Was gibt es schöneres, als sich um sich zu kümmern, sei es gesundheitlich, geistig, seelisch oder inspirativ? </p>
 
                                 <div class="btn-group text-center btn-group-vertical md:btn-group-horizontal lg:btn-group-horizontal justify-end">
-                                    <button class="btn btn-active">Massagen</button>
-                                    <button class="btn">Heilpraktiker</button>
-                                    <button class="btn">Live Kurse</button>
-                                    <button class="btn">Online Kurse</button>
+                                    <a href="wellnessmassagen.html"> <button class="btn btn-active">Massagen</button></a>
+                                    <a href="heilpraktiker.html"><button class="btn">Heilpraktiker</button></a>
+                                    <a href="liveKurs.html"><button class="btn">Live Kurse</button></a>
+                                    <a href="onlinekurs.html"><button class="btn">Online Kurse</button></a>
                                 </div>
                             </div>
                         </div>
@@ -475,19 +488,37 @@ Deine Beate
                     <p>natürlich Himstedt<br>Immer für sie da!</p>
                 </div>
                 <div>
-                    <span class="footer-title">Dienste</span>
-                    <a class="link link-hover" href="#section1">Beratung</a>
-                    <a class="link link-hover" href="#section2">Wellnessmassagen</a>
-                    <a class="link link-hover" href="#section3">Kräuterkurse</a>
-                    <a class="link link-hover" href="#section4">Frauenkreise</a>
-                    <a class="link link-hover" href="#section5">Schreibkurse</a>
-                    <a class="link link-hover" href="#section6">Aromaöle</a>
-                    <a class="link link-hover" href="onlinekurs.html">Onlinekurs</a>
+                    <span class="footer-title">Heilpraktiker</span>
+                    <a class="link link-hover" href="heilpraktiker.html#beratung">Beratung</a>
+                    <a class="link link-hover" href="heilpraktiker.html#schröpfen">Schröpfen</a>
+                    <a class="link link-hover" href="heilpraktiker.html#spagyrik">Spagyrik</a>
+                    <a class="link link-hover" href="heilpraktiker.html#akupunktur">Akupunktur</a>
+                    <a class="link link-hover" href="heilpraktiker.html#manuelleTherapien">manuelle Therapien</a>
+                    <a class="link link-hover" href="heilpraktiker.html#urindiagnostik">Diagnostik</a>
+                </div>
+                <div>
+                    <span class="footer-title">Wellnessmassagen</span>
+                    <a class="link link-hover" href="wellnessmassagen.html#wellnessmassagen">Wellnessmassagen</a>
+                    <a class="link link-hover" href="wellnessmassagen.html#aromaoele">Aromaöle</a>
+
+                </div>
+                <div>
+                    <span class="footer-title">Live Kurse</span>
+                    <a class="link link-hover" href="liveKurs.html#kraeuterkurs">Kräuterkurs</a>
+                    <a class="link link-hover" href="liveKurs.html#waldbaden">Waldbaden</a>
+                    <a class="link link-hover" href="liveKurs.html#schreibkurs">Schreibkurs</a>
+                    <a class="link link-hover" href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a>
+                </div>
+                <div>
+                    <span class="footer-title">Online Kurse</span>
+                    <a class="link link-hover" href="onlinekurs.html#5tagekurs">5 Tage Kurs</a>
+                    <a class="link link-hover" href="onlinekurs.html#schreibkurs">Schreibkurs</a>
+
                 </div>
                 <div>
                     <span class="footer-title">Unternehmen</span>
-                    <a class="link link-hover" href="/index.html">Über mich</a>
-                    <a class="link link-hover" href="#section7">Kontakt</a>
+                    <a class="link link-hover" href="index.html">Über mich</a>
+                    <a class="link link-hover" href="index.html#kontakt">Kontakt</a>
                 </div>
                 <div>
                     <span class="footer-title">Rechtlich</span>
@@ -500,64 +531,86 @@ Deine Beate
             <label for="my-drawer-3" class="drawer-overlay"></label>
             <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
                 <p class="py-10 text-xl" style="color: black;">Worüber möchten Sie mehr erfahren?</p>
-
                 <li class="menu-title">
                     <span>Massagen</span>
                 </li>
-                <li><button onClick="document.getElementById('section2').scrollIntoView();"><label for="my-drawer-3">Wellnessmassagen</label></button></li>
+                <li>
+                    <a href="wellnessmassagen.html#wellnessmassagen">
+                        Wellnessmassagen
+                    </a>
+                </li>
+
                 <li class="menu-title">
                     <span>Heilpraktiker</span>
                 </li>
-                <li><button onClick="document.getElementById('section1').scrollIntoView();"><label for="my-drawer-3">Beratung</label></button></li>
+
                 <li>
+                    <a href="heilpraktiker.html#beratung">
+                    Beratung
 
+                </a>
+                </li>
+                <li>
                     <div class="dropdown">
-
                         <label tabindex="0">Therapien</label>
                         <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><button onClick="document.getElementById('section13').scrollIntoView();"><label for="my-drawer-3">Schröpfen</label> </button></li>
-                            <li><button onClick="document.getElementById('section14').scrollIntoView();"><label for="my-drawer-3">Spagyrik</label> </button></li>
-                            <li><button onClick="document.getElementById('section16').scrollIntoView();"><label for="my-drawer-3">Akupunktur</label> </button></li>
-                            <li><button onClick="document.getElementById('section15').scrollIntoView();"><label for="my-drawer-3">manuelle Therapien</label> </button></li>
+                            <li><a href="heilpraktiker.html#schröpfen">Schröpfen</a></li>
+                            <li><a href="heilpraktiker.html#spagyrik">Spagyrik</a></li>
+                            <li><a href="heilpraktiker.html#akupunktur">Akupunktur</a></li>
+                            <li> <a href="heilpraktiker.html#manuelleTherapien">manuelle Therapien</a></li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <div class="dropdown">
-
-                        <label tabindex="0">Diagnostik</label>
-                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><button onClick="document.getElementById('section10').scrollIntoView();"><label for="my-drawer-3">Urindiagnostik</label></button></li>
-                            <!--
-                                <li><button onClick="document.getElementById('section11').scrollIntoView();"><label for="my-drawer-3">Hormondiagnostik</label></button></li>
-                                <li><button onClick="document.getElementById('section12').scrollIntoView();"><label for="my-drawer-3">Darmcheck</label></button></li>
-                                -->
-                        </ul>
-                    </div>
+                    <a href="heilpraktiker.html#urindiagnostik">
+                        Diagnostik
+                    </a>
                 </li>
                 <li class="menu-title">
                     <span>Live Kurse</span>
                 </li>
-                <li><button onClick="document.getElementById('section3').scrollIntoView();"><label for="my-drawer-3">Kräuterkurse</label></button></li>
-                <li><button onClick="document.getElementById('section8').scrollIntoView();"><label for="my-drawer-3">Waldbaden</label></button></li>
-                <li><button onClick="document.getElementById('section5').scrollIntoView();"><label for="my-drawer-3">Schreibkurs</label></button></li>
-                <li><button onClick="document.getElementById('section9').scrollIntoView();"><label for="my-drawer-3">Fußreflexkurs</label></button></li>
+
+                <li>
+                    <a href="liveKurs.html#kraeuterkurs">
+                        Kräuterkurse  
+                         </a>
+                </li>
+                <li>
+                    <a href="liveKurs.html#waldbaden">
+                    Waldbaden
+                </a>
+                </li>
+                <li>
+                    <a href="liveKurs.html#schreibkurs">
+                    Schreibkurs
+                </a>
+                </li>
+
+                <li>
+                    <a href="liveKurs.html#fussreflexkurs">
+                    Fußreflexkurs
+
+                </a>
+                </li>
 
                 <li class="menu-title">
                     <span>Online Kurse</span>
                 </li>
-                <li><a href="onlinekurs.html">5 Tage Kurs</a></li>
-                <li><a href="onlinekurs_lang.html">4 Wochen Kurs</a></li>
+                <li>
+                    <a href="onlinekurs.html#5tagekurs">
+                        5 Tage Kurs
 
-                <!--
-                        <li><button onClick="document.getElementById('section4').scrollIntoView();"><label for="my-drawer-3">Frauenkreis</label></button></li>
-                    <li><a>Schreibkurse</a></li>
-                    <li><a>Frauenkreise</a></li>
-                    -->
+                    </a>
+                </li>
+                <li>
+                    <a href="onlinekurs.html#schreibkurs">
+                        Schreibkurs
+                    </a>
+                </li>
 
             </ul>
         </div>
-
+    </div>
 </body>
 
 </html>
