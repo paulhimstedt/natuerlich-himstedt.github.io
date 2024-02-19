@@ -116,22 +116,17 @@
                         </li>
                         <li>
                             <a href="onlinekurs.html">
-                                <div class="indicator">
-                                    <span class="indicator-item indicator-start indicator-top  badge badge-primary">neu</span> Online Kurse
-                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                                </div>
+                                Online Kurse
+                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>  
                             </a>
                             <ul class="p-2 bg-base-100">
                                 <li><a href="onlinekurs.html#5tagekurs">5 Tage Kurs</a></li>
-                                <div class="indicator">
-                                    <span class="indicator-item indicator-start indicator-top  badge badge-primary">neu</span>
-                                    <li><a href="onlinekurs.html#schreibkurs">Schreibkurs</a></li>
-                                </div>
+                                <li><a href="onlinekurs.html#schreibkurs">Schreibkurs</a></li>
                             </ul>
                         </li>
 
 
-                        <li><a href="#kontakt">Kontakt</a></li>
+                        <li><a href="index.html#kontakt">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -157,11 +152,12 @@
                                     <div class="card-body">
                                         <h2 class="card-title">Informationen</h2>
                                         <p style="color: black;">
-                                            Termin: &emsp;&emsp;&emsp;&emsp; Freitag, 14.7.23</br>
-                                            Uhrzeit: &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp; 14.00 - 18.00 Uhr</br>
-                                            Dauer: &emsp; &emsp;&emsp;&emsp;&nbsp; 4 Stunden</br>
+                                            Termin: &emsp;&emsp;&emsp;&emsp; Freitag, 15.3. 14.00 Uhr</br>
+                                            &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Samstag, 16.3. 10.00 Uhr</br>
+                                            &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Freitag, 29.3. 14.00 Uhr</br>
+                                            Dauer: &emsp; &emsp;&emsp;&emsp; 4 Stunden</br>
                                             Kosten: &emsp;&emsp;&emsp;&emsp; 39 € incl. Material/Skript</br>
-                                            Teilnehmer: &emsp;&emsp;&nbsp; 3 - 8</br>
+                                            Teilnehmer: &emsp;&emsp; 3 - 8</br>
                                             </br>
                                             Bitte kleine Gläschen, Messer und Brettchen mitbringen.
                                         </p>
@@ -173,6 +169,7 @@
                                                     <label for="my-modal-5" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
                                                     <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
                                                     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                                        <input type="hidden" name="_subject" id="email-subject" value="Anmeldung Kräuterkurs">
                                                         <fieldset id="fs-frm-inputs">
                                                             <div class="form-control">
                                                                 <label class="input-group input-group-vertical" for="full-name">Name</label>
@@ -182,12 +179,24 @@
                                                                 <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
                                                                 <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
                                                             </div>
+                                                            <div class="form-control">
+                                                                <label for="datum">Datum</label>
+                                                                <select name="datum" id="datum" required="">
+                                                                    <option value="" selected="" disabled="">Datum auswählen</option>
+                                                                    <option value="Freitag, 15.3. 14.00 Uhr">Freitag, 15.3. 14.00 Uhr</option>
+                                                                    <option value="Samstag, 16.3. 10.00 Uhr">Samstag, 16.3. 10.00 Uhr</option>
+                                                                    <option value="Freitag, 29.3. 14.00 Uhr">Freitag, 29.3. 14.00 Uhr</option>
+                                                                </select>
+
+                                                            </div>
                                                             <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
 
                                                             <div style="display: none;" class="input-group input-group-vertical" class="form-control">
                                                                 <label for="message">Nachricht</label>
                                                                 <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich">Ich möchte mich zum Kräuterkurs anmelden</textarea>
                                                             </div>
+
+
 
                                                         </fieldset>
                                                         <div class="modal-action">
@@ -228,23 +237,25 @@
                                 <div class="card-body">
                                     <h2 class="card-title">Informationen</h2>
                                     <p style="color: black;">
-                                        Dauer: &emsp; &emsp;&emsp;&emsp;&nbsp; 2-3 Stunden</br>
-                                        Kosten: &emsp;&emsp;&emsp;&emsp; 18 €</br>
-                                        Termin: &emsp;&emsp;&emsp;&emsp; 5.7.23 </br>
-                                        Uhrzeit: &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp; 17:00 Uhr</br>
+                                        Termin: &emsp;&emsp;&emsp;&emsp; Samstag, 6.4. 9.00 Uhr </br>
+                                        &nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp; Samstag, 6.4. 16.00 Uhr </br>
+                                        Dauer: &emsp; &emsp;&emsp;&emsp; 2-3 Stunden</br>
+                                        Kosten: &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; 18 €</br>
 
-                                        Teilnehmer: &emsp;&emsp;&nbsp; 3 - 6</br>
+
+                                        Teilnehmer: &emsp;&emsp; 3 - 6</br>
                                         </br>
                                         Bitte auf geeignetes Schuhwerk und wetterfeste Kleidung achten!
                                     </p>
                                     <div class="card-actions justify-end">
-                                        <label for="my-modal-5" class="btn modal-button">Jetzt anmelden</label>
-                                        <input type="checkbox" id="my-modal-5" class="modal-toggle">
+                                        <label for="my-modal-6" class="btn modal-button">Jetzt anmelden</label>
+                                        <input type="checkbox" id="my-modal-6" class="modal-toggle">
                                         <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
                                             <div class="modal-box w-11/12 max-w-5xl">
-                                                <label for="my-modal-5" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
                                                 <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
                                                 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                                    <input type="hidden" name="_subject" id="email-subject" value="Anmeldung Waldbaden">
                                                     <fieldset id="fs-frm-inputs">
                                                         <div class="form-control">
                                                             <label class="input-group input-group-vertical" for="full-name">Name</label>
@@ -254,16 +265,24 @@
                                                             <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
                                                             <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
                                                         </div>
+
+                                                        <label for="datum_w">Datum</label>
+                                                        <select name="datum_w" id="datum_w" required="">
+                                                                <option value="" selected="" disabled="">Datum auswählen</option>
+                                                                <option value="Samstag, 6.4. 9.00 Uhr">Samstag, 6.4. 9.00 Uhr</option>
+                                                                <option value="Samstag, 6.4. 9.00 Uhr">Samstag, 6.4. 16.00 Uhr</option>
+                                                            </select>
+
+
                                                         <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
 
                                                         <div style="display: none;" class="input-group input-group-vertical" class="form-control">
                                                             <label for="message">Nachricht</label>
                                                             <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich">Ich möchte mich zum Waldbaden anmelden</textarea>
                                                         </div>
-
                                                     </fieldset>
                                                     <div class="modal-action">
-                                                        <button type="submit" for="my-modal-5"><label for="my-modal-5" class="btn">Anmelden</label></button>
+                                                        <button type="submit" for="my-modal-6"><label for="my-modal-6" class="btn">Anmelden</label></button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -316,6 +335,7 @@
                                             <div class="card-body">
                                                 <h2 class="card-title">Schreibkurs:</h2>
                                                 <p>Meine neue Morgenroutine Abendkurs</p>
+                                                <!--
                                                 <p> Dauer: &emsp;&emsp;&emsp;&nbsp;Abendkurs a 2 Stunden</br>
                                                     Kosten:&emsp;&emsp;&emsp; 30 €</br>
                                                     Termin:&emsp;&emsp;&emsp; Dienstag den 18.04.23</br>
@@ -323,14 +343,26 @@
                                                     Uhrzeit:&emsp;&emsp;&emsp;18:30 Uhr </br>
                                                     Teilnehmer:&emsp;&nbsp; maximal 6 </br>
                                                 </p>
+                                                -->
+                                                <p> Termin:&emsp;&emsp;&emsp; Dienstag, 5.3. 18:30 Uhr</br>
+                                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Dienstag, 12.3. 18:30 Uhr</br>
+                                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Dienstag, 2.4. 18:30 Uhr</br>
+
+                                                    Dauer: &emsp;&emsp;&emsp;&nbsp;Abendkurs a 2 Stunden</br>
+                                                    Kosten:&emsp;&emsp;&emsp; 30 €</br>
+
+
+                                                    Teilnehmer:&emsp;&nbsp; maximal 6 </br>
+                                                </p>
                                                 <div class="card-actions justify-end">
-                                                    <label for="my-modal-5" class="btn modal-button">Jetzt anmelden</label>
-                                                    <input type="checkbox" id="my-modal-5" class="modal-toggle">
+                                                    <label for="my-modal-7" class="btn modal-button">Jetzt anmelden</label>
+                                                    <input type="checkbox" id="my-modal-7" class="modal-toggle">
                                                     <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
                                                         <div class="modal-box w-11/12 max-w-5xl">
-                                                            <label for="my-modal-5" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                            <label for="my-modal-7" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
                                                             <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
                                                             <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                                                <input type="hidden" name="_subject" id="email-subject" value="Anmeldung Schreibkurs">
                                                                 <fieldset id="fs-frm-inputs">
                                                                     <div class="form-control">
                                                                         <label class="input-group input-group-vertical" for="full-name">Name</label>
@@ -340,6 +372,13 @@
                                                                         <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
                                                                         <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
                                                                     </div>
+                                                                    <label for="datum_s">Datum</label>
+                                                                    <select name="datum_s" id="datum_s" required="">
+                                                                            <option value="" selected="" disabled="">Datum auswählen</option>
+                                                                            <option value="Dienstag, 5.3. 18:30 Uhr">Dienstag, 5.3. 18:30 Uhr</option>
+                                                                            <option value="Dienstag, 12.3. 18:30 Uhr">Dienstag, 12.3. 18:30 Uhr</option>
+                                                                            <option value="Dienstag, 2.4. 18:30 Uhr">Dienstag, 2.4. 18:30 Uhr</option>
+                                                                        </select>
                                                                     <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
 
                                                                     <div style="display: none;" class="input-group input-group-vertical" class="form-control">
@@ -349,7 +388,7 @@
 
                                                                 </fieldset>
                                                                 <div class="modal-action">
-                                                                    <button type="submit" for="my-modal-5"><label for="my-modal-5" class="btn">Anmelden</label></button>
+                                                                    <button type="submit" for="my-modal-7"><label for="my-modal-7" class="btn">Anmelden</label></button>
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -384,6 +423,7 @@
                             <div class="card w-96 bg-base-100 shadow-xl">
                                 <div class="card-body">
                                     <h2 class="card-title">Informationen</h2>
+                                    <!--
                                     <p style="color: black;">
                                         Dauer: &emsp; &emsp;&emsp;&emsp;&nbsp; 2-3 Stunden</br>
                                         Kosten: &emsp;&emsp;&emsp;&emsp; 39 €</br>
@@ -394,6 +434,62 @@
                                         </br>
                                         Bitte großes und kleines Handtuch mitbringen.
                                     </p>
+                                    -->
+                                    <p style="color: black;">
+                                        Termin: &emsp;&emsp;&emsp;&emsp; Freitag, 8.3. 14.00 Uhr</br>
+                                        &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Samstag, 9.3. 9.00 Uhr</br>
+                                        &nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Mittwoch, 3.4. 15.00 Uhr</br>
+                                        Dauer: &emsp; &emsp;&emsp;&emsp; 2-3 Stunden</br>
+                                        Kosten: &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; 39 € </br>
+                                        Teilnehmer: &emsp;&emsp; 3 - 6</br>
+                                        </br>
+                                        Bitte großes und kleines Handtuch mitbringen.
+                                    </p>
+                                    <div class="card-actions justify-end">
+                                        <label for="my-modal-8" class="btn modal-button">Jetzt anmelden</label>
+                                        <input type="checkbox" id="my-modal-8" class="modal-toggle">
+                                        <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
+                                            <div class="modal-box w-11/12 max-w-5xl">
+                                                <label for="my-modal-8" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
+                                                <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
+                                                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
+                                                    <input type="hidden" name="_subject" id="email-subject" value="Anmeldung Fußreflexkurs ">
+                                                    <fieldset id="fs-frm-inputs">
+                                                        <div class="form-control">
+                                                            <label class="input-group input-group-vertical" for="full-name">Name</label>
+                                                            <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
+                                                        </div>
+                                                        <div class="form-control">
+                                                            <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
+                                                            <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
+                                                        </div>
+                                                        <div class="form-control">
+                                                            <label for="datum">Datum</label>
+                                                            <select name="datum" id="datum" required="">
+                                                                <option value="" selected="" disabled="">Datum auswählen</option>
+                                                                <option value="Freitag, 8.3. 14.00 Uhr">Freitag, 8.3. 14.00 Uhr</option>
+                                                                <option value="Samstag, 9.3. 9.00 Uhr">Samstag, 9.3. 9.00 Uhr</option>
+                                                                <option value="Mittwoch, 3.4. 15.00 Uhr">Mittwoch, 3.4. 15.00 Uhr</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme</p>
+
+                                                        <div style="display: none;" class="input-group input-group-vertical" class="form-control">
+                                                            <label for="message">Nachricht</label>
+                                                            <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich">Ich möchte mich zum Fußreflexkurs anmelden</textarea>
+                                                        </div>
+
+
+
+                                                    </fieldset>
+                                                    <div class="modal-action">
+                                                        <button type="submit" for="my-modal-8"><label for="my-modal-8" class="btn">Anmelden</label></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
