@@ -1,427 +1,437 @@
 <!DOCTYPE html>
 <html lang="de" data-theme="emerald">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heilpraktiker</title>
-  <link rel="icon" type="image/png" href="src/logo-icon.png" />
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.tailwindcss.com" defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
-  <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js" defer></script>
-  <script defer src="src/index.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heilpraktiker</title>
+    <link rel="icon" type="image/png" href="src/logo-icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js" defer></script>
+    <script defer src="src/index.js"></script>
 </head>
+
 <body>
-  <div class="drawer">
-    <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
-    <div class="drawer-content flex flex-col">
-      <!-- Navbar -->
-      <nav class="w-full navbar bg-base-100" id="sticky-nav">
-        <div class="flex-none lg:hidden">
-          <label for="my-drawer-3" class="btn btn-square btn-ghost" aria-label="Open Menu">
+    <div class="drawer">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
+        <div class="drawer-content flex flex-col">
+            <!-- Navbar -->
+            <nav class="w-full navbar bg-base-100" id="sticky-nav">
+                <div class="flex-none lg:hidden">
+                    <label for="my-drawer-3" class="btn btn-square btn-ghost" aria-label="Open Menu">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current" aria-hidden="true" role="img" title="Menu">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </label>
-        </div>
-        <div class="flex-1 px-2 mx-2">
-          <a href="/index.html">
-            <img src="src/logo-nobackground-1000.png" alt="natürlich Himstedt Logo" class="h-10">
-          </a>
-        </div>
-        <div class="flex-none hidden lg:block" id="menu-container">
-          <ul class="menu menu-horizontal p-0">
-            <li>
-              <a href="wellnessmassagen.html">
+                </div>
+                <div class="flex-1 px-2 mx-2">
+                    <a href="/index.html">
+                        <img src="src/logo-nobackground-1000.png" alt="natürlich Himstedt Logo" class="h-10">
+                    </a>
+                </div>
+                <div class="flex-none hidden lg:block" id="menu-container">
+                    <ul class="menu menu-horizontal p-0">
+                        <li>
+                            <a href="wellnessmassagen.html">
                 Wellnessmassagen
                 <svg class="fill-current ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" title="Dropdown Arrow">
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                 </svg>
               </a>
-              <ul class="p-2 bg-base-100">
-                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s9e7a53b0f3c940998a9a3cd3ec39aee41fbf6604?source=settings">Entspannungsmassage</a></li>
-                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s6cec911d8b67709c031a1d633d409c5d7f838609?source=settings">Fußmassage</a></li>
-                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s83c5153f3c1202fb4f281b9521177af337f81181?source=settings">Hot Stone Massage</a></li>
-                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s84bd1aa443380f8931d728065b0c69997e6defe4?source=settings">Aromaölmassage</a></li>
-                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/sc34c1f2c2310feeb026a73792142dd60fbf737c6?source=settings">Kräuterstempelmassage</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="heilpraktiker.html">
+                            <ul class="p-2 bg-base-100">
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s9e7a53b0f3c940998a9a3cd3ec39aee41fbf6604?source=settings">Entspannungsmassage</a></li>
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s6cec911d8b67709c031a1d633d409c5d7f838609?source=settings">Fußmassage</a></li>
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s83c5153f3c1202fb4f281b9521177af337f81181?source=settings">Hot Stone Massage</a></li>
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s84bd1aa443380f8931d728065b0c69997e6defe4?source=settings">Aromaölmassage</a></li>
+                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/sc34c1f2c2310feeb026a73792142dd60fbf737c6?source=settings">Kräuterstempelmassage</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="heilpraktiker.html">
                 Heilpraktiker
                 <svg class="fill-current ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" title="Dropdown Arrow">
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                 </svg>
               </a>
-              <ul class="p-2 bg-base-100">
-                <li><a href="heilpraktiker.html#beratung">Beratung</a></li>
-                <li>
-                  <div class="dropdown dropdown-hover dropdown-left">
-                    <a href="#" class="flex items-center">
+                            <ul class="p-2 bg-base-100">
+                                <li><a href="heilpraktiker.html#beratung">Beratung</a></li>
+                                <li>
+                                    <div class="dropdown dropdown-hover dropdown-left">
+                                        <a href="#" class="flex items-center">
                       Therapie
                       <svg class="fill-current ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" title="Dropdown Arrow">
                         <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                       </svg>
                     </a>
-                    <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a href="/heilpraktiker.html#schröpfen">Schröpfen</a></li>
-                      <li><a href="/heilpraktiker.html#spagyrik">Spagyrik</a></li>
-                      <li><a href="/heilpraktiker.html#akupunktur">Akupunktur</a></li>
-                      <li>
-                        <div class="dropdown dropdown-left">
-                          <a href="heilpraktiker.html#manuelleTherapien" class="flex items-center">
+                                        <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a href="/heilpraktiker.html#schröpfen">Schröpfen</a></li>
+                                            <li><a href="/heilpraktiker.html#spagyrik">Spagyrik</a></li>
+                                            <li><a href="/heilpraktiker.html#akupunktur">Akupunktur</a></li>
+                                            <li>
+                                                <div class="dropdown dropdown-left">
+                                                    <a href="heilpraktiker.html#manuelleTherapien" class="flex items-center">
                             Manuelle Therapie
                             <svg class="fill-current ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" title="Dropdown Arrow">
                               <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                             </svg>
                           </a>
-                          <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav0()">Entgiftungsmassage</a></li>
-                            <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav1()">Dorn Breuss Therapie</a></li>
-                            <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav2()">Lymphdrainage</a></li>
-                            <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav3()">Bindegewebsmassage</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown dropdown-hover dropdown-left">
-                    <a href="#" class="flex items-center">
+                                                    <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                                        <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav0()">Entgiftungsmassage</a></li>
+                                                        <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav1()">Dorn Breuss Therapie</a></li>
+                                                        <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav2()">Lymphdrainage</a></li>
+                                                        <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav3()">Bindegewebsmassage</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown dropdown-hover dropdown-left">
+                                        <a href="#" class="flex items-center">
                       Diagnostik
                       <svg class="fill-current ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" title="Dropdown Arrow">
                         <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                       </svg>
                     </a>
-                    <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a href="heilpraktiker.html#urindiagnostik">Urindiagnostik</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="liveKurs.html">
-                <div class="indicator">
-                  <span class="indicator-item badge badge-primary">neu</span>
-                  Live Kurse
-                  <svg class="fill-current ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" title="Dropdown Arrow">
+                                        <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                            <li><a href="heilpraktiker.html#urindiagnostik">Urindiagnostik</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="liveKurs.html">
+                                <div class="indicator">
+                                    <span class="indicator-item badge badge-primary">neu</span> Live Kurse
+                                    <svg class="fill-current ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" title="Dropdown Arrow">
                     <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                   </svg>
-                </div>
-              </a>
-              <ul class="p-2 bg-base-100">
-                <li><a href="liveKurs.html#kraeuterkurs">Kräuterkurse</a></li>
-                <li><a href="liveKurs.html#waldbaden">Waldbaden</a></li>
-                <li><a href="liveKurs.html#schreibkurs">Schreibkurs</a></li>
-                <li><a href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="onlinekurs.html">
-                Online Kurse
+                                </div>
+                            </a>
+                            <ul class="p-2 bg-base-100">
+                                <li><a href="liveKurs.html#kraeuterkurs">Kräuterkurse</a></li>
+                                <li><a href="liveKurs.html#waldbaden">Waldbaden</a></li>
+                                <li><a href="liveKurs.html#schreibkurs">Schreibkurs</a></li>
+                                <li><a href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="aboutme.html">
+                Über mich
                 <svg class="fill-current ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" title="Dropdown Arrow">
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                 </svg>
               </a>
-              <ul class="p-2 bg-base-100">
-                <li><a href="onlinekurs.html#5tagekurs">5 Tage Kurs</a></li>
-                <li><a href="onlinekurs.html#schreibkurs">Schreibkurs</a></li>
-              </ul>
-            </li>
-            <li><a href="index.html#kontakt">Kontakt</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Beratung zu Lebensfragen -->
-      <section id="beratung">
-        <div class="hero bg-transparent product-container">
-          <div class="hero-content flex-col lg:flex-row">
-            <div class="animated">
-              <img src="src/img-beratung.png" alt="Beratung Image" class="max-w-sm rounded-lg shadow-2xl">
-            </div>
-            <div class="ml-0 lg:ml-8">
-              <h1 class="text-5xl font-bold">Beratung</h1>
-              <h2 class="text-3xl mt-4">Individuelle Begleitung für Ihre Gesundheit</h2>
-              <p class="py-6 text-2xl">
-                „In meiner Praxis biete ich Ihnen umfassende und individuell abgestimmte Beratungen an, die Sie auf Ihrem Weg zu mehr Wohlbefinden und innerer Balance unterstützen. Jede Beratung ist auf Ihre speziellen Bedürfnisse und gesundheitlichen Herausforderungen ausgerichtet, denn es ist mir wichtig, dass Sie als Mensch in Ihrer Gesamtheit wahrgenommen werden. Gemeinsam entwickeln wir Lösungen, die zu Ihrem Lebensstil passen und Ihnen helfen, Ihre Gesundheit aktiv in die Hand zu nehmen.
-              </p>
-              <a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e" class="btn btn-primary">Termin Buchen</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Schröpfen -->
-      <section id="schröpfen">
-        <div class="hero bg-transparent product-container">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="src/img-schröpfen.png" alt="Schröpfen Image" class="max-w-sm rounded-lg shadow-2xl">
-            <div class="ml-0 lg:ml-8">
-              <h1 class="text-5xl font-bold">Schröpfen</h1>
-              <p class="py-6 text-2xl">
-                Das Schröpfen ist eine jahrtausendealte Heilmethode, die in verschiedenen Kulturen der Welt angewendet wird. Es handelt sich um eine wirkungsvolle Technik, um Blockaden im Körper zu lösen und die Selbstheilungskräfte zu aktivieren.
-                <span class="badge badge-lg mt-4">Unblutiges Schröpfen</span>
-                <span class="badge badge-lg mt-4">Blutiges Schröpfen</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Spagyrik -->
-      <section id="spagyrik">
-        <div class="hero bg-transparent product-container">
-          <div class="hero-content flex-col lg:flex-row">
-            <img src="src/img-darmcheck.png" alt="Spagyrik Image" class="max-w-sm rounded-lg shadow-2xl">
-            <div class="ml-0 lg:ml-8">
-              <h1 class="text-5xl font-bold">Spagyrik</h1>
-              <p class="py-6 text-2xl">
-                Spagyrische Arzneimittel können die Vitalität des Organismus gezielt stärken, die Entgiftung des Körpers ankurbeln und so zu einer spürbaren Entlastung des Stoffwechsels beitragen. Dementsprechend wirkt eine spagyrische Arznei nicht „gegen“ eine bestimmte Erkrankung, sondern ermöglicht dem Menschen einen Zugang zu seinen inneren Heilkräften. Sie sollen in erster Linie seine Selbstheilungskräfte aktivieren.
-                <span class="badge badge-lg mt-4">Augenerkrankungen</span>
-                <span class="badge badge-lg mt-4">Blasen- und Nierenerkrankungen</span>
-                <span class="badge badge-lg mt-4">Erkrankungen der ableitenden Harnwege</span>
-                <span class="badge badge-lg mt-4">Rheumatische Beschwerden</span>
-                <span class="badge badge-lg mt-4">Grippe</span>
-                <span class="badge badge-lg mt-4">Husten</span>
-                <span class="badge badge-lg mt-4">Hauterkrankungen</span>
-                <span class="badge badge-lg mt-4">Kopfschmerzen</span>
-                <span class="badge badge-lg mt-4">Magen-Darm-Erkrankungen</span>
-                <span class="badge badge-lg mt-4">Menstruationsbeschwerden</span>
-                <span class="badge badge-lg mt-4">Wechseljahresbeschwerden</span>
-                <span class="badge badge-lg mt-4">Psychische Beschwerden</span>
-                <span class="badge badge-lg mt-4">Schlafstörungen</span>
-                <span class="badge badge-lg mt-4">Rheumatische Beschwerden</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Akupunktur -->
-      <section id="akupunktur">
-        <div class="hero bg-transparent product-container">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="src/img-akupunktur.png" alt="Akupunktur Image" class="max-w-sm rounded-lg shadow-2xl">
-            <div class="ml-0 lg:ml-8">
-              <h1 class="text-5xl font-bold">Akupunktur</h1>
-              <p class="py-6 text-2xl">
-                Die Akupunktur ist eine uralte chinesische Methode. Bei der Akupunktur werden Nadeln an genau festgelegten Hautpunkten gesetzt, die druckschmerzhaft sind, um reversible Erkrankungen oder Störungen zu behandeln. Die Akupunktur ist kein Allheilmittel, aber ihr Einsatz bei gestörten, nicht aber bei zerstörten Organfunktionen ist sinnvoll. Besonders häufig wird die Akupunktur bei akuten und chronischen Schmerzen eingesetzt. Bewährt hat sich die Körperakupunktur bei:
-                <span class="badge badge-lg mt-4">Atemwegserkrankungen</span>
-                <span class="badge badge-lg mt-4">Magen</span>
-                <span class="badge badge-lg mt-4">Darmerkrankungen</span>
-                <span class="badge badge-lg mt-4">Kopfschmerzen</span>
-                <span class="badge badge-lg mt-4">Schmerzen im Bewegungsapparat</span>
-                <span class="badge badge-lg mt-4">Gynäkologische Erkrankungen</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Manuelle Therapien -->
-      <section id="manuelleTherapien">
-        <div class="hero bg-transparent product-container">
-          <div class="hero-content flex-col lg:flex-row">
-            <img src="src/img-manuelleTherapien.png" alt="Manuelle Therapien Image" class="max-w-sm rounded-lg shadow-2xl">
-            <div class="ml-0 lg:ml-8">
-              <h1 class="text-5xl font-bold">Manuelle Therapien</h1>
-              <p class="py-6 text-2xl">
-                Mit den Händen arbeiten - den Menschen be-Handeln. Ich nutze in der Praxis folgende manuelle Therapien:
-              </p>
-              <div class="grid flex-grow">
-                <div class="card w-200 bg-base-100 shadow-xl">
-                  <div class="card-body">
-                    <div id="therapie_tab" class="tabs tabs-boxed">
-                      <a class="tab tab-active" onclick="showTherapie(0)">Entgiftungsmassage</a>
-                      <a class="tab" onclick="showTherapie(1)">Dorn-Breuss-Therapie</a>
-                      <a class="tab" onclick="showTherapie(2)">Lymphdrainage</a>
-                      <a class="tab" onclick="showTherapie(3)">Bindegewebsmassage</a>
-                    </div>
-                    <div id="therapie_container">
-                      <div id="manuelleTherapien_0" class="card-actions justify-end">
-                        <p class="text-black"><strong>Entgiftungsmassage</strong></p>
-                        <p class="text-black">
-                          Möchten Sie Ihren Körper von Schlackenstoffen befreien oder bei einer Fastenkur unterstützen? Eine Entgiftungsmassage regt den Zellstoffwechsel an, entgiftet und entwässert das Gewebe, strafft die Haut und wirkt wohltuend auf Körper, Geist und Seele.<br>
-                          Die einstündige Massage gliedert sich in drei Stufen.<br>
-                          1.) Heiße Rolle: entspannt die Muskulatur und fördert die Durchblutung, die Poren werden geöffnet und gereinigt.<br>
-                          2.) Lymphdrainage: Aktivierung des Körpers zum Abtransport von Schlacken und Gewebewasser.<br>
-                          3.) Honigmassage: Schlackenstoffe, Salze und Gifte werden aus dem Körpergewebe heraus befördert.
-                        </p>
-                      </div>
-                      <div id="manuelleTherapien_1" class="card-actions justify-end hidden">
-                        <p class="text-black"><strong>Dorn-Breuss-Therapie</strong></p>
-                        <p class="text-black">
-                          Dies ist eine Wirbelsäulentherapie, bei der Fehlstellungen oder Blockaden der Gelenke und Wirbel auf sanfte Art beseitigt und daraus resultierende Beschwerden gelindert oder geheilt werden. Bei der Dorntherapie werden systematisch die Gelenke von Fuß bis Kopf überprüft und gegebenenfalls korrigiert. Die anschließende Breussmassage ist eine sanfte Behandlung der Wirbelsäule, bei der sich eine wohltuende Entspannung auf körperlicher und auch auf seelischer Ebene einstellt. Durch spezielle Griffe und sanftes Ausstreichen kommt es zur Streckung und Dehnung der Wirbelsäule, sodass die Bandscheiben wieder die Möglichkeit haben, sich aufzurichten und dem Rücken mehr Stabilität zu geben.
-                        </p>
-                      </div>
-                      <div id="manuelleTherapien_2" class="card-actions justify-end hidden">
-                        <p class="text-black"><strong>Lymphdrainage</strong></p>
-                        <p class="text-black">
-                          Bei dieser Streichmassage entlang der Lymphbahnen kann der Lymphfluss gefördert und Wasseransammlungen im Gewebe abgeleitet werden. Die Lymphdrainage hat eine stark entspannende, schmerzlindernde und wohltuend beruhigende Wirkung. Das Lymphsystem ist ein Drainagesystem, das eine wichtige Funktion bei der Entschlackung, der Entgiftung und der Infektabwehr unseres Körpers hat.
-                        </p>
-                      </div>
-                      <div id="manuelleTherapien_3" class="card-actions justify-end hidden">
-                        <p class="text-black"><strong>Bindegewebsmassage</strong></p>
-                        <p class="text-black">
-                          Bei der Bindegewebsmassage geht man davon aus, dass bei Erkrankungen der inneren Organe Spannungsunterschiede im lockeren Bindegewebe der Unterhaut entstehen. Die Bindegewebsmassage wirkt regulierend und ausgleichend auf das Nervensystem. Lokale Verklebungen oder Verspannungen werden durch die Massage gelöst. Über bestimmte Nervenreizungen (Reflexe) können so auch innere Organe positiv beeinflusst werden.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                            <ul class="p-2 bg-base-100">
+                                <li><a href="aboutme.html#5tagekurs">5 Tage Kurs</a></li>
+                                <li><a href="aboutme.html#schreibkurs">Schreibkurs</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#kontakt">Kontakt</a></li>
+                    </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </nav>
 
-      <!-- Urindiagnostik -->
-      <section id="urindiagnostik">
-        <div class="hero bg-transparent product-container">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="src/img-urindiagnostik.png" alt="Urindiagnostik Image" class="max-w-sm rounded-lg shadow-2xl">
-            <div class="ml-0 lg:ml-8">
-              <h1 class="text-5xl font-bold">Urindiagnostik</h1>
-              <p class="py-6 text-2xl">
-                Bei der Urindiagnostik kann man durch Zusatz von Chemikalien und durch Erhitzung Urinphänomene erkennen, die gleichzeitig ein Spiegelbild der Funktion von Organsystemen sind. Dabei werden Stoffwechsel, Darm und Schleimhäute, Gallenfunktion, Blutbeschaffenheit, Herz-Kreislauf, Bauchspeicheldrüsen- und Leberfunktion genauer untersucht. Durch die Analyse des Harns, z.B. Farbphänomene, Ausflockungen und Ausfällungen, kann man auch solche Störungen diagnostizieren, bei denen die Symptome nicht eindeutig klar sind. Einmal jährlich sollte man eine Urinuntersuchung durchführen lassen, um rechtzeitig auf Veränderungen in den Körpersäften reagieren zu können.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Beratung zu Lebensfragen -->
+            <section id="beratung">
+                <div class="hero bg-transparent product-container">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <div class="animated">
+                            <img src="src/img-beratung.png" alt="Beratung Image" class="max-w-sm rounded-lg shadow-2xl">
+                        </div>
+                        <div class="ml-0 lg:ml-8">
+                            <h1 class="text-5xl font-bold">Beratung</h1>
+                            <h2 class="text-3xl mt-4">Individuelle Begleitung für Ihre Gesundheit</h2>
+                            <p class="py-6 text-2xl">
+                                „In meiner Praxis biete ich Ihnen umfassende und individuell abgestimmte Beratungen an, die Sie auf Ihrem Weg zu mehr Wohlbefinden und innerer Balance unterstützen. Jede Beratung ist auf Ihre speziellen Bedürfnisse und gesundheitlichen Herausforderungen
+                                ausgerichtet, denn es ist mir wichtig, dass Sie als Mensch in Ihrer Gesamtheit wahrgenommen werden. Gemeinsam entwickeln wir Lösungen, die zu Ihrem Lebensstil passen und Ihnen helfen, Ihre Gesundheit aktiv in die Hand zu
+                                nehmen.
+                            </p>
+                            <a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e" class="btn btn-primary">Termin Buchen</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Footer -->
-      <footer class="footer p-10 bg-base-100 text-base-content">
-        <div>
-          <img class="flex-1 px-2 mx-2 h-10" src="src/logo-nobackground-1000.png" alt="natürlich Himstedt Logo">
-          <p>natürlich Himstedt<br>Immer für Sie da!</p>
-        </div>
-        <div>
-          <span class="footer-title">Heilpraktiker</span>
-          <a class="link link-hover" href="heilpraktiker.html#beratung">Beratung</a>
-          <a class="link link-hover" href="heilpraktiker.html#schröpfen">Schröpfen</a>
-          <a class="link link-hover" href="heilpraktiker.html#spagyrik">Spagyrik</a>
-          <a class="link link-hover" href="heilpraktiker.html#akupunktur">Akupunktur</a>
-          <a class="link link-hover" href="heilpraktiker.html#manuelleTherapien">Manuelle Therapien</a>
-          <a class="link link-hover" href="heilpraktiker.html#urindiagnostik">Diagnostik</a>
-        </div>
-        <div>
-          <span class="footer-title">Wellnessmassagen</span>
-          <a class="link link-hover" href="wellnessmassagen.html#wellnessmassagen">Wellnessmassagen</a>
-          <a class="link link-hover" href="wellnessmassagen.html#aromaoele">Aromaöle</a>
-        </div>
-        <div>
-          <span class="footer-title">Live Kurse</span>
-          <a class="link link-hover" href="liveKurs.html#kraeuterkurs">Kräuterkurse</a>
-          <a class="link link-hover" href="liveKurs.html#waldbaden">Waldbaden</a>
-          <a class="link link-hover" href="liveKurs.html#schreibkurs">Schreibkurs</a>
-          <a class="link link-hover" href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a>
-        </div>
-        <div>
-          <span class="footer-title">Online Kurse</span>
-          <a class="link link-hover" href="onlinekurs.html#5tagekurs">5 Tage Kurs</a>
-          <a class="link link-hover" href="onlinekurs.html#schreibkurs">Schreibkurs</a>
-        </div>
-        <div>
-          <span class="footer-title">Unternehmen</span>
-          <a class="link link-hover" href="index.html">Über mich</a>
-          <a class="link link-hover" href="index.html#kontakt">Kontakt</a>
-        </div>
-        <div>
-          <span class="footer-title">Rechtlich</span>
-          <a class="link link-hover" href="impressum.html">Impressum</a>
-        </div>
-      </footer>
-    </div>
+            <!-- Schröpfen -->
+            <section id="schröpfen">
+                <div class="hero bg-transparent product-container">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="src/img-schröpfen.png" alt="Schröpfen Image" class="max-w-sm rounded-lg shadow-2xl">
+                        <div class="ml-0 lg:ml-8">
+                            <h1 class="text-5xl font-bold">Schröpfen</h1>
+                            <p class="py-6 text-2xl">
+                                Das Schröpfen ist eine jahrtausendealte Heilmethode, die in verschiedenen Kulturen der Welt angewendet wird. Es handelt sich um eine wirkungsvolle Technik, um Blockaden im Körper zu lösen und die Selbstheilungskräfte zu aktivieren.
+                                <span class="badge badge-lg mt-4">Unblutiges Schröpfen</span>
+                                <span class="badge badge-lg mt-4">Blutiges Schröpfen</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Drawer Side -->
-    <div class="drawer-side">
-      <label for="my-drawer-3" class="drawer-overlay"></label>
-      <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
-        <p class="py-10 text-xl text-black">Worüber möchten Sie mehr erfahren?</p>
-        <li class="menu-title">
-          <span>Massagen</span>
-        </li>
-        <li>
-          <a href="wellnessmassagen.html#wellnessmassagen">Wellnessmassagen</a>
-        </li>
-        <li class="menu-title">
-          <span>Heilpraktiker</span>
-        </li>
-        <li>
-          <a href="heilpraktiker.html#beratung">Beratung</a>
-        </li>
-        <li>
-          <div class="dropdown">
-            <label class="flex items-center" tabindex="0">
+            <!-- Spagyrik -->
+            <section id="spagyrik">
+                <div class="hero bg-transparent product-container">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="src/img-darmcheck.png" alt="Spagyrik Image" class="max-w-sm rounded-lg shadow-2xl">
+                        <div class="ml-0 lg:ml-8">
+                            <h1 class="text-5xl font-bold">Spagyrik</h1>
+                            <p class="py-6 text-2xl">
+                                Spagyrische Arzneimittel können die Vitalität des Organismus gezielt stärken, die Entgiftung des Körpers ankurbeln und so zu einer spürbaren Entlastung des Stoffwechsels beitragen. Dementsprechend wirkt eine spagyrische Arznei nicht „gegen“ eine bestimmte
+                                Erkrankung, sondern ermöglicht dem Menschen einen Zugang zu seinen inneren Heilkräften. Sie sollen in erster Linie seine Selbstheilungskräfte aktivieren.
+                                <span class="badge badge-lg mt-4">Augenerkrankungen</span>
+                                <span class="badge badge-lg mt-4">Blasen- und Nierenerkrankungen</span>
+                                <span class="badge badge-lg mt-4">Erkrankungen der ableitenden Harnwege</span>
+                                <span class="badge badge-lg mt-4">Rheumatische Beschwerden</span>
+                                <span class="badge badge-lg mt-4">Grippe</span>
+                                <span class="badge badge-lg mt-4">Husten</span>
+                                <span class="badge badge-lg mt-4">Hauterkrankungen</span>
+                                <span class="badge badge-lg mt-4">Kopfschmerzen</span>
+                                <span class="badge badge-lg mt-4">Magen-Darm-Erkrankungen</span>
+                                <span class="badge badge-lg mt-4">Menstruationsbeschwerden</span>
+                                <span class="badge badge-lg mt-4">Wechseljahresbeschwerden</span>
+                                <span class="badge badge-lg mt-4">Psychische Beschwerden</span>
+                                <span class="badge badge-lg mt-4">Schlafstörungen</span>
+                                <span class="badge badge-lg mt-4">Rheumatische Beschwerden</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Akupunktur -->
+            <section id="akupunktur">
+                <div class="hero bg-transparent product-container">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="src/img-akupunktur.png" alt="Akupunktur Image" class="max-w-sm rounded-lg shadow-2xl">
+                        <div class="ml-0 lg:ml-8">
+                            <h1 class="text-5xl font-bold">Akupunktur</h1>
+                            <p class="py-6 text-2xl">
+                                Die Akupunktur ist eine uralte chinesische Methode. Bei der Akupunktur werden Nadeln an genau festgelegten Hautpunkten gesetzt, die druckschmerzhaft sind, um reversible Erkrankungen oder Störungen zu behandeln. Die Akupunktur ist kein Allheilmittel, aber
+                                ihr Einsatz bei gestörten, nicht aber bei zerstörten Organfunktionen ist sinnvoll. Besonders häufig wird die Akupunktur bei akuten und chronischen Schmerzen eingesetzt. Bewährt hat sich die Körperakupunktur bei:
+                                <span class="badge badge-lg mt-4">Atemwegserkrankungen</span>
+                                <span class="badge badge-lg mt-4">Magen</span>
+                                <span class="badge badge-lg mt-4">Darmerkrankungen</span>
+                                <span class="badge badge-lg mt-4">Kopfschmerzen</span>
+                                <span class="badge badge-lg mt-4">Schmerzen im Bewegungsapparat</span>
+                                <span class="badge badge-lg mt-4">Gynäkologische Erkrankungen</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Manuelle Therapien -->
+            <section id="manuelleTherapien">
+                <div class="hero bg-transparent product-container">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="src/img-manuelleTherapien.png" alt="Manuelle Therapien Image" class="max-w-sm rounded-lg shadow-2xl">
+                        <div class="ml-0 lg:ml-8">
+                            <h1 class="text-5xl font-bold">Manuelle Therapien</h1>
+                            <p class="py-6 text-2xl">
+                                Mit den Händen arbeiten - den Menschen be-Handeln. Ich nutze in der Praxis folgende manuelle Therapien:
+                            </p>
+                            <div class="grid flex-grow">
+                                <div class="card w-200 bg-base-100 shadow-xl">
+                                    <div class="card-body">
+                                        <div id="therapie_tab" class="tabs tabs-boxed">
+                                            <a class="tab tab-active" onclick="showTherapie(0)">Entgiftungsmassage</a>
+                                            <a class="tab" onclick="showTherapie(1)">Dorn-Breuss-Therapie</a>
+                                            <a class="tab" onclick="showTherapie(2)">Lymphdrainage</a>
+                                            <a class="tab" onclick="showTherapie(3)">Bindegewebsmassage</a>
+                                        </div>
+                                        <div id="therapie_container">
+                                            <div id="manuelleTherapien_0" class="card-actions justify-end">
+                                                <p class="text-black"><strong>Entgiftungsmassage</strong></p>
+                                                <p class="text-black">
+                                                    Möchten Sie Ihren Körper von Schlackenstoffen befreien oder bei einer Fastenkur unterstützen? Eine Entgiftungsmassage regt den Zellstoffwechsel an, entgiftet und entwässert das Gewebe, strafft die Haut und wirkt wohltuend auf Körper, Geist und Seele.<br>                                                    Die einstündige Massage gliedert sich in drei Stufen.<br> 1.) Heiße Rolle: entspannt die Muskulatur und fördert die Durchblutung, die Poren werden geöffnet und gereinigt.<br> 2.) Lymphdrainage: Aktivierung
+                                                    des Körpers zum Abtransport von Schlacken und Gewebewasser.<br> 3.) Honigmassage: Schlackenstoffe, Salze und Gifte werden aus dem Körpergewebe heraus befördert.
+                                                </p>
+                                            </div>
+                                            <div id="manuelleTherapien_1" class="card-actions justify-end hidden">
+                                                <p class="text-black"><strong>Dorn-Breuss-Therapie</strong></p>
+                                                <p class="text-black">
+                                                    Dies ist eine Wirbelsäulentherapie, bei der Fehlstellungen oder Blockaden der Gelenke und Wirbel auf sanfte Art beseitigt und daraus resultierende Beschwerden gelindert oder geheilt werden. Bei der Dorntherapie werden systematisch die Gelenke von Fuß
+                                                    bis Kopf überprüft und gegebenenfalls korrigiert. Die anschließende Breussmassage ist eine sanfte Behandlung der Wirbelsäule, bei der sich eine wohltuende Entspannung auf körperlicher und auch auf seelischer
+                                                    Ebene einstellt. Durch spezielle Griffe und sanftes Ausstreichen kommt es zur Streckung und Dehnung der Wirbelsäule, sodass die Bandscheiben wieder die Möglichkeit haben, sich aufzurichten und dem Rücken
+                                                    mehr Stabilität zu geben.
+                                                </p>
+                                            </div>
+                                            <div id="manuelleTherapien_2" class="card-actions justify-end hidden">
+                                                <p class="text-black"><strong>Lymphdrainage</strong></p>
+                                                <p class="text-black">
+                                                    Bei dieser Streichmassage entlang der Lymphbahnen kann der Lymphfluss gefördert und Wasseransammlungen im Gewebe abgeleitet werden. Die Lymphdrainage hat eine stark entspannende, schmerzlindernde und wohltuend beruhigende Wirkung. Das Lymphsystem ist
+                                                    ein Drainagesystem, das eine wichtige Funktion bei der Entschlackung, der Entgiftung und der Infektabwehr unseres Körpers hat.
+                                                </p>
+                                            </div>
+                                            <div id="manuelleTherapien_3" class="card-actions justify-end hidden">
+                                                <p class="text-black"><strong>Bindegewebsmassage</strong></p>
+                                                <p class="text-black">
+                                                    Bei der Bindegewebsmassage geht man davon aus, dass bei Erkrankungen der inneren Organe Spannungsunterschiede im lockeren Bindegewebe der Unterhaut entstehen. Die Bindegewebsmassage wirkt regulierend und ausgleichend auf das Nervensystem. Lokale Verklebungen
+                                                    oder Verspannungen werden durch die Massage gelöst. Über bestimmte Nervenreizungen (Reflexe) können so auch innere Organe positiv beeinflusst werden.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Urindiagnostik -->
+            <section id="urindiagnostik">
+                <div class="hero bg-transparent product-container">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="src/img-urindiagnostik.png" alt="Urindiagnostik Image" class="max-w-sm rounded-lg shadow-2xl">
+                        <div class="ml-0 lg:ml-8">
+                            <h1 class="text-5xl font-bold">Urindiagnostik</h1>
+                            <p class="py-6 text-2xl">
+                                Bei der Urindiagnostik kann man durch Zusatz von Chemikalien und durch Erhitzung Urinphänomene erkennen, die gleichzeitig ein Spiegelbild der Funktion von Organsystemen sind. Dabei werden Stoffwechsel, Darm und Schleimhäute, Gallenfunktion, Blutbeschaffenheit,
+                                Herz-Kreislauf, Bauchspeicheldrüsen- und Leberfunktion genauer untersucht. Durch die Analyse des Harns, z.B. Farbphänomene, Ausflockungen und Ausfällungen, kann man auch solche Störungen diagnostizieren, bei denen die Symptome
+                                nicht eindeutig klar sind. Einmal jährlich sollte man eine Urinuntersuchung durchführen lassen, um rechtzeitig auf Veränderungen in den Körpersäften reagieren zu können.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer p-10 bg-base-100 text-base-content">
+                <div>
+                    <img class="flex-1 px-2 mx-2 h-10" src="src/logo-nobackground-1000.png" alt="natürlich Himstedt Logo">
+                    <p>natürlich Himstedt<br>Immer für Sie da!</p>
+                </div>
+                <div>
+                    <span class="footer-title">Heilpraktiker</span>
+                    <a class="link link-hover" href="heilpraktiker.html#beratung">Beratung</a>
+                    <a class="link link-hover" href="heilpraktiker.html#schröpfen">Schröpfen</a>
+                    <a class="link link-hover" href="heilpraktiker.html#spagyrik">Spagyrik</a>
+                    <a class="link link-hover" href="heilpraktiker.html#akupunktur">Akupunktur</a>
+                    <a class="link link-hover" href="heilpraktiker.html#manuelleTherapien">Manuelle Therapien</a>
+                    <a class="link link-hover" href="heilpraktiker.html#urindiagnostik">Diagnostik</a>
+                </div>
+                <div>
+                    <span class="footer-title">Wellnessmassagen</span>
+                    <a class="link link-hover" href="wellnessmassagen.html#wellnessmassagen">Wellnessmassagen</a>
+                    <a class="link link-hover" href="wellnessmassagen.html#aromaoele">Aromaöle</a>
+                </div>
+                <div>
+                    <span class="footer-title">Live Kurse</span>
+                    <a class="link link-hover" href="liveKurs.html#kraeuterkurs">Kräuterkurse</a>
+                    <a class="link link-hover" href="liveKurs.html#waldbaden">Waldbaden</a>
+                    <a class="link link-hover" href="liveKurs.html#schreibkurs">Schreibkurs</a>
+                    <a class="link link-hover" href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a>
+                </div>
+                <div>
+                    <span class="footer-title">Über mich</span>
+                    <a class="link link-hover" href="aboutme.html#5tagekurs">5 Tage Kurs</a>
+                    <a class="link link-hover" href="aboutme.html#schreibkurs">Schreibkurs</a>
+                </div>
+                <div>
+                    <span class="footer-title">Unternehmen</span>
+                    <a class="link link-hover" href="index.html">Über mich</a>
+                    <a class="link link-hover" href="index.html#kontakt">Kontakt</a>
+                </div>
+                <div>
+                    <span class="footer-title">Rechtlich</span>
+                    <a class="link link-hover" href="impressum.html">Impressum</a>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Drawer Side -->
+        <div class="drawer-side">
+            <label for="my-drawer-3" class="drawer-overlay"></label>
+            <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
+                <p class="py-10 text-xl text-black">Worüber möchten Sie mehr erfahren?</p>
+                <li class="menu-title">
+                    <span>Massagen</span>
+                </li>
+                <li>
+                    <a href="wellnessmassagen.html#wellnessmassagen">Wellnessmassagen</a>
+                </li>
+                <li class="menu-title">
+                    <span>Heilpraktiker</span>
+                </li>
+                <li>
+                    <a href="heilpraktiker.html#beratung">Beratung</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <label class="flex items-center" tabindex="0">
               Therapien
               <svg class="fill-current ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" title="Dropdown Arrow">
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
               </svg>
             </label>
-            <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a href="heilpraktiker.html#schröpfen">Schröpfen</a></li>
-              <li><a href="heilpraktiker.html#spagyrik">Spagyrik</a></li>
-              <li><a href="heilpraktiker.html#akupunktur">Akupunktur</a></li>
-              <li><a href="heilpraktiker.html#manuelleTherapien">Manuelle Therapien</a></li>
+                        <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="heilpraktiker.html#schröpfen">Schröpfen</a></li>
+                            <li><a href="heilpraktiker.html#spagyrik">Spagyrik</a></li>
+                            <li><a href="heilpraktiker.html#akupunktur">Akupunktur</a></li>
+                            <li><a href="heilpraktiker.html#manuelleTherapien">Manuelle Therapien</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="heilpraktiker.html#urindiagnostik">Diagnostik</a>
+                </li>
+                <li class="menu-title">
+                    <span>Live Kurse</span>
+                </li>
+                <li>
+                    <a href="liveKurs.html#kraeuterkurs">Kräuterkurse</a>
+                </li>
+                <li>
+                    <a href="liveKurs.html#waldbaden">Waldbaden</a>
+                </li>
+                <li>
+                    <a href="liveKurs.html#schreibkurs">Schreibkurs</a>
+                </li>
+                <li>
+                    <a href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a>
+                </li>
+                <li class="menu-title">
+                    <span>Über mich</span>
+                </li>
+                <li>
+                    <a href="aboutme.html#5tagekurs">5 Tage Kurs</a>
+                </li>
+                <li>
+                    <a href="aboutme.html#schreibkurs">Schreibkurs</a>
+                </li>
             </ul>
-          </div>
-        </li>
-        <li>
-          <a href="heilpraktiker.html#urindiagnostik">Diagnostik</a>
-        </li>
-        <li class="menu-title">
-          <span>Live Kurse</span>
-        </li>
-        <li>
-          <a href="liveKurs.html#kraeuterkurs">Kräuterkurse</a>
-        </li>
-        <li>
-          <a href="liveKurs.html#waldbaden">Waldbaden</a>
-        </li>
-        <li>
-          <a href="liveKurs.html#schreibkurs">Schreibkurs</a>
-        </li>
-        <li>
-          <a href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a>
-        </li>
-        <li class="menu-title">
-          <span>Online Kurse</span>
-        </li>
-        <li>
-          <a href="onlinekurs.html#5tagekurs">5 Tage Kurs</a>
-        </li>
-        <li>
-          <a href="onlinekurs.html#schreibkurs">Schreibkurs</a>
-        </li>
-      </ul>
+        </div>
     </div>
-  </div>
 
-  <!-- Optional: Add JavaScript for Therapy Tabs -->
-  <script>
-    function showTherapie(index) {
-      const containers = document.querySelectorAll('#therapie_container > div');
-      containers.forEach((container, i) => {
-        if (i === index) {
-          container.classList.remove('hidden');
-        } else {
-          container.classList.add('hidden');
+    <!-- Optional: Add JavaScript for Therapy Tabs -->
+    <script>
+        function showTherapie(index) {
+            const containers = document.querySelectorAll('#therapie_container > div');
+            containers.forEach((container, i) => {
+                if (i === index) {
+                    container.classList.remove('hidden');
+                } else {
+                    container.classList.add('hidden');
+                }
+            });
+            const tabs = document.querySelectorAll('#therapie_tab .tab');
+            tabs.forEach((tab, i) => {
+                if (i === index) {
+                    tab.classList.add('tab-active');
+                } else {
+                    tab.classList.remove('tab-active');
+                }
+            });
         }
-      });
-      const tabs = document.querySelectorAll('#therapie_tab .tab');
-      tabs.forEach((tab, i) => {
-        if (i === index) {
-          tab.classList.add('tab-active');
-        } else {
-          tab.classList.remove('tab-active');
-        }
-      });
-    }
-  </script>
+    </script>
 </body>
+
 </html>
