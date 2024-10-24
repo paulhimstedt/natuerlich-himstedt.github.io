@@ -1,610 +1,402 @@
 <!DOCTYPE html>
 <html lang="de" data-theme="emerald">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>natürlich Himstedt</title>
-    <link rel="icon" type="image/png" href="src\logo-icon.png" />
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
-    <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="/index.js">
-    </script>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>natürlich Himstedt</title>
+  <link rel="icon" type="image/png" href="src/logo-icon.png" /> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" /> 
+  <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script> 
+  <script defer src="/index.js"></script>
 </head>
-
-<body id>
-
-    <!--nav bar-->
-
-    <div class="drawer">
-
-        <input id="my-drawer-3" type="checkbox" class="drawer-toggle">
-        <div class="drawer-content flex flex-col">
-
-            <div class="w-full navbar bg-base-100" id="sticky-nav">
-                <div class="flex-none lg:hidden">
-                    <label for="my-drawer-3" class="btn btn-square btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                        </label>
-                </div>
-                <div class="flex-1 px-2 mx-2">
-                    <a href="/index.html"> <img src="src\logo-nobackground-1000.png" alt="logo"></a>
-                </div>
-                <div class="flex-none hidden lg:block" id="menu-container">
-                    <ul class="menu menu-horizontal p-0">
-                        <li>
-                            <a href="wellnessmassagen.html">
-                              Wellnessmassagen
-                              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                            </a>
-                            <ul class="p-2 bg-base-100">
-                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s9e7a53b0f3c940998a9a3cd3ec39aee41fbf6604?source=settings">Entspannungsmassage</a></li>
-                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s6cec911d8b67709c031a1d633d409c5d7f838609?source=settings">Fußmassage</a></li>
-                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s83c5153f3c1202fb4f281b9521177af337f81181?source=settings">Hot Stone Massage</a></li>
-                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s84bd1aa443380f8931d728065b0c69997e6defe4?source=settings">Aromaölmassage</a></li>
-                                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/sc34c1f2c2310feeb026a73792142dd60fbf737c6?source=settings">Kräuterstempelmassage</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="heilpraktiker.html">
-                              Heilpraktiker
-                              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                            </a>
-                            <ul class="p-2 bg-base-100">
-                                <li><a href="heilpraktiker.html#beratung">Beratung</a></li>
-
-                                <li tabindex="0">
-                                    <div class="dropdown dropdown-hover dropdown-left">
-                                        <a>
-                                        Therapie</a>
-                                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-
-                                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                                            <li>
-                                                <a href="/heilpraktiker.html#schröpfen">Schröpfen</a>
-                                            </li>
-                                            <li><a href="/heilpraktiker.html#spagyrik">Spagyrik</a></li>
-                                            <li><a href="/heilpraktiker.html#akupunktur">Akupunktur</a></li>
-                                            <li tabindex="0">
-                                                <div class="dropdown dropdown-left">
-                                                    <a href="heilpraktiker.html#manuelleTherapien">manuelle Therapie</a>
-                                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                                                </div>
-                                                <ul id="nav_therapien" tabindex="0" class="p-2 shadow bg-base-100 rounded-box w-52">
-                                                    <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav0()">Entgiftungsmassage</a></li>
-                                                    <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav1()">Dorn Breuss Therapie</a></li>
-                                                    <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav2()">Lymphdrainage</a></li>
-                                                    <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav3()">Bindegewebsmassage</a></li>
-                                                </ul>
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-
-                                <li tabindex="0">
-                                    <div class="dropdown dropdown-hover dropdown-left">
-                                        <a>
-                                        Diagnostik</a>
-                                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-
-                                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                                            <li><a href="heilpraktiker.html#urindiagnostik">Urindiagnostik</a> </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="liveKurs.html">
-                                <div class="indicator">
-                                    <span class="indicator-item indicator-start indicator-top  badge badge-primary">neu</span> Live Kurse
-                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                                </div>
-                            </a>
-                            <ul class="p-2 bg-base-100">
-                                <li><a href="liveKurs.html#kraeuterkurs">Kräuterkurse</a></li>
-                                <li><a href="liveKurs.html#waldbaden">Waldbaden</a></li>
-                                <li><a href="liveKurs.html#schreibkurs">Schreibkurs</a></li>
-
-                                <li><a href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a></li>
-
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="onlineKurs.html">
-                                
-                                    Online Kurse
-                                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                                
-                            </a>
-                            <ul class="p-2 bg-base-100">
-                                <li><a href="onlinekurs.html#5tagekurs">5 Tage Kurs</a></li>
-
-                                <li><a href="onlinekurs.html#schreibkurs">Schreibkurs</a></li>
-
-                            </ul>
-                        </li>
-
-
-                        <li><a href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <section>
-                <div class="hero  min-h-screen bg-transparent" id="section0">
-                    <div class="hero-content flex-col lg:flex-row" style="padding: 0;">
-                        <div class="card-body">
-                            <div class="div-wrapper">
-                                <div id="head-div">
-                                    <img src="src/img-profile-pic.png" class="rounded-lg shadow-2xl mask mask-circle" id="profile-pic" style="max-height: 10%; width: auto;" />
-                                </div>
-                                <div id="head-div">
-                                    <h1 class="  text-5xl font-bold">natürlich Himstedt</h1>
-                                </div>
-                            </div>
-                            <p class="py-6 text-2xl" style="color: white;">steht für Natürlichkeit, Einfachheit, Unabhängigkeit, Zuverlässigkeit, Kreativität und Dankbarkeit. Besuchen Sie mich und Sie werden wieder ausgeglichener, zufriedener und glücklicher. Lernen Sie sich selbst wieder mehr zu
-                                schätzen. Oft liegt das Glück in den einfachen Dingen. Lassen Sie sich inspirieren, verwöhnen oder lernen Sie neue Seiten von sich selbst und der Natur kennen</p>
-                            <div class="card-actions justify-end">
-                                <a href="#info "><button class="btn ">Erfahren Sie Mehr</button></a>
-
-                                <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e"><button class="btn btn-primary">Termine Buchen</button></a>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card lg:card-side bg-base-100 shadow-xl" id="landing_card">
-                                <div class="card-body">
-                                    <h2 class="card-title">Kontaktieren Sie mich!</h2>
-                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
-                                        <fieldset id="fs-frm-inputs ">
-                                            <ul role="list " id="landing_contact_list">
-                                                <li><label for="full-name">Ganzer Name</label></li>
-                                                <li><input type="text" name="name" id="full-name" placeholder="Vorname und Nachname" required=""></li>
-                                                <li><label for="email-address">Email-Addresse</label></li>
-                                                <li><input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required=""></li>
-                                                <li><label for="message ">Ihre Nachricht</label></li>
-                                                <li><textarea rows="2" name="message" id="message" placeholder="Ihre persöhnliche Nachricht an mich" required="" data-gramm="false" wt-ignore-input="true"></textarea></li>
-                                                <li><input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"></li>
-                                            </ul>
-                                        </fieldset>
-                                        <div class="card-actions justify-end">
-                                            <!--<input  value="Senden ">--><button class="btn btn-primary" type="submit" value="Senden">Senden </button>
-
-
-                                        </div>
-
-
-                                    </form>
-
-                                </div>
-                            </div>
-
-                            <!--
-                                
-                            -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--
-
-    Herzlich willkommen bei natürlich Himstedt
-
-
-
-Du bist genau richtig hier, wenn Du …
-
-
-
-Verantwortung für Deine Gesundheit übernehmen möchtest
-Aktiv am gesund werden mitwirken möchtest
-Raus aus der Stress- und Angstspirale möchtest
-Dir ab und zu mal etwas Gutes gönnen möchtest
-Dir mehr Achtsamkeit und Gelassenheit in Deinem Leben wünscht
-Wieder in Deine Herzensverbindung kommen möchtest
-Du ein Naturliebhaber bist oder werden möchtest
-Dich mit Liveworkshops oder Onlinekursen auf Deinem Wachstumspfad begleiten lassen möchtest
-Dein Leben wieder selbst in die Hand nehmen möchtest und wieder inneres Glück und Zufriedenheit spüren möchtest
-
-
-Schau Dich gern auf meiner Homepage um, lass Dich inspirieren oder komm in Aktion. Was gibt es schöneres, als sich um sich zu kümmern, sei es gesundheitlich, geistig, seelisch oder inspirativ? 
-
-Ich freue mich auf Dich 
-
-Deine Beate
-
-
--->
-            <section>
-                <div class="hero" id="info">
-                    <div class="hero-content text-left flex-col lg:flex-row  md:flex-row">
-                        <figure class="px-10 pt-10">
-                            <img style="height: 70%;" src="./src/home_image.png" alt="home image" class="rounded-xl" />
-                        </figure>
-                        <div class="card shadow-xl glass">
-
-                            <div class="card-body">
-                                <h2 class="card-title">Herzlich willkommen bei natürlich Himstedt</h2>
-                                <p class="py-6 text-2xl">Du bist genau richtig hier, wenn Du …</p>
-                                <p style="padding: 10px;" class="py-6 text-2xl">• Verantwortung für Deine Gesundheit übernehmen möchtest</p>
-                                <p style="padding: 10px;" class="py-6 text-2xl">• Raus aus Stress und Angstspirale möchtest</p>
-                                <p style="padding: 10px;" class="py-6 text-2xl">• Mehr Achtsamkeit und Gelassenheit im Leben wünschst</p>
-                                <p style="padding: 10px;" class="py-6 text-2xl">• Dich mit Liveworkshops oder Onlinekursen auf Deinem Wachstumspfad begleiten lassen möchtest</p>
-                                <p style="padding: 10px;" class="py-6 text-2xl">• Dein Leben selbst in die Hand nehmen und inneres Glück und Zufriedenheit spüren möchtest</p>
-                                <p style="padding: 10px;" class="py-6 text-2xl">• Du Naturliebhaber bist oder werden möchtest</p>
-                                <p class="py-6 text-2xl">Schau Dich gern auf meiner Homepage um, lass Dich inspirieren oder komm in Aktion. Was gibt es schöneres, als sich um sich zu kümmern, sei es gesundheitlich, geistig, seelisch oder inspirativ? </p>
-
-                                <div class="btn-group text-center btn-group-vertical md:btn-group-horizontal lg:btn-group-horizontal justify-end">
-                                    <a href="wellnessmassagen.html"> <button class="btn btn-active">Massagen</button></a>
-                                    <a href="heilpraktiker.html"><button class="btn">Heilpraktiker</button></a>
-                                    <a href="liveKurs.html"><button class="btn">Live Kurse</button></a>
-                                    <a href="onlinekurs.html"><button class="btn">Online Kurse</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-            <!--Hormonspeicheldiagnostik-->
-            <!--
-                <section>
-                <div class="hero bg-transparent product-container" id="section11">
-                    <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="src/img-speicheldiagnostik.PNG" class="max-w-sm rounded-lg shadow-2xl" />
-                        <div>
-                            <h1 id="long_title_diagnostik" class="text-5xl font-bold">Hormonspeicheldiagnostik</h1>
-                            <p class="py-6 text-2xl">Ich arbeite mit dem Labor SwissHealthMed bei Feldkirchen/ Westerham zusammen. Warum Speicheltestung und nicht Blut? Bei der Hormonmessung hat die Speicheldiagnostik einfach Vorteile. Diese sind: - genauere Werte, schmerzfrei,
-                                hohe Probenstabilität, zeitlich unabhängig - Erfassung der Hypophysenaktivität, da Hormone Schwankungen unterliegen (Blutentnahme einmalig, Speichel 2-4 Röhrchen) Indikationen: </br>
-                                <span class="badge badge-lg">Wechseljahrsprobleme / Östrogendominanz </span>
-                                <span class="badge badge-lg">Zyklusstörungen</span>
-                                <span class="badge badge-lg">Kinderwunsch</span>
-                                <span class="badge badge-lg">Bluthochdruck</span>
-                                <span class="badge badge-lg">Haarausfall</span>
-                                <span class="badge badge-lg">Depressionen</span>
-                                <span class="badge badge-lg">Schlafprobleme</span>
-                                <span class="badge badge-lg">Abnehmen</span>
-                                <span class="badge badge-lg">Kopfschmerzen / Migräne</span>
-                                <span class="badge badge-lg">Burn out / Neurostress</span>
-                                <span class="badge badge-lg">Rheuma</span>
-                                <span class="badge badge-lg">Osteoporose</span>
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            -->
-
-
-            <!--Darmcheck-->
-            <!--
-<section>
-                <div class="hero bg-transparent product-container" id="section12">
-                    <div class="hero-content flex-col lg:flex-row-reverse">
-                        <img src="src/img-darmcheck.png" class="max-w-sm rounded-lg shadow-2xl" />
-                        <div>
-                            <h1 class="text-5xl font-bold">Darmcheck</h1>
-                            <p class="py-6 text-2xl">Mit dem Darmcheck werden unklare abdominelle Beschwerden durch die Stuhlanalyse abgeklärt. Sollten Sie unter folgenden Beschwerden leiden ist ein Darmcheck zu empfehlen: </br>
-                                </br>
-                                <span class="badge badge-lg">unklaren Bauchschmerzen</span>
-                                <span class="badge badge-lg">Blähungen</span>
-                                <span class="badge badge-lg">wechselnden Stulfrequenzen</span>
-                                <span class="badge badge-lg">auffälligen Stuhlkonsistenzen</span>
-                                <span class="badge badge-lg">abnorme Geruchsbildung</span>
-                                <span class="badge badge-lg"> Mundgeruch</span>
-                                <span class="badge badge-lg">Übelkeit</span>, <span class="badge badge-lg">Kopfschmerzen</span>
-                                <span class="badge badge-lg">Konzentrationsstörungen</span>
-                                <span class="badge badge-lg">Müdigkeit</span>
-                                <span class="badge badge-lg">Hauterscheinungen</span>
-                                <span class="badge badge-lg">Infektanfälligkeit</span>
-                                <span class="badge badge-lg">Allergien</span>
-                                <span class="badge badge-lg">Unverträglichkeiten</span>
-                                </br>
-                                </br>Der Darmcheck ist nicht das Selbe wie die Darmspiegelung. Im Letzteren wird die Darmwandbeschaffenheit untersucht bzw. nach Divertikeln oder Polypen geschaut. Beim Darmcheck dagegen werden die Bakterienkultur, die Schleimhäute,
-                                die Entzündungsmaker, die Verdauungsenzyme u.a. untersucht und gemessen.</br>
-                                Die Stuhlprobe wird in ein externes Labor geschickt.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            -->
-
-
-
-
-            <!--Frauenkreise-->
-            <!--
-                <section>
-                <div class="hero bg-transparent product-container" id="section4">
-                    <div class="hero-content flex-col lg:flex-row">
-                        <img src="src/img-frauenkreise.png" class="max-w-sm rounded-lg shadow-2xl" />
-                        <div>
-                            <h1 class="text-5xl font-bold">Frauenkreise (Online)</h1>
-                            <p class="py-6 text-2xl">„natürlich“ geht es hier um Frauen, um Themen, die die eigene Persönlichkeit betreffen. Gemeinsam wollen wir gelebte Kreativität, Austausch, Hilfe, Bewusstwerdung, Freiheit und Lebendigkeit wieder zusammen spüren. Alle Frauen
-                                haben die gleichen Themen vom Frau werden, Frau sein und älter werden. Im Kreis sind alle gleich-( wertig), verbunden und getragen von gegenseitigem Respekt. Lasst uns an den Abenden über bestimmte Themen austauschen, füreinander
-                                da sein, zuhören, kreativ sein, Leid und Freude teilen. An 10 Abenden wird immer wieder jeder für sich etwas mit nach Hause nehmen. Sei es ein Glücksgefühl oder ein Aha-Erlebnis. </br><strong>Alles bleibt in der Gruppe !!!</strong>
-                            </p>
-                            <div class="w-full flex w-auto flex-col lg:flex-row">
-
-
-                                <div class="card w-96 bg-base-100 shadow-xl image-full" id="frauenkreis-card">
-                                    <figure><img src="src/img-frauenkreise-buchen.jpg" alt="Shoes" /></figure>
-                                    <div class="card-body">
-                                        <h2 class="card-title">Frauenkreise:</h2>
-                                        <p>Informationen</p>
-                                        <p>
-                                            Kosten: &emsp;&emsp;&emsp;&emsp; 99 €</br>
-                                            Termin: &emsp;&emsp;&emsp;&emsp; dienstags ab 17.01.2023
-                                            </br>
-                                            Teilnehmer: &emsp;&emsp;&nbsp; unbegrenzt</br>
-                                        </p>
-                                        <div class="card-actions justify-end">
-
-                                            <label for="my-modal-4" class="btn modal-button">Jetzt anmelden</label>
-                                            <input type="checkbox" id="my-modal-4" class="modal-toggle">
-
-                                            <div class="modal modal-bottom sm:modal-middle cursor-pointer" style="color: black;">
-                                                <div class="modal-box w-11/12 max-w-5xl">
-                                                    <label for="my-modal-4" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
-                                                    <h3 class="font-bold text-lg">Über dieses Formular können sie sich verbindlich für diesen Kurs anmelden.</h3>
-                                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
-                                                        <fieldset id="fs-frm-inputs">
-                                                            <div class="form-control">
-                                                                <label class="input-group input-group-vertical" for="full-name">Name</label>
-                                                                <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
-                                                            </div>
-                                                            <div class="form-control">
-                                                                <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
-                                                                <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
-                                                            </div>
-                                                            <p style="color: black;"><br>Sie erhalten nach der Anmeldung eine Mail zur Bestätigung ihrer Teilnahme.</p>
-
-                                                            <div style="display: none;" class="input-group input-group-vertical" class="form-control">
-                                                                <label for="message">Nachricht</label>
-                                                                <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required="">Ich möchte mich zum Frauenkreis anmelden.</textarea>
-                                                            </div>
-
-                                                        </fieldset>
-                                                        <div class="modal-action">
-                                                            <button type="submit" for="my-modal-4"><label for="my-modal-4" class="btn">Anmelden</label></button>
-                                                        </div>
-                                                    </form>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    
-                            <button class="btn" id="moresection4" onclick="section_four_more()"> Mehr</button>
-                            
-                        </div>
-                    </div>
-                    
-                    <div style="padding: 5%; padding-top: 1%; padding-left: 0%; display: none;" id="moresection4_p">
-
-                    </div>
-
-        
-    
-    </section>
-            -->
-
-
-
-
-            <!--Kontakt-->
-            <section>
-                <div class="hero bg-transparent product-container" id="kontakt">
-                    <div class="hero-content flex-col lg:flex-row">
-                        <div>
-                            <h1 class="text-3xl font-bold">Kontakt</h1>
-                            <p style="margin: 0;" class="py-6 text-2xl">Beate Himstedt</p>
-                            <h2 style="color: white; " class="py-6 text-2xl">
-
-                                <a href="mailto: etaeb.himstedt@t-online.de">Mail:</br><p style="text-decoration: underline;">natuerlich.himstedt@gmail.com</p> </a></br>
-                                <a href="tel:08074176009"> Telefon:</br><p style="text-decoration: underline;">08074 / 176009 </p></a> </br>
-                                Adresse:</br> Kraiburgerstrasse 3 </br>83530 Schnaitsee</h2>
-
-                            <!-- The button to open modal -->
-                            <label for="my-modal-6" class="btn modal-button">Kontaktieren sie mich</label>
-                            <input type="checkbox" id="my-modal-6" class="modal-toggle">
-                            <div class="modal modal-bottom sm:modal-middle cursor-pointer">
-                                <div class="modal-box w-11/12 max-w-5xl">
-                                    <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2" for="">✕</label>
-                                    <h3 class="font-bold text-lg">Über dieses Formular können sie mir eine Nachricht zukommen lassen.</h3>
-                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
-                                        <fieldset id="fs-frm-inputs">
-                                            <div class="form-control">
-                                                <label class="input-group input-group-vertical" for="full-name">Name</label>
-                                                <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required="">
-                                            </div>
-                                            <div class="form-control">
-                                                <label class="input-group input-group-vertical " for="email-address ">Email Addresse</label>
-                                                <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required="">
-                                            </div>
-                                            <div class="input-group input-group-vertical" class="form-control">
-                                                <label for="message">Nachricht</label>
-                                                <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required=""></textarea>
-                                            </div>
-                                        </fieldset>
-                                        <div class="modal-action">
-                                            <button type="submit" for="my-modal-6"><label for="my-modal-6" class="btn">Senden</label></button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="google-maps-embedding">
-                            <div class="gmap_canvas"><iframe width="590" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?q=Kraiburger%20str%203%20schnaitsee&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
-                                <style>
-                                    .mapouter {
-                                        position: relative;
-                                        text-align: right;
-                                        height: 300px;
-                                        width: 590px;
-                                    }
-                                </style>
-                                <a href="https://www.embedgooglemap.net"></a>
-                                <style>
-                                    .gmap_canvas {
-                                        overflow: hidden;
-                                        background: none!important;
-                                        height: 300px;
-                                        width: 590px;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Footer-->
-
-            <footer class="footer p-10 bg-base-100 text-base-content">
-                <div>
-                    <img class="flex-1 px-2 mx-2" src="src\logo-nobackground-1000.png" alt="logo">
-                    <p>natürlich Himstedt<br>Immer für sie da!</p>
-                </div>
-                <div>
-                    <span class="footer-title">Heilpraktiker</span>
-                    <a class="link link-hover" href="heilpraktiker.html#beratung">Beratung</a>
-                    <a class="link link-hover" href="heilpraktiker.html#schröpfen">Schröpfen</a>
-                    <a class="link link-hover" href="heilpraktiker.html#spagyrik">Spagyrik</a>
-                    <a class="link link-hover" href="heilpraktiker.html#akupunktur">Akupunktur</a>
-                    <a class="link link-hover" href="heilpraktiker.html#manuelleTherapien">manuelle Therapien</a>
-                    <a class="link link-hover" href="heilpraktiker.html#urindiagnostik">Diagnostik</a>
-                </div>
-                <div>
-                    <span class="footer-title">Wellnessmassagen</span>
-                    <a class="link link-hover" href="wellnessmassagen.html#wellnessmassagen">Wellnessmassagen</a>
-                    <a class="link link-hover" href="wellnessmassagen.html#aromaoele">Aromaöle</a>
-
-                </div>
-                <div>
-                    <span class="footer-title">Live Kurse</span>
-                    <a class="link link-hover" href="liveKurs.html#kraeuterkurs">Kräuterkurs</a>
-                    <a class="link link-hover" href="liveKurs.html#waldbaden">Waldbaden</a>
-                    <a class="link link-hover" href="liveKurs.html#schreibkurs">Schreibkurs</a>
-                    <a class="link link-hover" href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a>
-                </div>
-                <div>
-                    <span class="footer-title">Online Kurse</span>
-                    <a class="link link-hover" href="onlinekurs.html#5tagekurs">5 Tage Kurs</a>
-                    <a class="link link-hover" href="onlinekurs.html#schreibkurs">Schreibkurs</a>
-
-                </div>
-                <div>
-                    <span class="footer-title">Unternehmen</span>
-                    <a class="link link-hover" href="index.html">Über mich</a>
-                    <a class="link link-hover" href="index.html#kontakt">Kontakt</a>
-                </div>
-                <div>
-                    <span class="footer-title">Rechtlich</span>
-                    <a class="link link-hover" href="impressum.html">Impressum</a>
-                </div>
-            </footer>
-
+<body>
+  <!--nav bar-->
+  <div class="drawer">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle"> 
+    <div class="drawer-content flex flex-col">
+      <div class="w-full navbar bg-base-100" id="sticky-nav"> 
+        <div class="flex-none lg:hidden">
+          <label for="my-drawer-3" class="btn btn-square btn-ghost"> 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg> 
+          </label>
         </div>
-        <div class="drawer-side">
-            <label for="my-drawer-3" class="drawer-overlay"></label>
-            <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
-                <p class="py-10 text-xl" style="color: black;">Worüber möchten Sie mehr erfahren?</p>
-                <li class="menu-title">
-                    <span>Massagen</span>
-                </li>
+        <div class="flex-1 px-2 mx-2">
+          <a href="/index.html"> 
+            <img src="src/logo-nobackground-1000.png" alt="logo">
+          </a> 
+        </div>
+        <div class="flex-none hidden lg:block" id="menu-container"> 
+          <ul class="menu menu-horizontal p-0">
+            <li>
+              <a href="wellnessmassagen.html">
+                Wellnessmassagen
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                </svg> 
+              </a>
+              <ul class="p-2 bg-base-100">
+                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s9e7a53b0f3c940998a9a3cd3ec39aee41fbf6604?source=settings">Entspannungsmassage</a></li> 
+                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s6cec911d8b67709c031a1d633d409c5d7f838609?source=settings">Fußmassage</a></li> 
+                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s83c5153f3c1202fb4f281b9521177af337f81181?source=settings">Hot Stone Massage</a></li> 
+                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/s84bd1aa443380f8931d728065b0c69997e6defe4?source=settings">Aromaölmassage</a></li> 
+                <li><a href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e/services/sc34c1f2c2310feeb026a73792142dd60fbf737c6?source=settings">Kräuterstempelmassage</a></li> 
+              </ul>
+            </li>
+            <li>
+              <a href="heilpraktiker.html">
+                Heilpraktiker
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                </svg> 
+              </a>
+              <ul class="p-2 bg-base-100">
+                <li><a href="heilpraktiker.html#beratung">Beratung</a></li> 
                 <li>
-                    <a href="wellnessmassagen.html#wellnessmassagen">
-                        Wellnessmassagen
-                    </a>
-                </li>
-
-                <li class="menu-title">
-                    <span>Heilpraktiker</span>
-                </li>
-
-                <li>
-                    <a href="heilpraktiker.html#beratung">
-                    Beratung
-
-                </a>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <label tabindex="0">Therapien</label>
-                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href="heilpraktiker.html#schröpfen">Schröpfen</a></li>
-                            <li><a href="heilpraktiker.html#spagyrik">Spagyrik</a></li>
-                            <li><a href="heilpraktiker.html#akupunktur">Akupunktur</a></li>
-                            <li> <a href="heilpraktiker.html#manuelleTherapien">manuelle Therapien</a></li>
+                  <div class="dropdown dropdown-hover dropdown-left">
+                    <a>Therapie</a>
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                      <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg> 
+                    <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"> 
+                      <li><a href="/heilpraktiker.html#schröpfen">Schröpfen</a></li>
+                      <li><a href="/heilpraktiker.html#spagyrik">Spagyrik</a></li> 
+                      <li><a href="/heilpraktiker.html#akupunktur">Akupunktur</a></li> 
+                      <li>
+                        <div class="dropdown dropdown-left">
+                          <a href="heilpraktiker.html#manuelleTherapien">manuelle Therapie</a> 
+                          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                          </svg> 
+                        </div>
+                        <ul id="nav_therapien" class="p-2 shadow bg-base-100 rounded-box w-52"> 
+                          <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav0()">Entgiftungsmassage</a></li> 
+                          <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav1()">Dorn Breuss Therapie</a></li> 
+                          <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav2()">Lymphdrainage</a></li> 
+                          <li><a href="heilpraktiker.html#manuelleTherapien" onclick="therapien_topnav3()">Bindegewebsmassage</a></li> 
                         </ul>
-                    </div>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
-                    <a href="heilpraktiker.html#urindiagnostik">
-                        Diagnostik
-                    </a>
+                  <div class="dropdown dropdown-hover dropdown-left">
+                    <a>Diagnostik</a>
+                    <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                      <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg> 
+                    <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"> 
+                      <li><a href="heilpraktiker.html#urindiagnostik">Urindiagnostik</a></li> 
+                    </ul>
+                  </div>
                 </li>
-                <li class="menu-title">
-                    <span>Live Kurse</span>
-                </li>
-
-                <li>
-                    <a href="liveKurs.html#kraeuterkurs">
-                        Kräuterkurse  
-                         </a>
-                </li>
-                <li>
-                    <a href="liveKurs.html#waldbaden">
-                    Waldbaden
-                </a>
-                </li>
-                <li>
-                    <a href="liveKurs.html#schreibkurs">
-                    Schreibkurs
-                </a>
-                </li>
-
-                <li>
-                    <a href="liveKurs.html#fussreflexkurs">
-                    Fußreflexkurs
-
-                </a>
-                </li>
-
-                <li class="menu-title">
-                    <span>Online Kurse</span>
-                </li>
-                <li>
-                    <a href="onlinekurs.html#5tagekurs">
-                        5 Tage Kurs
-
-                    </a>
-                </li>
-                <li>
-                    <a href="onlinekurs.html#schreibkurs">
-                        Schreibkurs
-                    </a>
-                </li>
-
-            </ul>
+              </ul>
+            </li>
+            <li>
+              <a href="liveKurs.html">
+                <div class="indicator">
+                  <span class="indicator-item indicator-start indicator-top badge badge-primary">neu</span> 
+                  Live Kurse 
+                  <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                  </svg> 
+                </div>
+              </a>
+              <ul class="p-2 bg-base-100">
+                <li><a href="liveKurs.html#kraeuterkurs">Kräuterkurse</a></li> 
+                <li><a href="liveKurs.html#waldbaden">Waldbaden</a></li> 
+                <li><a href="liveKurs.html#schreibkurs">Schreibkurs</a></li> 
+                <li><a href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a></li> 
+              </ul>
+            </li>
+            <li>
+              <a href="onlineKurs.html">
+                Online Kurse
+                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                </svg> 
+              </a>
+              <ul class="p-2 bg-base-100">
+                <li><a href="onlinekurs.html#5tagekurs">5 Tage Kurs</a></li> 
+                <li><a href="onlinekurs.html#schreibkurs">Schreibkurs</a></li> 
+              </ul>
+            </li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
         </div>
+      </div>
+      <section>
+        <div class="hero min-h-screen bg-transparent" id="section0"> 
+          <div class="hero-content flex-col lg:flex-row" style="padding: 0;"> 
+            <div class="card-body">
+              <div class="div-wrapper">
+                <div id="head-div">
+                  <img src="src/img-profile-pic.png" alt="Profilbild" class="rounded-lg shadow-2xl mask mask-circle" id="profile-pic" style="max-height: 10%; width: auto;" /> 
+                </div>
+                <div id="head-div">
+                  <h1 class="text-4xl font-bold">Natürlich Himstedt – Ihre Gesundheit in heilenden Händen</h1> 
+                  <h2 class="text-2xl">Ganzheitliche Heilung für Körper, Geist und Seele</h2> 
+                </div>
+              </div>
+              <p class="py-6 text-2xl" style="color: white;">
+                In meiner Praxis geht es um mehr als nur Entspannung. Ich arbeite mit heilenden Händen, um Blockaden zu lösen, und begleite Sie auf Ihrem Weg zu innerer Balance und nachhaltiger Gesundheit. Meine Behandlungen sind darauf ausgerichtet, den Körper in seiner Tiefe zu berühren und Sie dabei zu unterstützen, Ihre Gesundheit aktiv selbst in die Hand zu nehmen.
+              </p> 
+              <div class="card-actions justify-end">
+                <a href="#info">
+                  <button class="btn">Erfahren Sie Mehr</button>
+                </a> 
+                <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e">
+                  <button class="btn btn-primary">Termine Buchen</button>
+                </a> 
+              </div>
+            </div>
+            <div>
+              <div class="card lg:card-side bg-base-100 shadow-xl" id="landing_card"> 
+                <div class="card-body">
+                  <h2 class="card-title">Kontaktieren Sie mich!</h2>
+                  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post"> 
+                    <fieldset id="fs-frm-inputs">
+                      <legend>Kontaktformular</legend>
+                      <ul role="list" id="landing_contact_list">
+                        <li><label for="full-name">Ganzer Name</label></li>
+                        <li><input type="text" name="name" id="full-name" placeholder="Vorname und Nachname" required></li> 
+                        <li><label for="email-address">Email-Addresse</label></li> 
+                        <li><input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required></li> 
+                        <li><label for="message">Ihre Nachricht</label></li> 
+                        <li>
+                          <textarea rows="2" name="message" id="message" placeholder="Ihre persönliche Nachricht an mich" required data-gramm="false" wt-ignore-input="true"></textarea>
+                        </li> 
+                        <li><input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"></li> 
+                      </ul>
+                    </fieldset>
+                    <div class="card-actions justify-end">
+                      <!--<input  value="Senden ">-->
+                      <button class="btn btn-primary" type="submit">Senden</button> 
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="hero" id="info">
+          <div class="hero-content text-left flex-col lg:flex-row md:flex-row"> 
+            <figure>
+              <img src="./src/home_image.png" alt="Therapeutisches Umfeld" class="rounded-xl" /> 
+            </figure>
+            <div class="card shadow-xl glass">
+              <div class="card-body">
+                <h1 class="card-title text-3xl font-bold">Heilung mit Herz und Hand</h1> 
+                <p class="py-6 text-2xl">
+                  Meine Patientin nannte meine Arbeit einmal „heilende Hände“. Diese Worte spiegeln wider, was mich antreibt: Ich möchte Menschen berühren, sowohl körperlich als auch emotional. Mit meinen Massagen, Reflexzonenbehandlungen und naturheilkundlichen Methoden schaffe ich einen Raum, in dem Sie sich tief entspannen und wieder zu sich selbst finden können.
+                  <br>
+                  Dabei lege ich großen Wert auf die ganzheitliche Betrachtung. Körperliche Symptome sind oft nur die Spitze des Eisbergs – ich helfe Ihnen, die Ursachen hinter Ihren Beschwerden zu erkennen und Wege zu finden, Ihre Gesundheit nachhaltig zu stärken. Sei es durch Reflexzonentherapien, Akupunktur nach Master Tung, Kräutermedizin oder andere naturheilkundliche Verfahren. In meiner Praxis arbeiten wir zusammen an Ihrem Wohlbefinden.
+                </p> 
+                <p class="py-6 text-2xl">Du bist genau richtig hier, wenn Du …</p> 
+                <p style="padding: 10px;" class="py-6 text-2xl">• Verantwortung für Deine Gesundheit übernehmen möchtest</p> 
+                <p style="padding: 10px;" class="py-6 text-2xl">• Raus aus Stress und Angstspirale möchtest</p> 
+                <p style="padding: 10px;" class="py-6 text-2xl">• Mehr Achtsamkeit und Gelassenheit im Leben wünschst</p> 
+                <p style="padding: 10px;" class="py-6 text-2xl">• Dich mit Liveworkshops oder Onlinekursen auf Deinem Wachstumspfad begleiten lassen möchtest</p> 
+                <p style="padding: 10px;" class="py-6 text-2xl">• Dein Leben selbst in die Hand nehmen und inneres Glück und Zufriedenheit spüren möchtest</p> 
+                <p style="padding: 10px;" class="py-6 text-2xl">• Du Naturliebhaber bist oder werden möchtest</p> 
+                <p class="py-6 text-2xl">
+                  Schau Dich gern auf meiner Homepage um, lass Dich inspirieren oder komm in Aktion. Was gibt es Schöneres, als sich um sich zu kümmern, sei es gesundheitlich, geistig, seelisch oder inspirativ?
+                </p> 
+                <div class="btn-group text-center btn-group-vertical md:btn-group-horizontal lg:btn-group-horizontal justify-end"> 
+                  <a href="wellnessmassagen.html"> 
+                    <button class="btn btn-active">Massagen</button>
+                  </a> 
+                  <a href="heilpraktiker.html">
+                    <button class="btn">Heilpraktiker</button>
+                  </a> 
+                  <a href="liveKurs.html">
+                    <button class="btn">Live Kurse</button>
+                  </a> 
+                  <a href="onlinekurs.html">
+                    <button class="btn">Online Kurse</button>
+                  </a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Kontakt-->
+      <section>
+        <div class="hero bg-transparent product-container" id="kontakt"> 
+          <div class="hero-content flex-col lg:flex-row">
+            <div>
+              <h1 class="text-3xl font-bold">Kontakt</h1>
+              <p style="margin: 0;" class="py-6 text-2xl">Beate Himstedt</p> 
+              <h2 style="color: white;" class="py-6 text-2xl">
+                <a href="mailto:etaeb.himstedt@t-online.de">Mail:</a><br>
+                <span style="text-decoration: underline;">natuerlich.himstedt@gmail.com</span> <br>
+                <a href="tel:08074176009">Telefon:</a><br>
+                <span style="text-decoration: underline;">08074 / 176009</span> <br>
+                Adresse:<br>
+                Kraiburgerstrasse 3 <br>
+                83530 Schnaitsee
+              </h2> 
+              <!-- The button to open modal -->
+              <label for="my-modal-6" class="btn modal-button">Kontaktieren sie mich</label> 
+              <input type="checkbox" id="my-modal-6" class="modal-toggle"> 
+              <div class="modal modal-bottom sm:modal-middle cursor-pointer"> 
+                <div class="modal-box w-11/12 max-w-5xl">
+                  <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label> 
+                  <h3 class="font-bold text-lg">Über dieses Formular können sie mir eine Nachricht zukommen lassen.</h3> 
+                  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post"> 
+                    <fieldset id="fs-frm-inputs">
+                      <legend>Kontaktformular</legend>
+                      <div class="form-control">
+                        <label class="input-group input-group-vertical" for="full-name">Name</label> 
+                        <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required> 
+                      </div>
+                      <div class="form-control">
+                        <label class="input-group input-group-vertical" for="email-address">Email Addresse</label> 
+                        <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required> 
+                      </div>
+                      <div class="form-control input-group input-group-vertical"> 
+                        <label for="message">Nachricht</label>
+                        <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required></textarea> 
+                      </div>
+                    </fieldset>
+                    <div class="modal-action">
+                      <button type="submit"><label for="my-modal-6" class="btn">Senden</label></button> 
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="google-maps-embedding">
+              <div class="gmap_canvas">
+                <iframe width="590" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?q=Kraiburger%20str%203%20schnaitsee&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br> 
+                <style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 300px;
+                    width: 590px;
+                  }
+                </style>
+                <a href="https://www.embedgooglemap.net"></a>
+                <style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none!important;
+                    height: 300px;
+                    width: 590px;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Footer-->
+      <footer class="footer p-10 bg-base-100 text-base-content"> 
+        <div>
+          <img class="flex-1 px-2 mx-2" src="src/logo-nobackground-1000.png" alt="logo"> 
+          <p>natürlich Himstedt<br>Immer für sie da!</p>
+        </div>
+        <div>
+          <span class="footer-title">Heilpraktiker</span>
+          <a class="link link-hover" href="heilpraktiker.html#beratung">Beratung</a> 
+          <a class="link link-hover" href="heilpraktiker.html#schröpfen">Schröpfen</a> 
+          <a class="link link-hover" href="heilpraktiker.html#spagyrik">Spagyrik</a> 
+          <a class="link link-hover" href="heilpraktiker.html#akupunktur">Akupunktur</a> 
+          <a class="link link-hover" href="heilpraktiker.html#manuelleTherapien">manuelle Therapien</a> 
+          <a class="link link-hover" href="heilpraktiker.html#urindiagnostik">Diagnostik</a> 
+        </div>
+        <div>
+          <span class="footer-title">Wellnessmassagen</span>
+          <a class="link link-hover" href="wellnessmassagen.html#wellnessmassagen">Wellnessmassagen</a> 
+          <a class="link link-hover" href="wellnessmassagen.html#aromaoele">Aromaöle</a> 
+        </div>
+        <div>
+          <span class="footer-title">Live Kurse</span>
+          <a class="link link-hover" href="liveKurs.html#kraeuterkurs">Kräuterkurse</a> 
+          <a class="link link-hover" href="liveKurs.html#waldbaden">Waldbaden</a> 
+          <a class="link link-hover" href="liveKurs.html#schreibkurs">Schreibkurs</a> 
+          <a class="link link-hover" href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a> 
+        </div>
+        <div>
+          <span class="footer-title">Online Kurse</span>
+          <a class="link link-hover" href="onlinekurs.html#5tagekurs">5 Tage Kurs</a> 
+          <a class="link link-hover" href="onlinekurs.html#schreibkurs">Schreibkurs</a> 
+        </div>
+        <div>
+          <span class="footer-title">Unternehmen</span>
+          <a class="link link-hover" href="index.html">Über mich</a> 
+          <a class="link link-hover" href="index.html#kontakt">Kontakt</a> 
+        </div>
+        <div>
+          <span class="footer-title">Rechtlich</span>
+          <a class="link link-hover" href="impressum.html">Impressum</a> 
+        </div>
+      </footer>
     </div>
+    <div class="drawer-side">
+      <label for="my-drawer-3" class="drawer-overlay"></label> 
+      <ul class="menu p-4 overflow-y-auto w-80 bg-base-100"> 
+        <p class="py-10 text-xl" style="color: black;">Worüber möchten Sie mehr erfahren?</p> 
+        <li class="menu-title">
+          <span>Massagen</span>
+        </li>
+        <li>
+          <a href="wellnessmassagen.html#wellnessmassagen">Wellnessmassagen</a>
+        </li>
+        <li class="menu-title">
+          <span>Heilpraktiker</span>
+        </li>
+        <li>
+          <a href="heilpraktiker.html#beratung">Beratung</a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <label>Therapien</label>
+            <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"> 
+              <li><a href="heilpraktiker.html#schröpfen">Schröpfen</a></li> 
+              <li><a href="heilpraktiker.html#spagyrik">Spagyrik</a></li> 
+              <li><a href="heilpraktiker.html#akupunktur">Akupunktur</a></li> 
+              <li><a href="heilpraktiker.html#manuelleTherapien">manuelle Therapien</a></li> 
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="heilpraktiker.html#urindiagnostik">Diagnostik</a>
+        </li>
+        <li class="menu-title">
+          <span>Live Kurse</span>
+        </li>
+        <li>
+          <a href="liveKurs.html#kraeuterkurs">Kräuterkurse</a>
+        </li>
+        <li>
+          <a href="liveKurs.html#waldbaden">Waldbaden</a>
+        </li>
+        <li>
+          <a href="liveKurs.html#schreibkurs">Schreibkurs</a>
+        </li>
+        <li>
+          <a href="liveKurs.html#fussreflexkurs">Fußreflexkurs</a>
+        </li>
+        <li class="menu-title">
+          <span>Online Kurse</span>
+        </li>
+        <li>
+          <a href="onlinekurs.html#5tagekurs">5 Tage Kurs</a>
+        </li>
+        <li>
+          <a href="onlinekurs.html#schreibkurs">Schreibkurs</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
-
 </html>
