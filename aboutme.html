@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Über mich</title>
     <link rel="icon" type="image/png" href="src\logo-icon.png" />
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
@@ -102,55 +102,68 @@
             </div>
             <!-- Ende Topnav -->
             <section>
-                <div class="hero min-h-screen bg-transparent" id="section0">
-                    <div class="hero-content flex-col lg:flex-row" style="padding: 0;">
-                        <div class="card-body">
-                            <div class="div-wrapper">
-                                <div id="head-div">
-                                    <img src="src/img-profile-pic.png" alt="Profilbild" class="rounded-lg shadow-2xl mask mask-circle" id="profile-pic" style="max-height: 10%; width: auto;" />
-                                </div>
-                                <div id="head-div">
-                                    <h1 class="text-4xl font-bold">Natürlich Himstedt – Ihre Gesundheit in heilenden Händen</h1>
-                                    <h2 class="text-2xl">Ganzheitliche Heilung für Körper, Geist und Seele</h2>
-                                </div>
-                            </div>
-                            <p class="py-6 text-2xl" style="color: white;">
-                                In meiner Praxis geht es um mehr als nur Entspannung. Ich arbeite mit heilenden Händen, um Blockaden zu lösen, und begleite Sie auf Ihrem Weg zu innerer Balance und nachhaltiger Gesundheit. Meine Behandlungen sind darauf ausgerichtet, den Körper in seiner
-                                Tiefe zu berühren und Sie dabei zu unterstützen, Ihre Gesundheit aktiv selbst in die Hand zu nehmen.
-                            </p>
-                            <div class="card-actions justify-end">
-                                <a class="btn" href="aboutme.html">
-                                    Erfahren Sie Mehr
-                                </a>
-                                <a class="btn btn-primary" id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e">
-                                    Termine Buchen
-                                </a>
-                            </div>
-                        </div>
+                <div class="hero min-h-screen product-container text-left flex-col lg:flex-row md:flex-row">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <img src="src/img-aboutme-top.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
-                            <div class="card lg:card-side bg-base-100 shadow-xl" id="landing_card">
-                                <div class="card-body">
-                                    <h2 class="card-title">Kontaktieren Sie mich!</h2>
-                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
-                                        <fieldset id="fs-frm-inputs">
-                                            <legend>Kontaktformular</legend>
-                                            <ul role="list" id="landing_contact_list">
-                                                <li><label for="full-name">Ganzer Name</label></li>
-                                                <li><input type="text" name="name" id="full-name" placeholder="Vorname und Nachname" required></li>
-                                                <li><label for="email-address">Email-Addresse</label></li>
-                                                <li><input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required></li>
-                                                <li><label for="message">Ihre Nachricht</label></li>
-                                                <li>
-                                                    <textarea rows="2" name="message" id="message" placeholder="Ihre persönliche Nachricht an mich" required data-gramm="false" wt-ignore-input="true"></textarea>
-                                                </li>
-                                                <li><input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"></li>
-                                            </ul>
-                                        </fieldset>
-                                        <div class="card-actions justify-end">
-                                            <!--<input  value="Senden ">-->
-                                            <button class="btn btn-primary" type="submit">Senden</button>
-                                        </div>
-                                    </form>
+                            <h1 class="text-5xl font-bold">Heilung mit Herz und Hand</h1>
+                            <p class="py-6 text-2xl">
+                                Meine Patientin nannte meine Arbeit einmal „heilende Hände“. Diese Worte spiegeln wider, was mich antreibt: Ich möchte Menschen berühren, sowohl körperlich als auch emotional. Mit meinen Massagen, Reflexzonenbehandlungen und naturheilkundlichen Methoden
+                                schaffe ich einen Raum, in dem Sie sich tief entspannen und wieder zu sich selbst finden können.
+                                <br> Dabei lege ich großen Wert auf die ganzheitliche Betrachtung. Körperliche Symptome sind oft nur die Spitze des Eisbergs – ich helfe Ihnen, die Ursachen hinter Ihren Beschwerden zu erkennen und Wege zu finden, Ihre
+                                Gesundheit nachhaltig zu stärken. Sei es durch Reflexzonentherapien, Akupunktur nach Master Tung, Kräutermedizin oder andere naturheilkundliche Verfahren. In meiner Praxis arbeiten wir zusammen an Ihrem Wohlbefinden.
+                            </p>
+                            <a class="btn btn-primary" id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/ff9dd9ea-16ef-4568-b4ee-3208e1c5dd7e">
+                                Termin Buchen
+                            </a>
+                            <a class="btn btn-primary" style="float:none" href="aboutme.html#aboutme-more">
+                               Weiter lesen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="aboutme-more">
+                <div class="hero product-container" id="info">
+                    <div class="hero-content  text-left flex-col lg:flex-row md:flex-row">
+                        <figure>
+                            <img src="src/img-aboutme-bottom.png" alt="Therapeutisches Umfeld" class="rounded-xl" />
+                        </figure>
+                        <div class="card shadow-xl glass">
+                            <div class="card-body">
+                                <h1 class="card-title text-3xl font-bold">Du bist genau richtig hier, wenn Du …</h1>
+                                <div class="join join-vertical">
+                                    <ul>
+                                        <li>
+                                            <p class="join-item py-2 text-xl">Verantwortung für Deine Gesundheit übernehmen möchtest</p>
+                                        </li>
+                                        <li>
+                                            <p class="join-item py-2 text-xl">Raus aus Stress und Angstspirale möchtestButton</p>
+                                        </li>
+                                        <li>
+                                            <p class="join-item py-2 text-xl">Mehr Achtsamkeit und Gelassenheit im Leben wünschst</p>
+                                        </li>
+                                        <li>
+                                            <p class="join-item py-2 text-xl">Dich mit Liveworkshops auf Deinem Wachstumspfad begleiten lassen möchtest</p>
+                                        </li>
+                                        <li>
+                                            <p class="join-item py-2 text-xl">Dein Leben selbst in die Hand nehmen und inneres Glück und Zufriedenheit spüren möchtest</p>
+                                        </li>
+                                        <li>
+                                            <p class="join-item py-2 text-xl">Du Naturliebhaber bist oder werden möchtest</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="py-6 text-2xl">
+                                    Schau Dich gern auf meiner Homepage um, lass Dich inspirieren oder komm in Aktion. Was gibt es Schöneres, als sich um sich zu kümmern, sei es gesundheitlich, geistig, seelisch oder inspirativ?
+                                </p>
+                                <div class="join join-vertical lg:join-horizontal">
+                                    <a class="btn join-item" href="wellnessmassagen.html">Massagen</a>
+                                    <a class="btn join-item" href="heilpraktiker.html">Heilpraktiker</a>
+                                    <a class="btn join-item" href="liveKurs.html"> Live Kurse </a>
+                                    <a class="btn join-item" href="beratung.html">Beratung</a>
+                                    <a class="btn join-item" href="index.html#kontakt">Beratung</a>
+
                                 </div>
                             </div>
                         </div>
@@ -158,75 +171,6 @@
                 </div>
             </section>
 
-            <!--Kontakt-->
-            <section>
-                <div class="hero bg-transparent product-container" id="kontakt">
-                    <div class="hero-content flex-col lg:flex-row">
-                        <div>
-                            <h1 class="text-3xl font-bold">Kontakt</h1>
-                            <p style="margin: 0;" class="py-6 text-2xl">Beate Himstedt</p>
-                            <h2 style="color: white;" class="py-6 text-2xl">
-                                <a href="mailto:etaeb.himstedt@t-online.de">Mail:</a><br>
-                                <span style="text-decoration: underline;">natuerlich.himstedt@gmail.com</span> <br>
-                                <a href="tel:08074176009">Telefon:</a><br>
-                                <span style="text-decoration: underline;">08074 / 176009</span> <br> Adresse:
-                                <br> Kraiburgerstrasse 3 <br> 83530 Schnaitsee
-                            </h2>
-                            <!-- The button to open modal -->
-                            <label for="my-modal-6" class="btn modal-button">Kontaktieren sie mich</label>
-                            <input type="checkbox" id="my-modal-6" class="modal-toggle">
-                            <div class="modal modal-bottom sm:modal-middle cursor-pointer">
-                                <div class="modal-box w-11/12 max-w-5xl">
-                                    <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                                    <h3 class="font-bold text-lg">Über dieses Formular können sie mir eine Nachricht zukommen lassen.</h3>
-                                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqnraed" method="post">
-                                        <fieldset id="fs-frm-inputs">
-                                            <legend>Kontaktformular</legend>
-                                            <div class="form-control">
-                                                <label class="input-group input-group-vertical" for="full-name">Name</label>
-                                                <input class="input input-bordered" type="text" name="name" id="full-name" placeholder="" required>
-                                            </div>
-                                            <div class="form-control">
-                                                <label class="input-group input-group-vertical" for="email-address">Email Addresse</label>
-                                                <input class="input input-bordered" type="email" name="_replyto" id="email-address" placeholder="" required>
-                                            </div>
-                                            <div class="form-control input-group input-group-vertical">
-                                                <label for="message">Nachricht</label>
-                                                <textarea class="textarea textarea-secondary" rows="5" name="message" id="message" placeholder="Ihre Nachricht an mich" required></textarea>
-                                            </div>
-                                        </fieldset>
-                                        <div class="modal-action">
-                                            <button type="submit"><label for="my-modal-6" class="btn">Senden</label></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="google-maps-embedding">
-                            <div class="gmap_canvas">
-                                <iframe width="590" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?q=Kraiburger%20str%203%20schnaitsee&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
-                                <style>
-                                    .mapouter {
-                                        position: relative;
-                                        text-align: right;
-                                        height: 300px;
-                                        width: 590px;
-                                    }
-                                </style>
-                                <a href="https://www.embedgooglemap.net"></a>
-                                <style>
-                                    .gmap_canvas {
-                                        overflow: hidden;
-                                        background: none!important;
-                                        height: 300px;
-                                        width: 590px;
-                                    }
-                                </style>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!--Footer-->
             <footer class="footer p-10 bg-base-100 text-base-content">
                 <div>
