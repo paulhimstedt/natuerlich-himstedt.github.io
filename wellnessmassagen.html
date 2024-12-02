@@ -55,15 +55,7 @@
                                 </li>
 
                                 <li tabindex="0">
-                                    <div class="dropdown dropdown-hover dropdown-left">
-                                        <a>
-                                        Diagnostik</a>
-                                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-
-                                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                                            <li><a href="heilpraktiker.html#urindiagnostik">Urindiagnostik</a> </li>
-                                        </ul>
-                                    </div>
+                                    <li><a href="heilpraktiker.html#Diagnostik">Diagnostik</a> </li>
                                 </li>
                             </ul>
                         </li>
@@ -176,6 +168,124 @@
                 </div>
             </section>
 
+            <!-- Manuelle Therapien -->
+            <section id="manuelleTherapien">
+                <div class="hero bg-transparent product-container">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <div class="ml-0 lg:ml-8">
+                            <h1 class="text-5xl font-bold">Berührung als Schlüssel zur Heilung</h1>
+                            <h2 class="text-3xl mt-4">Entspannen, Loslassen, Wohlfühlen</h2>
+                            <p class="py-6 text-2xl">In meiner Praxis steht Berührung im Mittelpunkt – Berührung, die Körper und Geist verbindet und Sie wieder in Kontakt mit sich selbst bringt. Mit meinen Wellnessmassagen möchte ich Ihnen Momente der Ruhe und des Loslassens
+                                schenken. Jede Massageform ist darauf ausgerichtet, Sie nicht nur zu entspannen, sondern Ihre Selbstwahrnehmung zu stärken und Heilungsprozesse zu unterstützen. Erleben Sie in wohltuender Atmosphäre, wie Sie Stress und
+                                Verspannungen loslassen und wieder in Balance kommen.
+                            </p>
+                            <div class="grid flex-grow">
+                                <div class="card w-200 bg-base-100 shadow-xl">
+                                    <div class="card-body">
+                                        <div id="therapie_tab" class="tabs tabs-boxed">
+                                            <a class="tab tab-active" onclick="showTherapie(0)">Entspannungsmassage</a>
+                                            <a class="tab" onclick="showTherapie(1)">Fußmassage</a>
+                                            <a class="tab" onclick="showTherapie(2)">Hot Stone Massage</a>
+                                            <a class="tab" onclick="showTherapie(3)">Aromaölmassage</a>
+                                            <a class="tab" onclick="showTherapie(4)">Kräuterstempelmassage</a>
+                                        </div>
+                                        <div id="therapie_container">
+                                            <div id="manuelleTherapien_0" class="card-actions justify-end">
+
+                                                <div class="card lg:card-side bg-base-100 shadow-xl flex w-full flex-col lg:flex-row">
+                                                    <figure>
+                                                        <img src="src/img-massage-1.png" alt="" class="rounded-lg shadow-2xl max-w-80">
+                                                    </figure>
+                                                    <div class="divider lg:divider-horizontal"></div>
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Löschen Sie den Stress des Alltags</h2>
+                                                        <p class="text-black">
+                                                            Die Entspannungsmassage ist ideal, um tiefen Stress abzubauen und Körper und Geist in Einklang zu bringen. Durch sanfte, rhythmische Bewegungen wird die Muskulatur gelockert und der Geist beruhigt. Diese Massageform wirkt besonders wohltuend bei allgemeiner
+                                                            Anspannung und stressbedingten Beschwerden. Ziel ist es, ein tiefes Gefühl der Ruhe und Gelassenheit zu schaffen – ein Moment, in dem Sie ganz zu sich selbst finden können.
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div id="manuelleTherapien_1" class="card-actions justify-end hidden">
+
+
+                                                <div class="card lg:card-side bg-base-100 shadow-xl flex w-full flex-col lg:flex-row">
+                                                    <figure>
+                                                        <img src="src/img-massage-2.png" alt="" class="rounded-lg shadow-2xl max-w-80">
+                                                    </figure>
+                                                    <div class="divider lg:divider-horizontal"></div>
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Beruhigung durch Reflexzonenstimulation</h2>
+                                                        <p class="text-black">
+                                                            Unsere Füße tragen uns durch das Leben und sind oft überlastet. Die Fußmassage löst Spannungen und stimuliert über Reflexzonen den gesamten Körper. Durch gezielte Drucktechniken werden nicht nur die Füße entlastet, sondern auch die inneren Organe harmonisiert.
+                                                            Diese Massage hilft Ihnen, sich geerdet und leicht zu fühlen, und kann das gesamte Wohlbefinden positiv beeinflussen.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="manuelleTherapien_2" class="card-actions justify-end hidden">
+
+                                                <div class="card lg:card-side bg-base-100 shadow-xl flex w-full flex-col lg:flex-row">
+                                                    <figure>
+                                                        <img src="src/img-massage-3.png" alt="" class="rounded-lg shadow-2xl max-w-80">
+                                                    </figure>
+                                                    <div class="divider lg:divider-horizontal"></div>
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Wärme, die tief unter die Haut geht</h2>
+                                                        <p class="text-black">Die Hot Stone Massage kombiniert sanfte Massagetechniken mit der intensiven Wirkung von warmen Vulkansteinen. Die Wärme dringt tief in die Muskulatur ein, löst Verspannungen und fördert die Durchblutung.
+                                                            Diese Behandlung ist besonders für Menschen geeignet, die unter chronischen Verspannungen leiden und sich eine besonders tiefgehende Entspannung wünschen. Die Kombination aus wohltuender Wärme
+                                                            und gezielter Massage lässt Sie körperlich und geistig regenerieren.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="manuelleTherapien_3" class="card-actions justify-end hidden">
+
+                                                <div class="card lg:card-side bg-base-100 shadow-xl flex w-full flex-col lg:flex-row">
+                                                    <figure>
+                                                        <img src="src/img-massage-5.png" alt="" class="rounded-lg shadow-2xl max-w-80">
+                                                    </figure>
+                                                    <div class="divider lg:divider-horizontal"></div>
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Heilsame Düfte für Körper und Seele</h2>
+                                                        <p class="text-black">Die Aromaölmassage verbindet sanfte Massagetechniken mit den heilenden Eigenschaften ätherischer Öle. Je nach Bedarf wähle ich individuell auf Sie abgestimmte Düfte aus, die beruhigend, anregend
+                                                            oder harmonisierend wirken. Die Kombination aus Massagedruck und den Eigenschaften der Öle fördert die Entspannung und unterstützt die Selbstheilungskräfte. Diese Massage wirkt besonders wohltuend
+                                                            bei Stress, Schlafproblemen und innerer Unruhe. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="manuelleTherapien_4" class="card-actions justify-end hidden">
+
+                                                <div class="card lg:card-side bg-base-100 shadow-xl flex w-full flex-col lg:flex-row">
+                                                    <figure>
+                                                        <img src="src/img-massage-4.png" alt="" class="rounded-lg shadow-2xl max-w-80">
+                                                    </figure>
+                                                    <div class="divider lg:divider-horizontal"></div>
+                                                    <div class="card-body">
+                                                        <h2 class="card-title">Natur pur – mit der Kraft der Kräuter</h2>
+                                                        <p class="text-black">Die Kräuterstempelmassage vereint Wärme und die Heilkraft natürlicher Kräuter. In Stofftücher gewickelte, erwärmte Kräuterstempel werden sanft über den Körper geführt, um Verspannungen zu lösen und
+                                                            die Haut zu verwöhnen. Die ätherischen Öle der Kräuter dringen tief in die Haut ein und entfalten dort ihre beruhigende und entgiftende Wirkung. Diese Massage ist ideal, um Körper und Geist zu
+                                                            reinigen und neue Energie zu tanken.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="py-6 text-2xl">
+                                Jede dieser Wellnessmassagen hilft Ihnen, den Alltag hinter sich zu lassen, Stress abzubauen und sich auf sich selbst zu besinnen. Lassen Sie sich von den heilenden Berührungen leiten und genießen Sie Momente der tiefen Entspannung und Regeneration.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
             <!--Aromaöle-->
             <section>
                 <div class="hero bg-transparent product-container" id="aromaoele">
@@ -193,7 +303,26 @@
                     </div>
                 </div>
             </section>
-
+            <script>
+                function showTherapie(index) {
+                    const containers = document.querySelectorAll('#therapie_container > div');
+                    containers.forEach((container, i) => {
+                        if (i === index) {
+                            container.classList.remove('hidden');
+                        } else {
+                            container.classList.add('hidden');
+                        }
+                    });
+                    const tabs = document.querySelectorAll('#therapie_tab .tab');
+                    tabs.forEach((tab, i) => {
+                        if (i === index) {
+                            tab.classList.add('tab-active');
+                        } else {
+                            tab.classList.remove('tab-active');
+                        }
+                    });
+                }
+            </script>
 
 
             <!--Footer-->
@@ -208,7 +337,7 @@
                     <a class="link link-hover" href="heilpraktiker.html#spagyrik">Spagyrik</a>
                     <a class="link link-hover" href="heilpraktiker.html#akupunktur">Akupunktur</a>
                     <a class="link link-hover" href="heilpraktiker.html#manuelleTherapien">manuelle Therapien</a>
-                    <a class="link link-hover" href="heilpraktiker.html#urindiagnostik">Diagnostik</a>
+                    <a class="link link-hover" href="heilpraktiker.html#Diagnostik">Diagnostik</a>
                 </div>
                 <div>
                     <span class="footer-title">Wellnessmassagen</span>
@@ -260,7 +389,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="heilpraktiker.html#urindiagnostik">Diagnostik</a></li>
+                <li><a href="heilpraktiker.html#Diagnostik">Diagnostik</a></li>
                 <li class="menu-title">
                     <span>Live Kurse</span>
                 </li>
